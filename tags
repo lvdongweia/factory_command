@@ -1,0 +1,56 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+FACTORY_TEST_LOG_H	factory_test_log.h	9;"	d
+FD_ERROR	transport.cpp	26;"	d	file:
+FD_READ	transport.cpp	23;"	d	file:
+FD_TIMEOUT	transport.cpp	25;"	d	file:
+FD_WRITE	transport.cpp	24;"	d	file:
+FT_LOGD	factory_test_log.h	15;"	d
+FT_LOGE	factory_test_log.h	16;"	d
+LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := $/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := rm_factory_test$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOGD	factory_test_log.h	21;"	d
+LOGD	factory_test_log.h	23;"	d
+LOGE	factory_test_log.h	27;"	d
+LOGE	factory_test_log.h	29;"	d
+LOG_TAG	factory_test_log.h	13;"	d
+ST_OPEN	transport.cpp	21;"	d	file:
+ST_UNMOUNT	transport.cpp	20;"	d	file:
+TRANSPORT_H	transport.h	9;"	d
+_write	serial.cpp	/^static int _write(int _fd, const void *data, int datalen)$/;"	f	file:	signature:(int _fd, const void *data, int datalen)
+close_device	transport.cpp	/^static void close_device()$/;"	f	file:	signature:()
+close_device	transport.cpp	/^static void close_device();$/;"	p	file:	signature:()
+device_poll_thread	transport.cpp	/^static void* device_poll_thread(void *arg)$/;"	f	file:	signature:(void *arg)
+event_loop	factory_test_main.cpp	/^static void event_loop()$/;"	f	file:	signature:()
+find_serial_device	transport.cpp	/^static void find_serial_device(char *base) $/;"	f	file:	signature:(char *base)
+ft_pthread_create	transport.h	/^static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t func, void *arg)$/;"	f	signature:(pthread_t *pthread, ft_thread_func_t func, void *arg)
+ft_thread_func_t	transport.h	/^typedef void* (*ft_thread_func_t)(void *arg);$/;"	t
+input_thread	transport.cpp	/^static void* input_thread(void *arg)$/;"	f	file:	signature:(void *arg)
+know_device	transport.cpp	/^static int know_device(char *dev)$/;"	f	file:	signature:(char *dev)
+main	factory_test_main.cpp	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
+open_device	transport.cpp	/^static void open_device(char *dev)$/;"	f	file:	signature:(char *dev)
+open_device	transport.cpp	/^static void open_device(char *dev);$/;"	p	file:	signature:(char *dev)
+read_data	transport.cpp	/^static int read_data()$/;"	f	file:	signature:()
+read_id	transport.cpp	/^static pthread_t read_id;$/;"	v	file:
+se_fd	transport.cpp	/^static int se_fd = -1;$/;"	v	file:
+se_name	transport.cpp	/^static char se_name[32] = {0};$/;"	v	file:
+se_state	transport.cpp	/^static int se_state = ST_UNMOUNT;$/;"	v	file:
+serial_close	serial.cpp	/^void serial_close(int fd)$/;"	f	signature:(int fd)
+serial_close	serial.h	/^void serial_close(int fd);$/;"	p	signature:(int fd)
+serial_init	serial.cpp	/^static int serial_init(int fd)$/;"	f	file:	signature:(int fd)
+serial_open	serial.cpp	/^int serial_open(const char *dev)$/;"	f	signature:(const char *dev)
+serial_open	serial.h	/^int serial_open(const char *dev);$/;"	p	signature:(const char *dev)
+serial_read	serial.cpp	/^int serial_read(int fd, void *data, int datalen)$/;"	f	signature:(int fd, void *data, int datalen)
+serial_read	serial.h	/^int serial_read(int fd, void *data, int datalen);$/;"	p	signature:(int fd, void *data, int datalen)
+serial_write	serial.cpp	/^int serial_write(int fd, const void *data, int datalen)$/;"	f	signature:(int fd, const void *data, int datalen)
+serial_write	serial.h	/^int serial_write(int fd, const void *data, int datalen);$/;"	p	signature:(int fd, const void *data, int datalen)
+transport_init	transport.cpp	/^void transport_init()$/;"	f	signature:()
+transport_init	transport.h	/^void transport_init();$/;"	p	signature:()
+wait_transport	transport.cpp	/^static int wait_transport()$/;"	f	file:	signature:()
