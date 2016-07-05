@@ -48,12 +48,13 @@ static int serial_init(int fd)
      * options.c_iflag |= INPCK;
      */
 
-    options.c_oflag &= ~OPOST;           /* 修改输出模式，原始数据输出 */
-    options.c_lflag = 0;                 /* 不激活终端模式 */
+    /* 使用原始模式方式通讯 */
+    options.c_oflag &= ~OPOST;
+    options.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG);
 
-    // 设置等待时间和最小接收字符,作用于read
-    //options.c_cc[VTIME] = 1;             /* 读取一个字符等待 1*(1/10)s */
-    //options.c_cc[VMIN]  = 1;             /* 读取字符的最少个数为1 */
+    // 设置等待时间和最小接收字符,作用于read,只有当不使用NDELAY属性时才能生效*/
+    options.c_cc[VTIME] = 1;             /* 读取一个字符等待 n*(1/10)s*/
+    options.c_cc[VMIN]  = 0;             /* 读取字符的最少个数为1 */
 
     // 设置波特率:115200KHz
     cfsetispeed(&options, B115200);
@@ -75,7 +76,7 @@ static int serial_init(int fd)
 int serial_open(const char *dev)
 {
     // open ttyusb0
-    int fd = open(dev, O_RDWR | O_NOCTTY | O_NDELAY);
+    int fd = open(dev, O_RDWR | O_NOCTTY);
     if (fd < 0)
     {
         LOGE("open %s failed.(%s)", dev, strerror(errno));
@@ -116,6 +117,7 @@ static int _write(int _fd, const void *data, int datalen)
 int serial_read(int fd, void *data, int datalen)
 {
     int len = 0;
+    int tollen = 0;
 
     if (fd < 0)
         return -1;
@@ -123,8 +125,14 @@ int serial_read(int fd, void *data, int datalen)
     if (data == NULL || datalen < 0)
         return -1;
 
-    len = read(fd, data, datalen);
-    return len;
+    do
+    {
+        len = read(fd, data+tollen, datalen-tollen);
+        if (len <= 0) break;
+        tollen += len;
+    } while (tollen < datalen);
+
+    return tollen;
 }
 
 int serial_write(int fd, const void *data, int datalen)
@@ -135,17 +143,20 @@ int serial_write(int fd, const void *data, int datalen)
     if (fd < 0)
         return -1;
 
+    if (data == NULL || datalen < 0)
+        return -1;
+
     do
     {
-        len = _write(fd, data + tollen, datalen - tollen);
-        if (len == -1)
-            return -1;
-        else
+        len = write(fd, data+tollen, datalen-tollen);
+        if (len < 0) 
         {
-            tollen += len;
+            tcflush(fd, TCOFLUSH); //清空发送缓冲区
+            break;
         }
+        tollen += len;
     } while(tollen < datalen);
 
-    return 0;
+    return tollen;
 }
 

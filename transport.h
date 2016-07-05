@@ -10,6 +10,30 @@
 
 #include <pthread.h>
 
+/* data protocol */
+#define MSG_HEADER    0xC0
+#define MSG_TYPE_CMD  0x01
+#define MSG_TYPE_ACK  0x10
+#define MSG_TYPE_NACK 0x80
+#define MSG_TYPE (MSG_TYPE_CMD | MSG_TYPE_ACK | MSG_TYPE_NACK)
+
+   
+struct message
+{
+    uint8_t header;
+    uint8_t type;
+    uint8_t cmd;
+    uint8_t d_len;
+    uint8_t *data;
+};
+
+struct amessage
+{
+    message msg;
+    uint8_t check;
+};
+
+
 typedef void* (*ft_thread_func_t)(void *arg);
 
 static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t func, void *arg)

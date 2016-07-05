@@ -11,7 +11,8 @@ LOCAL_C_INCLUDES :=
 
 
 LOCAL_SHARED_LIBRARIES := \
-	libcutils
+	libcutils \
+	libutils
 
 LOCAL_MODULE := rm_factory_test
 
