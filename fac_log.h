@@ -5,10 +5,15 @@
 	> Created Time: 2016年06月29日 星期三 17时21分26秒
  ************************************************************************/
 
-#ifndef FACTORY_TEST_LOG_H
-#define FACTORY_TEST_LOG_H
+#ifndef FAC_LOG_H
+#define FAC_LOG_H
 
 #include <android/log.h>
+
+#define PAYLOAD_SIZE 250
+#define BUF_SIZE     (PAYLOAD_SIZE+5)
+
+
 
 #define LOG_TAG "FACTORY_COMMAND"
 
@@ -38,4 +43,4 @@
 
 
 
-#endif /* FACTORY_TEST_LOG_H */
+#endif /* FAC_LOG_H */

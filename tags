@@ -4,53 +4,161 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.6	//
-FACTORY_TEST_LOG_H	factory_test_log.h	9;"	d
-FD_ERROR	transport.cpp	26;"	d	file:
-FD_READ	transport.cpp	23;"	d	file:
-FD_TIMEOUT	transport.cpp	25;"	d	file:
-FD_WRITE	transport.cpp	24;"	d	file:
-FT_LOGD	factory_test_log.h	15;"	d
-FT_LOGE	factory_test_log.h	16;"	d
-LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := $/;"	m
+BUF_SIZE	fac_log.h	14;"	d
+CLASS_NAME	transport_jni.cpp	20;"	d	file:
+COMMAND_FACTORYTEST	command.h	/^enum COMMAND_FACTORYTEST $/;"	g
+COMMAND_H	command.h	9;"	d
+ERRORS_H	errors.h	9;"	d
+E_OK	errors.h	13;"	d
+E_OTHER	errors.h	18;"	d
+EventCallback	transport.h	/^typedef void (*EventCallback)(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len);$/;"	t
+FAC_ID_BATTERY_LEVEL	command.h	/^    FAC_ID_BATTERY_LEVEL            = 0x27,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_GET_ADDR	command.h	/^    FAC_ID_BT_GET_ADDR              = 0x0E,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_GET_SIGNAL_STRENGTH	command.h	/^    FAC_ID_BT_GET_SIGNAL_STRENGTH   = 0x0F,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_PAIRING	command.h	/^    FAC_ID_BT_PAIRING               = 0x10,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_SET_ADDR	command.h	/^    FAC_ID_BT_SET_ADDR              = 0x0D,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_CLOSE	command.h	/^    FAC_ID_CAMERA_CLOSE             = 0x24,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_OPEN	command.h	/^    FAC_ID_CAMERA_OPEN              = 0x21,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_TAKE_PICTURE	command.h	/^    FAC_ID_CAMERA_TAKE_PICTURE      = 0x22,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_VIEW_PICTURE	command.h	/^    FAC_ID_CAMERA_VIEW_PICTURE      = 0x23,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAN_BUS_TEST	command.h	/^    FAC_ID_CAN_BUS_TEST             = 0x29,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CHARGER_STATUS	command.h	/^    FAC_ID_CHARGER_STATUS           = 0x1F,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_ENTER_BURNING_MODE	command.h	/^    FAC_ID_ENTER_BURNING_MODE       = 0x11,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_ENTER_FACTORY_MODE	command.h	/^    FAC_ID_ENTER_FACTORY_MODE       = 0x01,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_EXIT_BURNING_MODE	command.h	/^    FAC_ID_EXIT_BURNING_MODE        = 0x12,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_EXIT_FACTORY_MODE	command.h	/^    FAC_ID_EXIT_FACTORY_MODE        = 0x02,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_FACIAL_EXPRESSION	command.h	/^    FAC_ID_FACIAL_EXPRESSION        = 0x2A,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_FW_VERSION	command.h	/^    FAC_ID_GET_FW_VERSION = 0x14,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_IP_ADDR	command.h	/^    FAC_ID_GET_IP_ADDR              = 0x0B,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_ROBOT_SN	command.h	/^    FAC_ID_GET_ROBOT_SN             = 0x05,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_WIFI_MAC	command.h	/^    FAC_ID_GET_WIFI_MAC             = 0x07,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_WIFI_SIGNAL_STRENGTH	command.h	/^    FAC_ID_GET_WIFI_SIGNAL_STRENGTH = 0x08,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_IR_SENSOR	command.h	/^    FAC_ID_IR_SENSOR                = 0x1D,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_KEY_STATUS	command.h	/^    FAC_ID_KEY_STATUS               = 0x19,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_LCD_DISPLAY	command.h	/^    FAC_ID_LCD_DISPLAY              = 0x25,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_LED_OFF	command.h	/^    FAC_ID_LED_OFF                  = 0x1C,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_LED_ON	command.h	/^    FAC_ID_LED_ON                   = 0x1B,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_CLOSE	command.h	/^    FAC_ID_MIC_CLOSE                = 0x18,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_PLAY_RECORD_FILE	command.h	/^    FAC_ID_MIC_PLAY_RECORD_FILE     = 0x17,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_START_RECORD	command.h	/^    FAC_ID_MIC_START_RECORD         = 0x15,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_STOP_RECORD	command.h	/^    FAC_ID_MIC_STOP_RECORD          = 0x16,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MOTOR_MOTION	command.h	/^    FAC_ID_MOTOR_MOTION             = 0x2B,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_PING_ID_ADDR	command.h	/^    FAC_ID_PING_ID_ADDR             = 0x0C,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_RESET_FACTORY_DEFAULT	command.h	/^    FAC_ID_RESET_FACTORY_DEFAULT    = 0x03,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_RING_PLAY	command.h	/^    FAC_ID_RING_PLAY                = 0x1A,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SET_ROBOT_SN	command.h	/^    FAC_ID_SET_ROBOT_SN             = 0x04,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SET_WIFI_MAC	command.h	/^    FAC_ID_SET_WIFI_MAC             = 0x06,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SPEAK_PATTERN	command.h	/^    FAC_ID_SPEAK_PATTERN            = 0x2C,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_TF_STATUS	command.h	/^    FAC_ID_TF_STATUS                = 0x28,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_TOUCH_PANEL_TEST	command.h	/^    FAC_ID_TOUCH_PANEL_TEST         = 0x26,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_TOUCH_SENSOR	command.h	/^    FAC_ID_TOUCH_SENSOR             = 0x2D,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_ULTRASONIC_SENDOR	command.h	/^    FAC_ID_ULTRASONIC_SENDOR        = 0x1E,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_USB_PLUGIN_STATUS	command.h	/^    FAC_ID_USB_PLUGIN_STATUS        = 0x20,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_WIFI_GET_AP_ASSOCIATE	command.h	/^    FAC_ID_WIFI_GET_AP_ASSOCIATE    = 0x0A,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_WIFI_SET_AP_ASSOCIATE	command.h	/^    FAC_ID_WIFI_SET_AP_ASSOCIATE    = 0x09,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_LOG_H	fac_log.h	9;"	d
+FAC_UTIL_H	fac_util.h	9;"	d
+FD_ERROR	transport.cpp	31;"	d	file:
+FD_READ	transport.cpp	28;"	d	file:
+FD_TIMEOUT	transport.cpp	30;"	d	file:
+FD_WRITE	transport.cpp	29;"	d	file:
+FT_LOGD	fac_log.h	20;"	d
+FT_LOGE	fac_log.h	21;"	d
+FW_VERSION_H	fw_version.h	9;"	d
+FW_VER_AI_CORE_LIB	fw_version.h	12;"	d
+FW_VER_ANDROID_OS	fw_version.h	11;"	d
+FW_VER_SUBSYS_RBB	fw_version.h	19;"	d
+FW_VER_SUBSYS_RBL	fw_version.h	18;"	d
+FW_VER_SUBSYS_RBR	fw_version.h	17;"	d
+FW_VER_SUBSYS_RC	fw_version.h	14;"	d
+FW_VER_SUBSYS_RF	fw_version.h	16;"	d
+FW_VER_SUBSYS_RM	fw_version.h	13;"	d
+FW_VER_SUBSYS_RP	fw_version.h	15;"	d
+JNI_OnLoad	transport_jni.cpp	/^jint JNI_OnLoad(JavaVM* vm, void* reserved)$/;"	f
+LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
 LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := rm_factory_test$/;"	m
 LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
 LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
 LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
-LOGD	factory_test_log.h	21;"	d
-LOGD	factory_test_log.h	23;"	d
-LOGE	factory_test_log.h	27;"	d
-LOGE	factory_test_log.h	29;"	d
-LOG_TAG	factory_test_log.h	13;"	d
-ST_OPEN	transport.cpp	21;"	d	file:
-ST_UNMOUNT	transport.cpp	20;"	d	file:
+LOGD	fac_log.h	26;"	d
+LOGD	fac_log.h	28;"	d
+LOGE	fac_log.h	32;"	d
+LOGE	fac_log.h	34;"	d
+LOG_TAG	fac_log.h	18;"	d
+MSG_HEADER	transport.h	14;"	d
+MSG_TYPE	transport.h	18;"	d
+MSG_TYPE_ACK	transport.h	16;"	d
+MSG_TYPE_CMD	transport.h	15;"	d
+MSG_TYPE_NACK	transport.h	17;"	d
+NELEM	transport_jni.cpp	18;"	d	file:
+PAYLOAD_SIZE	fac_log.h	13;"	d
+ST_OPEN	transport.cpp	26;"	d	file:
+ST_UNMOUNT	transport.cpp	25;"	d	file:
 TRANSPORT_H	transport.h	9;"	d
-_write	serial.cpp	/^static int _write(int _fd, const void *data, int datalen)$/;"	f	file:	signature:(int _fd, const void *data, int datalen)
-close_device	transport.cpp	/^static void close_device()$/;"	f	file:	signature:()
-close_device	transport.cpp	/^static void close_device();$/;"	p	file:	signature:()
-device_poll_thread	transport.cpp	/^static void* device_poll_thread(void *arg)$/;"	f	file:	signature:(void *arg)
-event_loop	factory_test_main.cpp	/^static void event_loop()$/;"	f	file:	signature:()
-find_serial_device	transport.cpp	/^static void find_serial_device(char *base) $/;"	f	file:	signature:(char *base)
-ft_pthread_create	transport.h	/^static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t func, void *arg)$/;"	f	signature:(pthread_t *pthread, ft_thread_func_t func, void *arg)
+_write	serial.cpp	/^static int _write(int _fd, const void *data, int datalen)$/;"	f	file:
+callbackID	transport_jni.cpp	/^static jmethodID callbackID = NULL;$/;"	v	file:
+close_device	transport.cpp	/^static void close_device()$/;"	f	file:
+cmd	transport.h	/^    uint8_t cmd;$/;"	m	struct:message
+d_len	transport.h	/^    uint8_t d_len;$/;"	m	struct:exmessage
+d_len	transport.h	/^    uint8_t d_len;$/;"	m	struct:message
+data	transport.h	/^    uint8_t *data;$/;"	m	struct:exmessage
+data	transport.h	/^    uint8_t *data;$/;"	m	struct:message
+device_poll_thread	transport.cpp	/^static void* device_poll_thread(void *arg)$/;"	f	file:
+event_loop	factory_test_main.cpp	/^static void event_loop()$/;"	f	file:
+exmessage	transport.h	/^struct exmessage$/;"	s
+find_serial_device	transport.cpp	/^static void find_serial_device(char *base) $/;"	f	file:
+ft_pthread_create	transport.h	/^static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t func, void *arg)$/;"	f
 ft_thread_func_t	transport.h	/^typedef void* (*ft_thread_func_t)(void *arg);$/;"	t
-input_thread	transport.cpp	/^static void* input_thread(void *arg)$/;"	f	file:	signature:(void *arg)
-know_device	transport.cpp	/^static int know_device(char *dev)$/;"	f	file:	signature:(char *dev)
-main	factory_test_main.cpp	/^int main(int argc, char **argv)$/;"	f	signature:(int argc, char **argv)
-open_device	transport.cpp	/^static void open_device(char *dev)$/;"	f	file:	signature:(char *dev)
-open_device	transport.cpp	/^static void open_device(char *dev);$/;"	p	file:	signature:(char *dev)
-read_data	transport.cpp	/^static int read_data()$/;"	f	file:	signature:()
+gMethods	transport_jni.cpp	/^static JNINativeMethod gMethods[] =$/;"	v	file:
+getChecksum	transport.cpp	/^static int getChecksum(const message *msg)$/;"	f	file:
+getNewEvent	transport.cpp	/^int getNewEvent(EventCallback cbFun)$/;"	f
+getPacket	transport.cpp	/^static message* getPacket(uint8_t header, $/;"	f	file:
+getSerialData	transport.cpp	/^void getSerialData(uint8_t *data, int &len)$/;"	f
+get_ai_core_lib_ver	fw_version.cpp	/^static int get_ai_core_lib_ver(char *ver, size_t len)$/;"	f	file:
+get_android_os_ver	fw_version.cpp	/^static int get_android_os_ver(char *ver, size_t len)$/;"	f	file:
+get_fw_version	factory_test_main.cpp	/^static void get_fw_version(int id)$/;"	f	file:
+get_subsys_ver	fw_version.cpp	/^static int get_subsys_ver(int id, char *ver, size_t len)$/;"	f	file:
+getfw_version	fw_version.cpp	/^int getfw_version(int id, char *version, size_t len)$/;"	f
+handle_event	factory_test_main.cpp	/^void handle_event(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len)$/;"	f
+header	transport.h	/^    uint8_t header;$/;"	m	struct:message
+hex2Str	fac_util.cpp	/^void hex2Str(char *dst, uint8_t *src, int len)$/;"	f
+hex2Str	transport_jni.cpp	/^static void hex2Str(char* dst, uint8_t* src, int len)$/;"	f	file:
+init	transport_jni.cpp	/^static void init(JNIEnv* env, jobject thiz)$/;"	f	file:
+know_device	transport.cpp	/^static int know_device(char *dev)$/;"	f	file:
+mRecvLock	transport.cpp	/^static Mutex mRecvLock;$/;"	v	file:
+mRecvSignal	transport.cpp	/^static Condition mRecvSignal;$/;"	v	file:
+main	factory_test_main.cpp	/^int main(int argc, char **argv)$/;"	f
+message	transport.h	/^struct message$/;"	s
+notifyClient	transport_jni.cpp	/^static void notifyClient(const char *info)$/;"	f	file:
+open_device	transport.cpp	/^static void open_device(char *dev)$/;"	f	file:
+popFromRecvList	transport.cpp	/^struct exmessage* popFromRecvList()$/;"	f
+popFromRecvList	transport.cpp	/^struct message* popFromRecvList()$/;"	f
+printHex	fac_util.cpp	/^void printHex(const uint8_t *data, int len)$/;"	f
+pushToRecvList	transport.cpp	/^static void pushToRecvList(struct exmessage *msg)$/;"	f	file:
+pushToRecvList	transport.cpp	/^static void pushToRecvList(struct message *msg)$/;"	f	file:
+qRecvList	transport.cpp	/^static List<struct exmessage*> qRecvList;$/;"	v	file:
+qRecvList	transport.cpp	/^static List<struct message*> qRecvList;$/;"	v	file:
+r_thread	transport_jni.cpp	/^static pthread_t r_thread;$/;"	v	file:
+read_data	transport.cpp	/^static int read_data()$/;"	f	file:
 read_id	transport.cpp	/^static pthread_t read_id;$/;"	v	file:
+receive_thread	transport_jni.cpp	/^void* receive_thread(void* arg)$/;"	f
+register_native_methods	transport_jni.cpp	/^static int register_native_methods(JNIEnv* env)$/;"	f	file:
+releasePacket	transport.cpp	/^static void releasePacket(struct message *msg)$/;"	f	file:
+responseEvent	transport.cpp	/^int responseEvent(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len)$/;"	f
+s_jobject	transport_jni.cpp	/^static jobject   s_jobject = NULL;$/;"	v	file:
 se_fd	transport.cpp	/^static int se_fd = -1;$/;"	v	file:
 se_name	transport.cpp	/^static char se_name[32] = {0};$/;"	v	file:
 se_state	transport.cpp	/^static int se_state = ST_UNMOUNT;$/;"	v	file:
-serial_close	serial.cpp	/^void serial_close(int fd)$/;"	f	signature:(int fd)
-serial_close	serial.h	/^void serial_close(int fd);$/;"	p	signature:(int fd)
-serial_init	serial.cpp	/^static int serial_init(int fd)$/;"	f	file:	signature:(int fd)
-serial_open	serial.cpp	/^int serial_open(const char *dev)$/;"	f	signature:(const char *dev)
-serial_open	serial.h	/^int serial_open(const char *dev);$/;"	p	signature:(const char *dev)
-serial_read	serial.cpp	/^int serial_read(int fd, void *data, int datalen)$/;"	f	signature:(int fd, void *data, int datalen)
-serial_read	serial.h	/^int serial_read(int fd, void *data, int datalen);$/;"	p	signature:(int fd, void *data, int datalen)
-serial_write	serial.cpp	/^int serial_write(int fd, const void *data, int datalen)$/;"	f	signature:(int fd, const void *data, int datalen)
-serial_write	serial.h	/^int serial_write(int fd, const void *data, int datalen);$/;"	p	signature:(int fd, const void *data, int datalen)
-transport_init	transport.cpp	/^void transport_init()$/;"	f	signature:()
-transport_init	transport.h	/^void transport_init();$/;"	p	signature:()
-wait_transport	transport.cpp	/^static int wait_transport()$/;"	f	file:	signature:()
+serial_close	serial.cpp	/^void serial_close(int fd)$/;"	f
+serial_init	serial.cpp	/^static int serial_init(int fd)$/;"	f	file:
+serial_open	serial.cpp	/^int serial_open(const char *dev)$/;"	f
+serial_read	serial.cpp	/^int serial_read(int fd, uint8_t *data, int datalen)$/;"	f
+serial_write	serial.cpp	/^int serial_write(int fd, const uint8_t *data, int datalen)$/;"	f
+str2Hex	fac_util.cpp	/^void str2Hex(uint8_t *dst, char *src, int len)$/;"	f
+str2Hex	transport_jni.cpp	/^static void str2Hex(uint8_t* dst, char* src, int len)$/;"	f	file:
+transport_init	transport.cpp	/^void transport_init()$/;"	f
+transport_thread	transport.cpp	/^static void* transport_thread(void *arg)$/;"	f	file:
+transport_write	transport.cpp	/^static int transport_write(struct message *packet)$/;"	f	file:
+type	transport.h	/^    uint8_t type;$/;"	m	struct:message
+uninit	transport_jni.cpp	/^static void uninit(JNIEnv* env, jobject thiz)$/;"	f	file:
+wait_transport	transport.cpp	/^static int wait_transport()$/;"	f	file:

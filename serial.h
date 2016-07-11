@@ -13,9 +13,9 @@ int serial_open(const char *dev);
 
 void serial_close(int fd);
 
-int serial_read(int fd, void *data, int datalen);
+int serial_read(int fd, uint8_t *data, int datalen);
 
-int serial_write(int fd, const void *data, int datalen);
+int serial_write(int fd, const uint8_t *data, int datalen);
 
 
 #endif /* SERIAL_H */

@@ -12,7 +12,7 @@
 #include <fcntl.h>
 #include <termio.h>
 
-#include "factory_test_log.h"
+#include "fac_log.h"
 
 #include "serial.h"
 
@@ -114,7 +114,7 @@ static int _write(int _fd, const void *data, int datalen)
 }
 
 
-int serial_read(int fd, void *data, int datalen)
+int serial_read(int fd, uint8_t *data, int datalen)
 {
     int len = 0;
     int tollen = 0;
@@ -135,7 +135,7 @@ int serial_read(int fd, void *data, int datalen)
     return tollen;
 }
 
-int serial_write(int fd, const void *data, int datalen)
+int serial_write(int fd, const uint8_t *data, int datalen)
 {
     int len = 0;
     int tollen = 0;

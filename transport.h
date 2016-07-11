@@ -17,7 +17,8 @@
 #define MSG_TYPE_NACK 0x80
 #define MSG_TYPE (MSG_TYPE_CMD | MSG_TYPE_ACK | MSG_TYPE_NACK)
 
-   
+
+#ifndef BUILD_FOR_JNI   
 struct message
 {
     uint8_t header;
@@ -27,12 +28,22 @@ struct message
     uint8_t *data;
 };
 
-struct amessage
+typedef void (*EventCallback)(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len);
+
+int getNewEvent(EventCallback cb);
+int responseEvent(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len); 
+
+#else
+
+struct exmessage
 {
-    message msg;
-    uint8_t check;
+    uint8_t d_len;
+    uint8_t *data;
 };
 
+void getSerialData(uint8_t *data, int &len);
+
+#endif
 
 typedef void* (*ft_thread_func_t)(void *arg);
 
@@ -46,11 +57,7 @@ static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t fun
     return pthread_create(pthread, &attr, func, arg);
 }
 
-
 void transport_init();
-
-
-
 
 
 #endif /* TRANSPROT_H */

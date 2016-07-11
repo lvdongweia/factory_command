@@ -16,10 +16,11 @@
 #include <utils/Condition.h>
 
 #include "serial.h"
-#include "factory_test_log.h"
+#include "fac_log.h"
+#include "fac_util.h"
+
 #include "transport.h"
 
-#define BUF_SIZE   255
 
 #define ST_UNMOUNT 0
 #define ST_OPEN    1
@@ -28,6 +29,8 @@
 #define FD_WRITE   2
 #define FD_TIMEOUT 3
 #define FD_ERROR   4
+
+
 
 using namespace android;
 
@@ -39,91 +42,179 @@ static pthread_t read_id;
 static Mutex mRecvLock;
 static Condition mRecvSignal;
 
+#ifndef BUILD_FOR_JNI
 static List<struct message*> qRecvList;
+#else
+static List<struct exmessage*> qRecvList;
+#endif
 
-static void printRecvHex(const uint8_t *data, int len)
-{
-    if (len <= 0 || len > BUF_SIZE) return;
 
-    char str[3*BUF_SIZE + 1] = {0};
-
-    for (int i = 0; i < len; i++)
-    {
-        sprintf(str+3*i, "%02x ", data[i]);
-    }
-
-    str[3*len-1] = '\0';
-    LOGD("###Recv data hex:[%s]", str);
-}
-
+#ifndef BUILD_FOR_JNI
 static void pushToRecvList(struct message *msg)
 {
     AutoMutex lock(mRecvLock);
     qRecvList.push_back(msg);
-    LOGD("RecvList size:%d", qRecvList.size());
-    if (msg->d_len > 0)
-    {
-        printRecvHex(msg->data, msg->d_len);
-    }
+    LOGD("recv list size:%d", qRecvList.size());
     mRecvSignal.signal();
 }
 
-static int isValidData(const message *msg, uint8_t check)
+struct message* popFromRecvList()
+{
+    struct message *packet = NULL;
+
+    AutoMutex lock(mRecvLock);
+    if (qRecvList.empty()) mRecvSignal.wait(mRecvLock);
+
+    List<struct message*>::iterator it = qRecvList.begin();
+    packet = *it;
+    qRecvList.erase(it);
+
+    return packet;
+}
+
+static int getChecksum(const message *msg)
 {
     uint8_t checksum;
-
     checksum = msg->header ^ msg->type ^ msg->cmd ^ msg->d_len;
     if (msg->d_len > 0 && msg->data != NULL)
     {
         for (int i = 0; i < msg->d_len; i++)
             checksum ^= msg->data[i];
     }
-
-    LOGD("calculate checksum is %x, origin is %x", checksum, check);
-
-    return checksum == check ? 1 : 0;
+    return checksum;
 }
 
-static message* getPackage(uint8_t header, 
+static message* getPacket(uint8_t header, 
         uint8_t type, 
         uint8_t cmd, 
         uint8_t len,
         uint8_t *data)
 {
     uint8_t *payload;
-    struct message *package = (struct message*)malloc(sizeof(struct message));
-    if (package == NULL) return NULL;
+    struct message *packet = (struct message*)malloc(sizeof(struct message));
+    if (packet == NULL) return NULL;
 
-    memset(package, 0, sizeof(struct message));
-    package->header = header;
-    package->type   = type;
-    package->cmd    = cmd;
-    package->d_len  = len;
+    memset(packet, 0, sizeof(struct message));
+    packet->header = header;
+    packet->type   = type;
+    packet->cmd    = cmd;
+    packet->d_len  = len;
 
     if (len > 0 && data != NULL)
     {
         payload = (uint8_t*)malloc(sizeof(uint8_t) * len);
         if (payload == NULL) return NULL;
         memcpy(payload, data, len);
-        package->data = payload;
+        packet->data = payload;
     }
 
-    return package;
+    return packet;
 }
+
+static void releasePacket(struct message *msg)
+{
+    if (msg == NULL) return;
+
+    if (msg->data) free(msg->data);
+
+    free(msg);
+}
+
+static int transport_write(struct message *packet)
+{
+    int datalen;
+    if (!se_state) return -1;
+
+    uint8_t data[BUF_SIZE] = {0};
+
+    data[0] = packet->header;
+    data[1] = packet->type;
+    data[2] = packet->cmd;
+    data[3] = datalen = packet->d_len;
+    if (datalen < 0 || datalen > 250) return -1;
+    if (datalen > 0 && packet->data == NULL) return -1;
+
+    if (datalen > 0)
+    {
+        memcpy(data + 4, packet->data, datalen);
+        data[4+datalen] = getChecksum(packet);
+    }
+    else
+    {
+        data[4] = getChecksum(packet);
+    }
+
+    return serial_write(se_fd, data, datalen+5);
+}
+
+int getNewEvent(EventCallback cbFun)
+{
+    /* if no event, it will block */
+    struct message *msg = popFromRecvList();
+    if (msg == NULL || cbFun == NULL) return -1;
+
+    // callback to handle event
+    if (cbFun)
+       (*cbFun)(msg->type, msg->cmd, msg->data, msg->d_len);
+
+    releasePacket(msg);
+    return 0;
+}
+
+int responseEvent(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len)
+{
+    struct message *msg = getPacket(MSG_HEADER, type, cmd, len, data);
+
+    // creat thread to write ?
+    int ret = transport_write(msg);
+
+    releasePacket(msg);
+    return ret;
+}
+
+
+#else
+
+static void pushToRecvList(struct exmessage *msg)
+{
+    AutoMutex lock(mRecvLock);
+    qRecvList.push_back(msg);
+    LOGD("RecvList size:%d", qRecvList.size()); 
+    mRecvSignal.signal();
+}
+
+struct exmessage* popFromRecvList()
+{
+    struct exmessage *packet = NULL;
+
+    AutoMutex lock(mRecvLock);
+    if (qRecvList.empty()) mRecvSignal.wait(mRecvLock);
+
+    List<struct exmessage*>::iterator it = qRecvList.begin();
+    packet = *it;
+    qRecvList.erase(it);
+
+    return packet;
+}
+
+void getSerialData(uint8_t *data, int &len)
+{
+    struct exmessage *msg = popFromRecvList();
+
+    memcpy(data, msg->data, msg->d_len);
+    len = msg->d_len;
+}
+#endif
 
 static int read_data()
 {
     int len;
     uint8_t buf[BUF_SIZE] = {0};
-    struct message *msg;
-
-    uint8_t *payload = NULL;
-    uint8_t header, type, cmd, length, checksum; 
-
+   
     if (!se_state) return -1;
     len = serial_read(se_fd, buf, sizeof(buf));
     LOGD("#####receive data len:%d", len);
-    printRecvHex(buf, len);
+    printHex(buf, len);
 
     if (len < 0)
     {
@@ -139,10 +230,17 @@ static int read_data()
         return -1;
     }
 
+#ifndef BUILD_FOR_JNI
+    struct message *msg;
+
+    uint8_t *payload = NULL;
+    uint8_t header, type, cmd, length, checksum; 
+
 #ifdef STRESS_TEST 
     /* for test serial */
     len = serial_write(se_fd, buf, len);
     LOGD("#####send success data len:%d", len);
+    return 0;
 #endif
  
     /* check msg protocol */
@@ -160,7 +258,7 @@ static int read_data()
     }
 
     type = buf[1];
-    if (!(type & MSG_TYPE))
+    if (type != MSG_TYPE_CMD && type != MSG_TYPE_ACK && type != MSG_TYPE_NACK)
     {
         LOGE("Invalid data type:%02x (%02x | %02x | %02x)", type, 
                 MSG_TYPE_CMD, MSG_TYPE_ACK, MSG_TYPE_NACK);
@@ -176,7 +274,7 @@ static int read_data()
         int pldLen = len - 5;
         if (length != pldLen)
         {
-            LOGE("Invalid payload len:%d (%d)", pldLen, length);
+            LOGE("Invalid payload len:%d (%d)", length, pldLen);
             return 0;
         }
     }
@@ -184,17 +282,29 @@ static int read_data()
     checksum = buf[len-1];
 
     /* construct msg */
-    struct message *package = getPackage(header, type, cmd, length, payload);
-    if (package == NULL) return 0;
+    struct message *packet = getPacket(header, type, cmd, length, payload);
+    if (packet == NULL) return 0;
 
-    if (isValidData(package, checksum))
-        pushToRecvList(package);
+    int ck = getChecksum(packet);
+    if (checksum == ck)
+        pushToRecvList(packet);
     else 
     {
-        LOGE("checksum failed.");
-        if (package->data != NULL) free(package->data);
-        free(package);
+        LOGE("checksum failed.(%02x / %02x)", ck, checksum);
+        if (packet->data != NULL) free(packet->data);
+        free(packet);
     }
+
+#else
+
+    struct exmessage* msg = (struct exmessage*)malloc(sizeof(struct exmessage));
+    if (msg == NULL) return 0;
+    memcpy(msg->data, buf, len);
+    msg->d_len = len;
+
+    pushToRecvList(msg);
+
+#endif
 
     return 0;
 }
@@ -334,7 +444,6 @@ static void* device_poll_thread(void *arg)
     // never return
     return (NULL);
 }
-
 
 void transport_init()
 {
