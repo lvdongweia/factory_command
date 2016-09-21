@@ -4,161 +4,1559 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.6	//
-BUF_SIZE	fac_log.h	14;"	d
-CLASS_NAME	transport_jni.cpp	20;"	d	file:
-COMMAND_FACTORYTEST	command.h	/^enum COMMAND_FACTORYTEST $/;"	g
-COMMAND_H	command.h	9;"	d
-ERRORS_H	errors.h	9;"	d
-E_OK	errors.h	13;"	d
-E_OTHER	errors.h	18;"	d
-EventCallback	transport.h	/^typedef void (*EventCallback)(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len);$/;"	t
-FAC_ID_BATTERY_LEVEL	command.h	/^    FAC_ID_BATTERY_LEVEL            = 0x27,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_BT_GET_ADDR	command.h	/^    FAC_ID_BT_GET_ADDR              = 0x0E,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_BT_GET_SIGNAL_STRENGTH	command.h	/^    FAC_ID_BT_GET_SIGNAL_STRENGTH   = 0x0F,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_BT_PAIRING	command.h	/^    FAC_ID_BT_PAIRING               = 0x10,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_BT_SET_ADDR	command.h	/^    FAC_ID_BT_SET_ADDR              = 0x0D,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_CAMERA_CLOSE	command.h	/^    FAC_ID_CAMERA_CLOSE             = 0x24,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_CAMERA_OPEN	command.h	/^    FAC_ID_CAMERA_OPEN              = 0x21,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_CAMERA_TAKE_PICTURE	command.h	/^    FAC_ID_CAMERA_TAKE_PICTURE      = 0x22,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_CAMERA_VIEW_PICTURE	command.h	/^    FAC_ID_CAMERA_VIEW_PICTURE      = 0x23,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_CAN_BUS_TEST	command.h	/^    FAC_ID_CAN_BUS_TEST             = 0x29,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_CHARGER_STATUS	command.h	/^    FAC_ID_CHARGER_STATUS           = 0x1F,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_ENTER_BURNING_MODE	command.h	/^    FAC_ID_ENTER_BURNING_MODE       = 0x11,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_ENTER_FACTORY_MODE	command.h	/^    FAC_ID_ENTER_FACTORY_MODE       = 0x01,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_EXIT_BURNING_MODE	command.h	/^    FAC_ID_EXIT_BURNING_MODE        = 0x12,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_EXIT_FACTORY_MODE	command.h	/^    FAC_ID_EXIT_FACTORY_MODE        = 0x02,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_FACIAL_EXPRESSION	command.h	/^    FAC_ID_FACIAL_EXPRESSION        = 0x2A,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_GET_FW_VERSION	command.h	/^    FAC_ID_GET_FW_VERSION = 0x14,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_GET_IP_ADDR	command.h	/^    FAC_ID_GET_IP_ADDR              = 0x0B,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_GET_ROBOT_SN	command.h	/^    FAC_ID_GET_ROBOT_SN             = 0x05,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_GET_WIFI_MAC	command.h	/^    FAC_ID_GET_WIFI_MAC             = 0x07,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_GET_WIFI_SIGNAL_STRENGTH	command.h	/^    FAC_ID_GET_WIFI_SIGNAL_STRENGTH = 0x08,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_IR_SENSOR	command.h	/^    FAC_ID_IR_SENSOR                = 0x1D,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_KEY_STATUS	command.h	/^    FAC_ID_KEY_STATUS               = 0x19,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_LCD_DISPLAY	command.h	/^    FAC_ID_LCD_DISPLAY              = 0x25,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_LED_OFF	command.h	/^    FAC_ID_LED_OFF                  = 0x1C,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_LED_ON	command.h	/^    FAC_ID_LED_ON                   = 0x1B,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_MIC_CLOSE	command.h	/^    FAC_ID_MIC_CLOSE                = 0x18,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_MIC_PLAY_RECORD_FILE	command.h	/^    FAC_ID_MIC_PLAY_RECORD_FILE     = 0x17,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_MIC_START_RECORD	command.h	/^    FAC_ID_MIC_START_RECORD         = 0x15,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_MIC_STOP_RECORD	command.h	/^    FAC_ID_MIC_STOP_RECORD          = 0x16,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_MOTOR_MOTION	command.h	/^    FAC_ID_MOTOR_MOTION             = 0x2B,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_PING_ID_ADDR	command.h	/^    FAC_ID_PING_ID_ADDR             = 0x0C,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_RESET_FACTORY_DEFAULT	command.h	/^    FAC_ID_RESET_FACTORY_DEFAULT    = 0x03,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_RING_PLAY	command.h	/^    FAC_ID_RING_PLAY                = 0x1A,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_SET_ROBOT_SN	command.h	/^    FAC_ID_SET_ROBOT_SN             = 0x04,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_SET_WIFI_MAC	command.h	/^    FAC_ID_SET_WIFI_MAC             = 0x06,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_SPEAK_PATTERN	command.h	/^    FAC_ID_SPEAK_PATTERN            = 0x2C,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_TF_STATUS	command.h	/^    FAC_ID_TF_STATUS                = 0x28,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_TOUCH_PANEL_TEST	command.h	/^    FAC_ID_TOUCH_PANEL_TEST         = 0x26,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_TOUCH_SENSOR	command.h	/^    FAC_ID_TOUCH_SENSOR             = 0x2D,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_ULTRASONIC_SENDOR	command.h	/^    FAC_ID_ULTRASONIC_SENDOR        = 0x1E,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_USB_PLUGIN_STATUS	command.h	/^    FAC_ID_USB_PLUGIN_STATUS        = 0x20,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_WIFI_GET_AP_ASSOCIATE	command.h	/^    FAC_ID_WIFI_GET_AP_ASSOCIATE    = 0x0A,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_ID_WIFI_SET_AP_ASSOCIATE	command.h	/^    FAC_ID_WIFI_SET_AP_ASSOCIATE    = 0x09,$/;"	e	enum:COMMAND_FACTORYTEST
-FAC_LOG_H	fac_log.h	9;"	d
-FAC_UTIL_H	fac_util.h	9;"	d
-FD_ERROR	transport.cpp	31;"	d	file:
-FD_READ	transport.cpp	28;"	d	file:
-FD_TIMEOUT	transport.cpp	30;"	d	file:
-FD_WRITE	transport.cpp	29;"	d	file:
-FT_LOGD	fac_log.h	20;"	d
-FT_LOGE	fac_log.h	21;"	d
-FW_VERSION_H	fw_version.h	9;"	d
-FW_VER_AI_CORE_LIB	fw_version.h	12;"	d
-FW_VER_ANDROID_OS	fw_version.h	11;"	d
-FW_VER_SUBSYS_RBB	fw_version.h	19;"	d
-FW_VER_SUBSYS_RBL	fw_version.h	18;"	d
-FW_VER_SUBSYS_RBR	fw_version.h	17;"	d
-FW_VER_SUBSYS_RC	fw_version.h	14;"	d
-FW_VER_SUBSYS_RF	fw_version.h	16;"	d
-FW_VER_SUBSYS_RM	fw_version.h	13;"	d
-FW_VER_SUBSYS_RP	fw_version.h	15;"	d
-JNI_OnLoad	transport_jni.cpp	/^jint JNI_OnLoad(JavaVM* vm, void* reserved)$/;"	f
+ACL_STATE_CHANGED	lib/bluetooth/RMessage.h	/^    ACL_STATE_CHANGED,$/;"	e	enum:RMessageId
+ADAPTER_PROPERTIES	lib/bluetooth/RMessage.h	/^    ADAPTER_PROPERTIES,$/;"	e	enum:RMessageId
+ADAPTER_STATE_CHANGED	lib/bluetooth/RMessage.h	/^    ADAPTER_STATE_CHANGED = 0,$/;"	e	enum:RMessageId
+AI_CORE_LIB_VER_LEN	lib/factest1/test_robot_info.cpp	24;"	d	file:
+AKIMBO	lib/include/robot_fac.h	/^    APPLAUD                 = 0x23,    AKIMBO                  = 0x24,$/;"	e	enum:MOTION_ID
+ALL_RESET	lib/include/robot_fac.h	/^    ALL_RESET               = 0x07,    ARMS_RESET              = 0x08,$/;"	e	enum:MOTION_ID
+ALL_STOP	lib/include/robot_fac.h	/^    ALL_STOP                = 0x01,    ARMS_STOP               = 0x02,$/;"	e	enum:MOTION_ID
+ANDROID_IMOUNTSERVICE_H	lib/hwinfo/IMountService.h	7;"	d
+ANDROID_POWER_SUPPLY_TYPE_AC	lib/factest1/test_battery.cpp	/^    ANDROID_POWER_SUPPLY_TYPE_AC,$/;"	e	enum:PowerSupplyType	file:
+ANDROID_POWER_SUPPLY_TYPE_BATTERY	lib/factest1/test_battery.cpp	/^    ANDROID_POWER_SUPPLY_TYPE_BATTERY$/;"	e	enum:PowerSupplyType	file:
+ANDROID_POWER_SUPPLY_TYPE_UNKNOWN	lib/factest1/test_battery.cpp	/^    ANDROID_POWER_SUPPLY_TYPE_UNKNOWN = 0,$/;"	e	enum:PowerSupplyType	file:
+ANDROID_POWER_SUPPLY_TYPE_USB	lib/factest1/test_battery.cpp	/^    ANDROID_POWER_SUPPLY_TYPE_USB,$/;"	e	enum:PowerSupplyType	file:
+ANDROID_POWER_SUPPLY_TYPE_WIRELESS	lib/factest1/test_battery.cpp	/^    ANDROID_POWER_SUPPLY_TYPE_WIRELESS,$/;"	e	enum:PowerSupplyType	file:
+ANDROID_VER_LEN	lib/factest1/test_robot_info.cpp	23;"	d	file:
+APPLAUD	lib/include/robot_fac.h	/^    APPLAUD                 = 0x23,    AKIMBO                  = 0x24,$/;"	e	enum:MOTION_ID
+ARG_LEN	lib/wifi/RNetdConnector.h	/^        static const int ARG_LEN = 32;$/;"	m	class:RNetdConnector::RCommand
+ARG_NUM	lib/wifi/RNetdConnector.h	/^        static const int ARG_NUM = 32;$/;"	m	class:RNetdConnector::RCommand
+ARMS_RESET	lib/include/robot_fac.h	/^    ALL_RESET               = 0x07,    ARMS_RESET              = 0x08,$/;"	e	enum:MOTION_ID
+ARMS_STOP	lib/include/robot_fac.h	/^    ALL_STOP                = 0x01,    ARMS_STOP               = 0x02,$/;"	e	enum:MOTION_ID
+ARM_ROTATION_LEFT	lib/include/robot_fac.h	/^    ARM_ROTATION_LEFT       = 0x09,$/;"	e	enum:MOTOR_ID
+ARM_ROTATION_RIGHT	lib/include/robot_fac.h	/^    ARM_ROTATION_RIGHT      = 0x01,$/;"	e	enum:MOTOR_ID
+ARM_SWING_LEFT	lib/include/robot_fac.h	/^    ARM_SWING_LEFT          = 0x0A,$/;"	e	enum:MOTOR_ID
+ARM_SWING_RIGHT	lib/include/robot_fac.h	/^    ARM_SWING_RIGHT         = 0x02,$/;"	e	enum:MOTOR_ID
+ASSOC_REJECT_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::ASSOC_REJECT_STR = "ASSOC-REJECT";$/;"	m	class:RWifiHalCmd	file:
+ASSOC_REJECT_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* ASSOC_REJECT_STR;$/;"	m	class:RWifiHalCmd
+AVOID_OBSTACLE	lib/include/robot_fac.h	/^    AVOID_OBSTACLE          = 0x5B,    MOTION_MAX$/;"	e	enum:MOTION_ID
+AVOID_OBSTACLE_DISABLE	lib/src/robot_fac.c	156;"	d	file:
+AVOID_OBSTACLE_ENABLE	lib/src/robot_fac.c	155;"	d	file:
+ActivityTestCallback	lib/include/camera/ActivityTestService.h	/^class ActivityTestCallback$/;"	c
+ActivityTestService	lib/camera/ActivityTestService.cpp	/^ActivityTestService::ActivityTestService()$/;"	f	class:ActivityTestService
+ActivityTestService	lib/include/camera/ActivityTestService.h	/^class ActivityTestService : public BnActivityTestService$/;"	c
+AddrKey	lib/bluetooth/RRemoteDevices.h	/^        AddrKey() {}$/;"	f	struct:RRemoteDevices::AddrKey
+AddrKey	lib/bluetooth/RRemoteDevices.h	/^        AddrKey(const bt_bdaddr_t& address) { addr = address; }$/;"	f	struct:RRemoteDevices::AddrKey
+AddrKey	lib/bluetooth/RRemoteDevices.h	/^    struct AddrKey$/;"	s	class:RRemoteDevices
+BACK_500MM_NORMALLY	lib/include/robot_fac.h	/^    BACK_500MM_SLOWLY       = 0x13,    BACK_500MM_NORMALLY     = 0x14,$/;"	e	enum:MOTION_ID
+BACK_500MM_QUICKLY	lib/include/robot_fac.h	/^    BACK_500MM_QUICKLY      = 0x15,    BACK_CONTINUED_SLOWLY   = 0x16,$/;"	e	enum:MOTION_ID
+BACK_500MM_SLOWLY	lib/include/robot_fac.h	/^    BACK_500MM_SLOWLY       = 0x13,    BACK_500MM_NORMALLY     = 0x14,$/;"	e	enum:MOTION_ID
+BACK_CONTINUED_NORMALLY	lib/include/robot_fac.h	/^    BACK_CONTINUED_NORMALLY = 0x17,    BACK_CONTINUED_QUICKLY  = 0x18,$/;"	e	enum:MOTION_ID
+BACK_CONTINUED_QUICKLY	lib/include/robot_fac.h	/^    BACK_CONTINUED_NORMALLY = 0x17,    BACK_CONTINUED_QUICKLY  = 0x18,$/;"	e	enum:MOTION_ID
+BACK_CONTINUED_SLOWLY	lib/include/robot_fac.h	/^    BACK_500MM_QUICKLY      = 0x15,    BACK_CONTINUED_SLOWLY   = 0x16,$/;"	e	enum:MOTION_ID
+BALLET_DANCE_POSE	lib/include/robot_fac.h	/^    MJ_DANCE_POSE           = 0x4B,    BALLET_DANCE_POSE       = 0x4C,$/;"	e	enum:MOTION_ID
+BATTERY_STATUS_CHARGING	lib/factest1/test_battery.cpp	/^    BATTERY_STATUS_CHARGING     = 2, \/\/ equals BatteryManager.BATTERY_STATUS_CHARGING constant$/;"	e	enum:__anon7	file:
+BATTERY_STATUS_DISCHARGING	lib/factest1/test_battery.cpp	/^    BATTERY_STATUS_DISCHARGING  = 3, \/\/ equals BatteryManager.BATTERY_STATUS_DISCHARGING constant$/;"	e	enum:__anon7	file:
+BATTERY_STATUS_FULL	lib/factest1/test_battery.cpp	/^    BATTERY_STATUS_FULL         = 5, \/\/ equals BatteryManager.BATTERY_STATUS_FULL constant$/;"	e	enum:__anon7	file:
+BATTERY_STATUS_NOT_CHARGING	lib/factest1/test_battery.cpp	/^    BATTERY_STATUS_NOT_CHARGING = 4, \/\/ equals BatteryManager.BATTERY_STATUS_NOT_CHARGING constant$/;"	e	enum:__anon7	file:
+BATTERY_STATUS_UNKNOWN	lib/factest1/test_battery.cpp	/^    BATTERY_STATUS_UNKNOWN      = 1, \/\/ equals BatteryManager.BATTERY_STATUS_UNKNOWN constant$/;"	e	enum:__anon7	file:
+BLACK_PATTERN	lib/include/camera/pattern.h	/^    BLACK_PATTERN = 4,$/;"	e	enum:DisplayPattern
+BLACK_WHITE_PATTERN	lib/include/camera/pattern.h	/^    BLACK_WHITE_PATTERN = 6,$/;"	e	enum:DisplayPattern
+BLOWING_KISSES	lib/include/robot_fac.h	/^    BLOWING_KISSES          = 0x27,    HIGH_FIVES              = 0x28,$/;"	e	enum:MOTION_ID
+BLUE_PATTERN	lib/include/camera/pattern.h	/^    BLUE_PATTERN = 2,$/;"	e	enum:DisplayPattern
+BOND_STATE_CHANGED	lib/bluetooth/RMessage.h	/^    BOND_STATE_CHANGED,$/;"	e	enum:RMessageId
+BUF_SIZE	include/fac_util.h	20;"	d
+BURNING_SCRIPT_CONFIG	factory_test_main.cpp	/^const static char BURNING_SCRIPT_CONFIG[] = "\/data\/motor_break";$/;"	v	file:
+BURNING_SCRIPT_START	factory_test_main.cpp	/^const static char BURNING_SCRIPT_START[] = "\/system\/bin\/motor_main.sh";$/;"	v	file:
+BURNING_SCRIPT_STOP	factory_test_main.cpp	/^const static char BURNING_SCRIPT_STOP[] = "echo 0 > \/data\/motor_break";$/;"	v	file:
+BYTE_STREAM_LEN	lib/wifi/RWifiSsidPasswd.h	/^    static const int BYTE_STREAM_LEN = 128;$/;"	m	class:RWifiSsidPasswd
+BnActivityTestService	lib/include/camera/IActivityTestService.h	/^class BnActivityTestService : public BnInterface<IActivityTestService>$/;"	c
+BnCameraActivity	lib/camera/ICameraActivity.h	/^class BnCameraActivity : public BnInterface<ICameraActivity>$/;"	c
+BnLcdActivity	lib/camera/ILcdActivity.h	/^class BnLcdActivity : public BnInterface<ILcdActivity>$/;"	c
+BnTouchPanelActivity	lib/include/camera/ITouchPanelActivity.h	/^class BnTouchPanelActivity : public BnInterface<ITouchPanelActivity>$/;"	c
+BpActivityTestService	lib/camera/IActivityTestService.cpp	/^    BpActivityTestService(const sp<IBinder>& impl)$/;"	f	class:BpActivityTestService
+BpActivityTestService	lib/camera/IActivityTestService.cpp	/^class BpActivityTestService : public BpInterface<IActivityTestService>$/;"	c	file:
+BpCameraActivity	lib/camera/ICameraActivity.cpp	/^    BpCameraActivity(const sp<IBinder>& impl)$/;"	f	class:BpCameraActivity
+BpCameraActivity	lib/camera/ICameraActivity.cpp	/^class BpCameraActivity : public BpInterface<ICameraActivity>$/;"	c	file:
+BpLcdActivity	lib/camera/ILcdActivity.cpp	/^    BpLcdActivity(const sp<IBinder>& impl)$/;"	f	class:BpLcdActivity
+BpLcdActivity	lib/camera/ILcdActivity.cpp	/^class BpLcdActivity : public BpInterface<ILcdActivity>$/;"	c	file:
+BpMountService	lib/hwinfo/IMountService.cpp	/^    BpMountService(const sp<IBinder>& impl)$/;"	f	class:android::BpMountService
+BpMountService	lib/hwinfo/IMountService.cpp	/^class BpMountService: public BpInterface<IMountService>$/;"	c	namespace:android	file:
+BpTouchPanelActivity	lib/camera/ITouchPanelActivity.cpp	/^    BpTouchPanelActivity(const sp<IBinder>& impl)$/;"	f	class:BpTouchPanelActivity
+BpTouchPanelActivity	lib/camera/ITouchPanelActivity.cpp	/^class BpTouchPanelActivity : public BpInterface<ITouchPanelActivity>$/;"	c	file:
+BtState	lib/bluetooth/RAdapterProperties.h	/^    enum BtState$/;"	g	class:RAdapterProperties
+CAMERA_ACTIVITY	lib/camera/activity_path.h	6;"	d
+CAN_MODULE_RBB	lib/factest1/test_robot_info.h	33;"	d
+CAN_MODULE_RBL	lib/factest1/test_robot_info.h	32;"	d
+CAN_MODULE_RBR	lib/factest1/test_robot_info.h	31;"	d
+CAN_MODULE_RC	lib/factest1/test_robot_info.h	28;"	d
+CAN_MODULE_RF	lib/factest1/test_robot_info.h	30;"	d
+CAN_MODULE_RM	lib/factest1/test_robot_info.h	27;"	d
+CAN_MODULE_RP	lib/factest1/test_robot_info.h	29;"	d
+CAN_MODULE_SUM	lib/factest1/test_robot_info.h	34;"	d
+CHARGE_IN	lib/factest1/test_battery.h	/^    CHARGE_IN  = 0x01,$/;"	e	enum:__anon6
+CHARGE_OUT	lib/factest1/test_battery.h	/^    CHARGE_OUT = 0x02,$/;"	e	enum:__anon6
+CHEER	lib/include/robot_fac.h	/^    WAVE                    = 0x21,    CHEER                   = 0x22,$/;"	e	enum:MOTION_ID
+CLEAR_ARRAY	lib/wifi/RDhcpResults.cpp	9;"	d	file:
+CLOSE_CAMERA	lib/camera/ICameraActivity.cpp	/^    CLOSE_CAMERA,$/;"	e	enum:__anon2	file:
+CMD_LEN	lib/wifi/RNetdConnector.h	/^        static const int CMD_LEN = 16;$/;"	m	class:RNetdConnector::RCommand
+CMD_MAX_LEN	lib/wifi/RWifiHalCmd.h	/^    static const int CMD_MAX_LEN = 256;$/;"	m	class:RWifiHalCmd
+COLOR_BLACK_PATTERN	lib/include/camera/pattern.h	/^    COLOR_BLACK_PATTERN = 5,$/;"	e	enum:ComparePattern
+COLOR_INDEX	app/src/com/avatarmind/factorycommand/Utils.java	/^    public static final String COLOR_INDEX = "color_index";$/;"	f	class:Utils
+COLOR_WHITE_PATTERN	lib/include/camera/pattern.h	/^    COLOR_WHITE_PATTERN = 4,$/;"	e	enum:ComparePattern
+COMMAND_FACTORYTEST	include/command.h	/^enum COMMAND_FACTORYTEST $/;"	g
+COMMAND_H	include/command.h	9;"	d
+COMPARE_IMAGE	lib/camera/ICameraActivity.cpp	/^    COMPARE_IMAGE,$/;"	e	enum:__anon2	file:
+CONFIG_CURRENT	lib/wifi/RWifiInfo.h	/^            CONFIG_CURRENT = 0,$/;"	e	enum:RWifiInfo::RWifiConfiguredInfo::RWifiStatus
+CONFIG_DISABLED	lib/wifi/RWifiInfo.h	/^            CONFIG_DISABLED = 1,$/;"	e	enum:RWifiInfo::RWifiConfiguredInfo::RWifiStatus
+CONFIG_ENABLED	lib/wifi/RWifiInfo.h	/^            CONFIG_ENABLED = 2,$/;"	e	enum:RWifiInfo::RWifiConfiguredInfo::RWifiStatus
+CONNECTED_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::CONNECTED_STR = "CONNECTED";$/;"	m	class:RWifiHalCmd	file:
+CONNECTED_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* CONNECTED_STR;$/;"	m	class:RWifiHalCmd
+CameraTestActivity	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^public class CameraTestActivity extends Activity implements SurfaceHolder.Callback {$/;"	c
+CameraTestClient	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public CameraTestClient() {}$/;"	m	class:CameraTestActivity.CameraTestClient
+CameraTestClient	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public class CameraTestClient extends ICameraActivity.Stub {$/;"	c	class:CameraTestActivity
+ComparePattern	lib/include/camera/pattern.h	/^enum ComparePattern$/;"	g
+DEFAULT_DHCP_RANGE	lib/wifi/RNetworkManagement.cpp	/^static const char* DEFAULT_DHCP_RANGE[] = {$/;"	v	file:
+DEVICE_FOUND	lib/bluetooth/RMessage.h	/^    DEVICE_FOUND,$/;"	e	enum:RMessageId
+DEVICE_OUT_DEFAULT	lib/factest1/test_mic.cpp	/^static const int DEVICE_OUT_DEFAULT = 0x40000000;$/;"	v	file:
+DIRTY_BLACK_PATTERN	lib/include/camera/pattern.h	/^    DIRTY_BLACK_PATTERN = 3,$/;"	e	enum:ComparePattern
+DIRTY_WHITE_PATTERN	lib/include/camera/pattern.h	/^    DIRTY_WHITE_PATTERN = 2,$/;"	e	enum:ComparePattern
+DISCONNECTED_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::DISCONNECTED_STR = "DISCONNECTED";$/;"	m	class:RWifiHalCmd	file:
+DISCONNECTED_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* DISCONNECTED_STR;$/;"	m	class:RWifiHalCmd
+DISCOVERY_STATE_CHANGED	lib/bluetooth/RMessage.h	/^    DISCOVERY_STATE_CHANGED,$/;"	e	enum:RMessageId
+DISPLAY	lib/camera/ILcdActivity.cpp	/^    DISPLAY = IBinder::FIRST_CALL_TRANSACTION,$/;"	e	enum:__anon4	file:
+DISTRESSED	lib/include/robot_fac.h	/^    LOOK_SECOND             = 0x35,    DISTRESSED              = 0x36,$/;"	e	enum:MOTION_ID
+DNS_DEFAULT_SERVER	lib/wifi/RNetworkManagement.cpp	/^static const char* DNS_DEFAULT_SERVER[] = {"8.8.8.8", "8.8.4.4"};$/;"	v	file:
+DONT_TICKLE_LEFT	lib/include/robot_fac.h	/^    DONT_TICKLE_RIGHT       = 0x47,    DONT_TICKLE_LEFT        = 0x48,$/;"	e	enum:MOTION_ID
+DONT_TICKLE_RIGHT	lib/include/robot_fac.h	/^    DONT_TICKLE_RIGHT       = 0x47,    DONT_TICKLE_LEFT        = 0x48,$/;"	e	enum:MOTION_ID
+DONT_TOUCH_ME	lib/include/robot_fac.h	/^    DONT_TOUCH_ME           = 0x51,    OH_YEAH                 = 0x52,$/;"	e	enum:MOTION_ID
+DRIVER_STATE_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::DRIVER_STATE_STR = "DRIVER-STATE";$/;"	m	class:RWifiHalCmd	file:
+DRIVER_STATE_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* DRIVER_STATE_STR;$/;"	m	class:RWifiHalCmd
+DeviceProperties	lib/bluetooth/RRemoteDevices.cpp	/^RRemoteDevices::DeviceProperties::DeviceProperties(const bt_bdaddr_t& addr)$/;"	f	class:RRemoteDevices::DeviceProperties
+DeviceProperties	lib/bluetooth/RRemoteDevices.h	/^    class DeviceProperties$/;"	c	class:RRemoteDevices
+DisplayPattern	lib/include/camera/pattern.h	/^enum DisplayPattern$/;"	g
+EAP_AUTH_FAILURE_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::EAP_AUTH_FAILURE_STR = "EAP authentication failed";$/;"	m	class:RWifiHalCmd	file:
+EAP_AUTH_FAILURE_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* EAP_AUTH_FAILURE_STR;$/;"	m	class:RWifiHalCmd
+EAP_FAILURE_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::EAP_FAILURE_STR = "EAP-FAILURE";$/;"	m	class:RWifiHalCmd	file:
+EAP_FAILURE_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* EAP_FAILURE_STR;$/;"	m	class:RWifiHalCmd
+EMERGENCY_STOP	lib/include/robot_fac.h	208;"	d
+EVENT_BUF_SIZE	lib/wifi/RWifiHalCmd.h	/^    static const int EVENT_BUF_SIZE = 2048;$/;"	m	class:RWifiHalCmd
+EVENT_PREFIX_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::EVENT_PREFIX_STR = "CTRL-EVENT-";$/;"	m	class:RWifiHalCmd	file:
+EVENT_PREFIX_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* EVENT_PREFIX_STR;$/;"	m	class:RWifiHalCmd
+EXTERNAL_SD	lib/include/camera/pattern.h	/^    EXTERNAL_SD = 1, \/* external sdcard *\/$/;"	e	enum:StorageType
+E_CAN_COMMUNICATE	include/fac_errors.h	/^    E_CAN_COMMUNICATE   = 0x05,  \/\/ can communicate error$/;"	e	enum:E_FAC_TEST
+E_DISCONNECTED	include/fac_errors.h	/^    E_DISCONNECTED      = 0x06,  \/\/ device is not connected$/;"	e	enum:E_FAC_TEST
+E_EXECUTED	include/fac_errors.h	/^    E_EXECUTED          = 0x02,  \/\/ command is excuting$/;"	e	enum:E_FAC_TEST
+E_FAC_TEST	include/fac_errors.h	/^enum E_FAC_TEST {$/;"	g
+E_FAILED	include/fac_errors.h	/^    E_FAILED            = 0xFF   \/\/ command excute failed$/;"	e	enum:E_FAC_TEST
+E_FILE_NOT_FOUND	include/fac_errors.h	/^    E_FILE_NOT_FOUND    = 0x08,  \/\/ file not find$/;"	e	enum:E_FAC_TEST
+E_INVALID_NUMBER	include/fac_errors.h	/^    E_INVALID_NUMBER    = 0x03,  \/\/ invalid number$/;"	e	enum:E_FAC_TEST
+E_NOT_FACTORY_MODE	include/fac_errors.h	/^    E_NOT_FACTORY_MODE  = 0x07,  \/\/ not in factory mode$/;"	e	enum:E_FAC_TEST
+E_OK	include/fac_errors.h	/^    E_OK                = 0x01,  \/\/ success$/;"	e	enum:E_FAC_TEST
+E_OTHERS	include/fac_errors.h	/^    E_OTHERS            = 0xFE,  \/\/ unknow failed reason$/;"	e	enum:E_FAC_TEST
+E_PARAMETERS	include/fac_errors.h	/^    E_PARAMETERS        = 0x04,  \/\/ invalid parameters$/;"	e	enum:E_FAC_TEST
+E_RESET	include/fac_errors.h	30;"	d
+E_SET	include/fac_errors.h	29;"	d
+EventCallback	include/transport.h	/^typedef void (*EventCallback)(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len);$/;"	t
+FACTORY_TEST_OUTPUT_PATH	include/fac_util.h	16;"	d
+FAC_CAN_H	include/fac_can.h	9;"	d
+FAC_ERRORS_H	include/fac_errors.h	9;"	d
+FAC_EXEC_FAILED	lib/include/robot_fac.h	/^    FAC_EXEC_FAILED             = -1,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_EXEC_NO_ERROR	lib/include/robot_fac.h	/^    FAC_EXEC_NO_ERROR           =  0,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_ID_BATTERY_LEVEL	include/command.h	/^    FAC_ID_BATTERY_LEVEL            = 0x27,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_GET_ADDR	include/command.h	/^    FAC_ID_BT_GET_ADDR              = 0x0E,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_GET_SIGNAL_STRENGTH	include/command.h	/^    FAC_ID_BT_GET_SIGNAL_STRENGTH   = 0x0F,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_PAIRING	include/command.h	/^    FAC_ID_BT_PAIRING               = 0x10,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_BT_SET_ADDR	include/command.h	/^    FAC_ID_BT_SET_ADDR              = 0x0D,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_CLOSE	include/command.h	/^    FAC_ID_CAMERA_CLOSE             = 0x24,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_IMG_COMPARE	include/command.h	/^    FAC_ID_CAMERA_IMG_COMPARE       = 0x30,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_OPEN	include/command.h	/^    FAC_ID_CAMERA_OPEN              = 0x21,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_PREVIEW	include/command.h	/^    FAC_ID_CAMERA_PREVIEW           = 0x37,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_TAKE_PICTURE	include/command.h	/^    FAC_ID_CAMERA_TAKE_PICTURE      = 0x22,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAMERA_VIEW_PICTURE	include/command.h	/^    FAC_ID_CAMERA_VIEW_PICTURE      = 0x23,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CAN_BUS_TEST	include/command.h	/^    FAC_ID_CAN_BUS_TEST             = 0x29,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_CHARGER_STATUS	include/command.h	/^    FAC_ID_CHARGER_STATUS           = 0x1F,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_ENTER_BURNING_MODE	include/command.h	/^    FAC_ID_ENTER_BURNING_MODE       = 0x11,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_ENTER_FACTORY_MODE	include/command.h	/^    FAC_ID_ENTER_FACTORY_MODE       = 0x01,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_EXIT_BURNING_MODE	include/command.h	/^    FAC_ID_EXIT_BURNING_MODE        = 0x12,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_EXIT_FACTORY_MODE	include/command.h	/^    FAC_ID_EXIT_FACTORY_MODE        = 0x02,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_FACIAL_EXPRESSION	include/command.h	/^    FAC_ID_FACIAL_EXPRESSION        = 0x2A,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_FW_VERSION	include/command.h	/^    FAC_ID_GET_FW_VERSION           = 0x13,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_IP_ADDR	include/command.h	/^    FAC_ID_GET_IP_ADDR              = 0x0B,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_ROBOT_CHECK_CLOUD_SN	include/command.h	/^    FAC_ID_GET_ROBOT_CHECK_CLOUD_SN = 0x32,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_ROBOT_GENDER	include/command.h	/^    FAC_ID_GET_ROBOT_GENDER         = 0x2F,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_ROBOT_SN	include/command.h	/^    FAC_ID_GET_ROBOT_SN             = 0x05,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_WIFI_MAC	include/command.h	/^    FAC_ID_GET_WIFI_MAC             = 0x07,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_GET_WIFI_SIGNAL_STRENGTH	include/command.h	/^    FAC_ID_GET_WIFI_SIGNAL_STRENGTH = 0x08,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_IR_SENSOR	include/command.h	/^    FAC_ID_IR_SENSOR                = 0x1D,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_KEY_STATUS	include/command.h	/^    FAC_ID_KEY_STATUS               = 0x19,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_LCD_DISPLAY	include/command.h	/^    FAC_ID_LCD_DISPLAY              = 0x25,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_LED_OFF	include/command.h	/^    FAC_ID_LED_OFF                  = 0x1C,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_LED_ON	include/command.h	/^    FAC_ID_LED_ON                   = 0x1B,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_CLOSE	include/command.h	/^    FAC_ID_MIC_CLOSE                = 0x18,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_OPEN	include/command.h	/^    FAC_ID_MIC_OPEN                 = 0x14,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_PLAY_RECORD_FILE	include/command.h	/^    FAC_ID_MIC_PLAY_RECORD_FILE     = 0x17,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_START_RECORD	include/command.h	/^    FAC_ID_MIC_START_RECORD         = 0x15,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_STOP_RECORD	include/command.h	/^    FAC_ID_MIC_STOP_RECORD          = 0x16,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MIC_TEST	include/command.h	/^    FAC_ID_MIC_TEST                 = 0x36,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MOTOR_CALIBRATION	include/command.h	/^    FAC_ID_MOTOR_CALIBRATION        = 0x34,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MOTOR_MOTION	include/command.h	/^    FAC_ID_MOTOR_MOTION             = 0x2B,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MOTOR_MOVE	include/command.h	/^    FAC_ID_MOTOR_MOVE               = 0x35,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_MOTOR_STOP	include/command.h	/^    FAC_ID_MOTOR_STOP               = 0x38,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_PING_IP_ADDR	include/command.h	/^    FAC_ID_PING_IP_ADDR             = 0x0C,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_RESET_FACTORY_DEFAULT	include/command.h	/^    FAC_ID_RESET_FACTORY_DEFAULT    = 0x03,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_RING_PLAY_START	include/command.h	/^    FAC_ID_RING_PLAY_START          = 0x1A,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_RING_PLAY_STOP	include/command.h	/^    FAC_ID_RING_PLAY_STOP           = 0x33,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SET_POWER_MODE	include/command.h	/^    FAC_ID_SET_POWER_MODE           = 0x31,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SET_ROBOT_GENDER	include/command.h	/^    FAC_ID_SET_ROBOT_GENDER         = 0x2E,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SET_ROBOT_SN	include/command.h	/^    FAC_ID_SET_ROBOT_SN             = 0x04,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SET_WIFI_MAC	include/command.h	/^    FAC_ID_SET_WIFI_MAC             = 0x06,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_SPEAK_PATTERN	include/command.h	/^    FAC_ID_SPEAK_PATTERN            = 0x2C,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_TF_STATUS	include/command.h	/^    FAC_ID_TF_STATUS                = 0x28,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_TOUCH_PANEL_TEST	include/command.h	/^    FAC_ID_TOUCH_PANEL_TEST         = 0x26,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_TOUCH_SENSOR	include/command.h	/^    FAC_ID_TOUCH_SENSOR             = 0x2D,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_ULTRASONIC_SENSOR	include/command.h	/^    FAC_ID_ULTRASONIC_SENSOR        = 0x1E,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_USB_PLUGIN_STATUS	include/command.h	/^    FAC_ID_USB_PLUGIN_STATUS        = 0x20,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_WIFI_GET_AP_ASSOCIATE	include/command.h	/^    FAC_ID_WIFI_GET_AP_ASSOCIATE    = 0x0A,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_ID_WIFI_SET_AP_ASSOCIATE	include/command.h	/^    FAC_ID_WIFI_SET_AP_ASSOCIATE    = 0x09,$/;"	e	enum:COMMAND_FACTORYTEST
+FAC_INVALID_ANGLE	lib/include/robot_fac.h	/^    FAC_INVALID_ANGLE           = -2,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_INVALID_MOTION_ID	lib/include/robot_fac.h	/^    FAC_INVALID_MOTION_ID       = -7,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_INVALID_MOTOR_DIRECTION	lib/include/robot_fac.h	/^    FAC_INVALID_MOTOR_DIRECTION = -5,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_INVALID_MOTOR_ID	lib/include/robot_fac.h	/^    FAC_INVALID_MOTOR_ID        = -4,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_INVALID_POWER_MODE	lib/include/robot_fac.h	/^    FAC_INVALID_POWER_MODE      = -8,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_INVALID_RB_TYPE	lib/include/robot_fac.h	/^    FAC_INVALID_RB_TYPE         = -6,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_INVALID_TIME	lib/include/robot_fac.h	/^    FAC_INVALID_TIME            = -3,$/;"	e	enum:ROBOT_FAC_ERROR
+FAC_LOGD	include/fac_util.h	27;"	d
+FAC_LOGE	include/fac_util.h	28;"	d
+FAC_TEST_MODULE	fac_can.cpp	20;"	d	file:
+FAC_UTIL_H	include/fac_util.h	9;"	d
+FD_ERROR	transport.cpp	30;"	d	file:
+FD_READ	transport.cpp	27;"	d	file:
+FD_TIMEOUT	transport.cpp	29;"	d	file:
+FD_WRITE	transport.cpp	28;"	d	file:
+FOLD_ARMS	lib/include/robot_fac.h	/^    SALUTE                  = 0x25,    FOLD_ARMS               = 0x26,$/;"	e	enum:MOTION_ID
+FOLLOWING	lib/include/robot_fac.h	/^    READY_TO_FOLLOW         = 0x53,    FOLLOWING               = 0x54,$/;"	e	enum:MOTION_ID
+FORARM_ROTATION_LEFT	lib/include/robot_fac.h	/^    FORARM_ROTATION_LEFT    = 0x0B,$/;"	e	enum:MOTOR_ID
+FORARM_ROTATION_RIGHT	lib/include/robot_fac.h	/^    FORARM_ROTATION_RIGHT   = 0x03,$/;"	e	enum:MOTOR_ID
+FORARM_SWING_LEFT	lib/include/robot_fac.h	/^    FORARM_SWING_LEFT       = 0x0C,$/;"	e	enum:MOTOR_ID
+FORARM_SWING_RIGHT	lib/include/robot_fac.h	/^    FORARM_SWING_RIGHT      = 0x04,$/;"	e	enum:MOTOR_ID
+FRAME_PATTERN	lib/include/camera/pattern.h	/^    FRAME_PATTERN = 7,$/;"	e	enum:DisplayPattern
+FRIGHTENED	lib/include/robot_fac.h	/^    WAKE                    = 0x45,    FRIGHTENED              = 0x46,$/;"	e	enum:MOTION_ID
+FW_VER_AI_CORE_LIB	lib/factest1/test_robot_info.h	12;"	d
+FW_VER_ANDROID_OS	lib/factest1/test_robot_info.h	11;"	d
+FW_VER_SUBSYS_RBB	lib/factest1/test_robot_info.h	19;"	d
+FW_VER_SUBSYS_RBL	lib/factest1/test_robot_info.h	18;"	d
+FW_VER_SUBSYS_RBR	lib/factest1/test_robot_info.h	17;"	d
+FW_VER_SUBSYS_RC	lib/factest1/test_robot_info.h	14;"	d
+FW_VER_SUBSYS_RF	lib/factest1/test_robot_info.h	16;"	d
+FW_VER_SUBSYS_RM	lib/factest1/test_robot_info.h	13;"	d
+FW_VER_SUBSYS_RP	lib/factest1/test_robot_info.h	15;"	d
+FacCmdClient	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    public FacCmdClient() {}$/;"	m	class:FacCmdClient
+FacCmdClient	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^public class FacCmdClient {$/;"	c
+GET_TOUCH_PANEL_ACTIVITY	lib/camera/IActivityTestService.cpp	/^    GET_TOUCH_PANEL_ACTIVITY,$/;"	e	enum:__anon3	file:
+GO_500MM_NORMALLY	lib/include/robot_fac.h	/^    GO_500MM_SLOWLY         = 0x0D,    GO_500MM_NORMALLY       = 0x0E,$/;"	e	enum:MOTION_ID
+GO_500MM_QUICKLY	lib/include/robot_fac.h	/^    GO_500MM_QUICKLY        = 0x0F,    GO_CONTINUED_SLOWLY     = 0x10,$/;"	e	enum:MOTION_ID
+GO_500MM_SLOWLY	lib/include/robot_fac.h	/^    GO_500MM_SLOWLY         = 0x0D,    GO_500MM_NORMALLY       = 0x0E,$/;"	e	enum:MOTION_ID
+GO_CONTINUED_NORMALLY	lib/include/robot_fac.h	/^    GO_CONTINUED_NORMALLY   = 0x11,    GO_CONTINUED_QUICKLY    = 0x12,$/;"	e	enum:MOTION_ID
+GO_CONTINUED_QUICKLY	lib/include/robot_fac.h	/^    GO_CONTINUED_NORMALLY   = 0x11,    GO_CONTINUED_QUICKLY    = 0x12,$/;"	e	enum:MOTION_ID
+GO_CONTINUED_SLOWLY	lib/include/robot_fac.h	/^    GO_500MM_QUICKLY        = 0x0F,    GO_CONTINUED_SLOWLY     = 0x10,$/;"	e	enum:MOTION_ID
+GO_MAZE	lib/include/robot_fac.h	/^    NARRATE                 = 0x59,    GO_MAZE                 = 0x5A,$/;"	e	enum:MOTION_ID
+GREEN_PATTERN	lib/include/camera/pattern.h	/^    GREEN_PATTERN = 3,$/;"	e	enum:DisplayPattern
+GYROSCOPE_SAMPLE_RATE	lib/factest1/test_sensors.cpp	32;"	d	file:
+HANDLE_IRDA_BOTTOM_BACK_CENTER	lib/factest1/test_sensors.cpp	23;"	d	file:
+HANDLE_IRDA_BOTTOM_FRONT_LEFT	lib/factest1/test_sensors.cpp	21;"	d	file:
+HANDLE_IRDA_BOTTOM_FRONT_RIGHT	lib/factest1/test_sensors.cpp	22;"	d	file:
+HANDLE_ULTRASONIC_BACK_WAIST	lib/factest1/test_sensors.cpp	26;"	d	file:
+HANDLE_ULTRASONIC_CHASSIS	lib/factest1/test_sensors.cpp	29;"	d	file:
+HANDLE_ULTRASONIC_FRONT_BELLY	lib/factest1/test_sensors.cpp	25;"	d	file:
+HANDLE_ULTRASONIC_LEFT_ANKLE_OUTSIDE	lib/factest1/test_sensors.cpp	27;"	d	file:
+HANDLE_ULTRASONIC_RIGHT_ANKLE_OUTSIDE	lib/factest1/test_sensors.cpp	28;"	d	file:
+HANDSHAKE	lib/include/robot_fac.h	/^    RAN                     = 0x1F,    HANDSHAKE               = 0x20,$/;"	e	enum:MOTION_ID
+HIDDEN_HANDS	lib/include/robot_fac.h	/^    HIDDEN_HANDS            = 0x3B,    MOVE_RIGHT_HAND_FIRST   = 0x3C,$/;"	e	enum:MOTION_ID
+HIGH_FIVES	lib/include/robot_fac.h	/^    BLOWING_KISSES          = 0x27,    HIGH_FIVES              = 0x28,$/;"	e	enum:MOTION_ID
+HORIZONTAL_OFFSET	lib/include/robot_fac.h	/^    PAPER                   = 0x43,    HORIZONTAL_OFFSET       = 0x44,$/;"	e	enum:MOTION_ID
+HORIZONTAL_OFFSET_LEFT	lib/src/robot_fac.c	149;"	d	file:
+HORIZONTAL_OFFSET_RIGHT	lib/src/robot_fac.c	150;"	d	file:
+HUGS	lib/include/robot_fac.h	/^    HUGS                    = 0x29,    KISS                    = 0x2A,$/;"	e	enum:MOTION_ID
+Hex2Str	fac_util.cpp	/^void Hex2Str(char *dst, const uint8_t *src, int len)$/;"	f
+IActivityTestService	lib/include/camera/IActivityTestService.h	/^class IActivityTestService : public IInterface$/;"	c
+ICameraActivity	lib/camera/ICameraActivity.h	/^class ICameraActivity : public IInterface$/;"	c
+ILcdActivity	lib/camera/ILcdActivity.h	/^class ILcdActivity : public IInterface$/;"	c
+IMountService	lib/hwinfo/IMountService.h	/^class IMountService: public IInterface {$/;"	c	namespace:android
+INCOMING_CALL	lib/include/robot_fac.h	/^    TWO_HANDS_PUSH_FORWARD  = 0x49,    INCOMING_CALL           = 0x4A,$/;"	e	enum:MOTION_ID
+INDEXFINGER_LEFT	lib/include/robot_fac.h	/^    INDEXFINGER_LEFT        = 0x0F,$/;"	e	enum:MOTOR_ID
+INDEXFINGER_RIGHT	lib/include/robot_fac.h	/^    INDEXFINGER_RIGHT       = 0x07,$/;"	e	enum:MOTOR_ID
+INTERNAL_SD	lib/include/camera/pattern.h	/^    INTERNAL_SD = 2, \/* internal sdcard *\/$/;"	e	enum:StorageType
+INVALID_MOTOR_ID	lib/include/robot_fac.h	/^    INVALID_MOTOR_ID        = 0x00,$/;"	e	enum:MOTOR_ID
+IR_SENSORS_ID	lib/factest1/test_sensors.h	/^enum IR_SENSORS_ID {$/;"	g
+IR_SENSOR_BACK_CENTER	lib/factest1/test_sensors.h	/^    IR_SENSOR_BACK_CENTER       = 3,$/;"	e	enum:IR_SENSORS_ID
+IR_SENSOR_FRONT_LEFT	lib/factest1/test_sensors.h	/^    IR_SENSOR_FRONT_LEFT        = 1,$/;"	e	enum:IR_SENSORS_ID
+IR_SENSOR_FRONT_RIGHT	lib/factest1/test_sensors.h	/^    IR_SENSOR_FRONT_RIGHT       = 2,$/;"	e	enum:IR_SENSORS_ID
+IR_SENSOR_MAX	lib/factest1/test_sensors.h	/^    IR_SENSOR_MAX$/;"	e	enum:IR_SENSORS_ID
+ITouchPanelActivity	lib/include/camera/ITouchPanelActivity.h	/^class ITouchPanelActivity : public IInterface$/;"	c
+KISS	lib/include/robot_fac.h	/^    HUGS                    = 0x29,    KISS                    = 0x2A,$/;"	e	enum:MOTION_ID
+LAUGH_OUT_LOUD	lib/include/robot_fac.h	/^    LAUGH_OUT_LOUD          = 0x31,    YAWN                    = 0x32,$/;"	e	enum:MOTION_ID
+LCDActivity	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^public class LCDActivity extends Activity {$/;"	c
+LCDTestClient	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private class LCDTestClient extends ILcdActivity.Stub {$/;"	c	class:LCDActivity
+LCD_ACTIVITY	lib/camera/activity_path.h	7;"	d
+LEFT_ARM_RESET	lib/include/robot_fac.h	/^    LEFT_ARM_RESET          = 0x09,    RIGHT_ARM_RESET         = 0x0A,$/;"	e	enum:MOTION_ID
+LEFT_ARM_STOP	lib/include/robot_fac.h	/^    LEFT_ARM_STOP           = 0x03,    RIGHT_ARM_STOP          = 0x04, $/;"	e	enum:MOTION_ID
+LINK_SPEED_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::LINK_SPEED_STR = "LINK-SPEED";$/;"	m	class:RWifiHalCmd	file:
+LINK_SPEED_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* LINK_SPEED_STR;$/;"	m	class:RWifiHalCmd
+LISTEN	lib/include/robot_fac.h	/^    LISTEN                  = 0x33,    LOOK_FIRST              = 0x34,$/;"	e	enum:MOTION_ID
+LITTLEFINGER_LEFT	lib/include/robot_fac.h	/^    LITTLEFINGER_LEFT       = 0x19,$/;"	e	enum:MOTOR_ID
+LITTLEFINGER_RIGHT	lib/include/robot_fac.h	/^    LITTLEFINGER_RIGHT      = 0x17,$/;"	e	enum:MOTOR_ID
+LOCAL_CERTIFICATE	app/Android.mk	/^LOCAL_CERTIFICATE := platform$/;"	m
+LOCAL_CFLAGS	lib/factest1/Android.mk	/^LOCAL_CFLAGS := -O2 -Wall -g$/;"	m
 LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_C_INCLUDES	lib/Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_C_INCLUDES	lib/bluetooth/Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_C_INCLUDES	lib/camera/Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_C_INCLUDES	lib/factest1/Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_C_INCLUDES	lib/hwinfo/Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_C_INCLUDES	lib/wifi/Android.mk	/^LOCAL_C_INCLUDES := \\$/;"	m
+LOCAL_DEX_PREOPT	app/Android.mk	/^LOCAL_DEX_PREOPT := false$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := libfacutil$/;"	m
 LOCAL_MODULE	Android.mk	/^LOCAL_MODULE := rm_factory_test$/;"	m
+LOCAL_MODULE	lib/Android.mk	/^LOCAL_MODULE    := librobot_fac$/;"	m
+LOCAL_MODULE	lib/Android.mk	/^LOCAL_MODULE = faclib_test$/;"	m
+LOCAL_MODULE	lib/bluetooth/Android.mk	/^LOCAL_MODULE := libfactory_bt$/;"	m
+LOCAL_MODULE	lib/bluetooth/Android.mk	/^LOCAL_MODULE := test_bt$/;"	m
+LOCAL_MODULE	lib/camera/Android.mk	/^LOCAL_MODULE := libfactory_activity$/;"	m
+LOCAL_MODULE	lib/camera/Android.mk	/^LOCAL_MODULE := test_activity$/;"	m
+LOCAL_MODULE	lib/factest1/Android.mk	/^LOCAL_MODULE := libfactest1$/;"	m
+LOCAL_MODULE	lib/factest1/Android.mk	/^LOCAL_MODULE := libnlu_version$/;"	m
+LOCAL_MODULE	lib/hwinfo/Android.mk	/^LOCAL_MODULE := libfactory_hwinfo$/;"	m
+LOCAL_MODULE	lib/hwinfo/Android.mk	/^LOCAL_MODULE := test_hwinfo$/;"	m
+LOCAL_MODULE	lib/wifi/Android.mk	/^LOCAL_MODULE := libfactory_wifi$/;"	m
+LOCAL_MODULE	lib/wifi/Android.mk	/^LOCAL_MODULE := test_wifi$/;"	m
+LOCAL_MODULE_TAGS	Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	app/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	lib/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	lib/bluetooth/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	lib/camera/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	lib/factest1/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	lib/hwinfo/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_MODULE_TAGS	lib/wifi/Android.mk	/^LOCAL_MODULE_TAGS := eng optional$/;"	m
+LOCAL_NDK_STL_VARIANT	lib/factest1/Android.mk	/^LOCAL_NDK_STL_VARIANT := gnustl_static$/;"	m
+LOCAL_PACKAGE_NAME	app/Android.mk	/^LOCAL_PACKAGE_NAME := FacCommandTest$/;"	m
 LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	app/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	lib/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	lib/bluetooth/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	lib/camera/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	lib/factest1/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	lib/hwinfo/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PATH	lib/wifi/Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_PROGUARD_ENABLED	app/Android.mk	/^LOCAL_PROGUARD_ENABLED := disabled$/;"	m
+LOCAL_RESOURCE_DIR	app/Android.mk	/^LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)\/, res)$/;"	m
+LOCAL_SDK_VERSION	lib/factest1/Android.mk	/^LOCAL_SDK_VERSION := 14$/;"	m
 LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/bluetooth/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/camera/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/factest1/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/factest1/Android.mk	/^LOCAL_SHARED_LIBRARIES := librobot_nlu_jni$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/hwinfo/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
+LOCAL_SHARED_LIBRARIES	lib/wifi/Android.mk	/^LOCAL_SHARED_LIBRARIES := \\$/;"	m
 LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
-LOGD	fac_log.h	26;"	d
-LOGD	fac_log.h	28;"	d
-LOGE	fac_log.h	32;"	d
-LOGE	fac_log.h	34;"	d
-LOG_TAG	fac_log.h	18;"	d
-MSG_HEADER	transport.h	14;"	d
-MSG_TYPE	transport.h	18;"	d
-MSG_TYPE_ACK	transport.h	16;"	d
-MSG_TYPE_CMD	transport.h	15;"	d
-MSG_TYPE_NACK	transport.h	17;"	d
-NELEM	transport_jni.cpp	18;"	d	file:
-PAYLOAD_SIZE	fac_log.h	13;"	d
-ST_OPEN	transport.cpp	26;"	d	file:
-ST_UNMOUNT	transport.cpp	25;"	d	file:
-TRANSPORT_H	transport.h	9;"	d
+LOCAL_SRC_FILES	app/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	lib/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	lib/Android.mk	/^LOCAL_SRC_FILES := src\/faclib_test.c$/;"	m
+LOCAL_SRC_FILES	lib/bluetooth/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	lib/camera/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	lib/factest1/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	lib/factest1/Android.mk	/^LOCAL_SRC_FILES := ai_ver.cpp$/;"	m
+LOCAL_SRC_FILES	lib/hwinfo/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOCAL_SRC_FILES	lib/wifi/Android.mk	/^LOCAL_SRC_FILES := \\$/;"	m
+LOGD	include/fac_util.h	31;"	d
+LOGD	include/fac_util.h	33;"	d
+LOGD	lib/include/factory_log.h	6;"	d
+LOGE	include/fac_util.h	37;"	d
+LOGE	include/fac_util.h	39;"	d
+LOGE	lib/include/factory_log.h	7;"	d
+LOGI	lib/include/factory_log.h	8;"	d
+LOGW	lib/include/factory_log.h	9;"	d
+LOG_TAG	include/fac_util.h	24;"	d
+LOG_TAG	include/fac_util.h	25;"	d
+LOG_TAG	lib/bluetooth/RAdapterProperties.cpp	1;"	d	file:
+LOG_TAG	lib/bluetooth/RBluetoothAdapterHw.cpp	1;"	d	file:
+LOG_TAG	lib/bluetooth/RBluetoothAvrcp.cpp	1;"	d	file:
+LOG_TAG	lib/bluetooth/RBluetoothHandsfree.cpp	1;"	d	file:
+LOG_TAG	lib/bluetooth/RBluetoothListener.cpp	1;"	d	file:
+LOG_TAG	lib/bluetooth/RBluetoothManager.cpp	1;"	d	file:
+LOG_TAG	lib/bluetooth/RRemoteDevices.cpp	1;"	d	file:
+LOG_TAG	lib/camera/ActivityTestService.cpp	1;"	d	file:
+LOG_TAG	lib/camera/IActivityTestService.cpp	1;"	d	file:
+LOG_TAG	lib/camera/ICameraActivity.cpp	1;"	d	file:
+LOG_TAG	lib/camera/ILcdActivity.cpp	1;"	d	file:
+LOG_TAG	lib/camera/ITouchPanelActivity.cpp	1;"	d	file:
+LOG_TAG	lib/hwinfo/IMountService.cpp	5;"	d	file:
+LOG_TAG	lib/hwinfo/RStorageManager.cpp	1;"	d	file:
+LOG_TAG	lib/hwinfo/RobotHwInfo.cpp	1;"	d	file:
+LOG_TAG	lib/src/faclib_test.c	34;"	d	file:
+LOG_TAG	lib/src/robot_fac.c	23;"	d	file:
+LOG_TAG	lib/wifi/RDhcpResults.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RNetdConnector.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RNetworkManagement.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RNetworkUtils.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RWifiHalCmd.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RWifiInfo.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RWifiManager.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/RWifiSsidPasswd.cpp	1;"	d	file:
+LOG_TAG	lib/wifi/test.cpp	1;"	d	file:
+LOOK_FIRST	lib/include/robot_fac.h	/^    LISTEN                  = 0x33,    LOOK_FIRST              = 0x34,$/;"	e	enum:MOTION_ID
+LOOK_SECOND	lib/include/robot_fac.h	/^    LOOK_SECOND             = 0x35,    DISTRESSED              = 0x36,$/;"	e	enum:MOTION_ID
+LOOPER_ID_SENSOR	lib/factest1/test_sensors.cpp	33;"	d	file:
+LOOPER_TIMEOUT	lib/factest1/test_sensors.cpp	34;"	d	file:
+L_ONLY	lib/factest1/test_mic.h	/^    L_ONLY  = 0x01,$/;"	e	enum:PLAY_VOLUME
+Logd	app/src/com/avatarmind/factorycommand/Utils.java	/^    public static void Logd(String tag, String msg) {$/;"	m	class:Utils
+MAX_ANGLE_ARRAY_PER_MOTOR	lib/include/robot_fac.h	170;"	d
+MAX_RSSI	lib/wifi/RWifiInfo.h	/^    static const int MAX_RSSI = 256;$/;"	m	class:RWifiInfo
+MAX_STREAM_MUSIC_VOLUME	lib/factest1/test_mic.h	12;"	d
+MAZE_ACTION_BEGIN	lib/src/robot_fac.c	152;"	d	file:
+MAZE_ACTION_END	lib/src/robot_fac.c	153;"	d	file:
+ME	lib/include/robot_fac.h	/^    ME                      = 0x39,    US                      = 0x3A,$/;"	e	enum:MOTION_ID
+MIDDLEFINGER_LEFT	lib/include/robot_fac.h	/^    MIDDLEFINGER_LEFT       = 0x10,$/;"	e	enum:MOTOR_ID
+MIDDLEFINGER_RIGHT	lib/include/robot_fac.h	/^    MIDDLEFINGER_RIGHT      = 0x08,$/;"	e	enum:MOTOR_ID
+MIN_ANGLE_ARRAY_PER_MOTOR	lib/include/robot_fac.h	138;"	d
+MIN_RSSI	lib/wifi/RWifiInfo.h	/^    static const int MIN_RSSI = -200;$/;"	m	class:RWifiInfo
+MJ_DANCE_POSE	lib/include/robot_fac.h	/^    MJ_DANCE_POSE           = 0x4B,    BALLET_DANCE_POSE       = 0x4C,$/;"	e	enum:MOTION_ID
+MODULE_CALIB_PER_MOTOR	lib/include/robot_fac.h	101;"	d
+MODULE_CALIB_PER_RB_TYPE	lib/include/robot_fac.h	133;"	d
+MODULE_DRIVE_PER_MOTOR	lib/include/robot_fac.h	69;"	d
+MOTION_ID	lib/include/robot_fac.h	/^enum MOTION_ID {$/;"	g
+MOTION_MAX	lib/include/robot_fac.h	/^    AVOID_OBSTACLE          = 0x5B,    MOTION_MAX$/;"	e	enum:MOTION_ID
+MOTOR_DIRECTION	lib/include/robot_fac.h	/^enum MOTOR_DIRECTION {$/;"	g
+MOTOR_ID	lib/include/robot_fac.h	/^enum MOTOR_ID {$/;"	g
+MOTOR_MAX	lib/include/robot_fac.h	/^    MOTOR_MAX$/;"	e	enum:MOTOR_ID
+MOVE_RIGHT_HAND_FIFTH	lib/include/robot_fac.h	/^    MOVE_RIGHT_HAND_FOURTH  = 0x3F,    MOVE_RIGHT_HAND_FIFTH   = 0x40,$/;"	e	enum:MOTION_ID
+MOVE_RIGHT_HAND_FIRST	lib/include/robot_fac.h	/^    HIDDEN_HANDS            = 0x3B,    MOVE_RIGHT_HAND_FIRST   = 0x3C,$/;"	e	enum:MOTION_ID
+MOVE_RIGHT_HAND_FOURTH	lib/include/robot_fac.h	/^    MOVE_RIGHT_HAND_FOURTH  = 0x3F,    MOVE_RIGHT_HAND_FIFTH   = 0x40,$/;"	e	enum:MOTION_ID
+MOVE_RIGHT_HAND_SECOND	lib/include/robot_fac.h	/^    MOVE_RIGHT_HAND_SECOND  = 0x3D,    MOVE_RIGHT_HAND_THIRD   = 0x3E,$/;"	e	enum:MOTION_ID
+MOVE_RIGHT_HAND_THIRD	lib/include/robot_fac.h	/^    MOVE_RIGHT_HAND_SECOND  = 0x3D,    MOVE_RIGHT_HAND_THIRD   = 0x3E,$/;"	e	enum:MOTION_ID
+MS	fac_can.cpp	21;"	d	file:
+MSG_HEADER	include/transport.h	14;"	d
+MSG_MAX_ID	lib/bluetooth/RMessage.h	/^    MSG_MAX_ID,$/;"	e	enum:RMessageId
+MSG_TYPE_ACK	include/transport.h	16;"	d
+MSG_TYPE_CMD	include/transport.h	15;"	d
+MSG_TYPE_NACK	include/transport.h	17;"	d
+MacAddrStore	lib/include/RobotHwInfo.h	/^struct MacAddrStore$/;"	s
+NARRATE	lib/include/robot_fac.h	/^    NARRATE                 = 0x59,    GO_MAZE                 = 0x5A,$/;"	e	enum:MOTION_ID
+NECK_RESET	lib/include/robot_fac.h	/^    NECK_RESET              = 0x0B,    WAIST_RESET             = 0x0C,$/;"	e	enum:MOTION_ID
+NECK_ROTATION	lib/include/robot_fac.h	/^    NECK_ROTATION           = 0x14,$/;"	e	enum:MOTOR_ID
+NECK_TILT	lib/include/robot_fac.h	/^    NECK_TILT               = 0x15,$/;"	e	enum:MOTOR_ID
+NEGATIVE	lib/include/robot_fac.h	/^    NEGATIVE = 2,$/;"	e	enum:MOTOR_DIRECTION
+NELEM	include/fac_util.h	14;"	d
+NOD	lib/include/robot_fac.h	/^    NOD                     = 0x2B,    SHAKING_HEAD            = 0x2C,$/;"	e	enum:MOTION_ID
+NONE_SSID	lib/wifi/RWifiSsidPasswd.cpp	/^const char* RWifiSsidPasswd::NONE_SSID = "<unknown ssid>";$/;"	m	class:RWifiSsidPasswd	file:
+NONE_SSID	lib/wifi/RWifiSsidPasswd.h	/^    static const char* NONE_SSID;$/;"	m	class:RWifiSsidPasswd
+NOT_STOP	lib/include/robot_fac.h	209;"	d
+OH_YEAH	lib/include/robot_fac.h	/^    DONT_TOUCH_ME           = 0x51,    OH_YEAH                 = 0x52,$/;"	e	enum:MOTION_ID
+OPEN_CAMERA	lib/camera/ICameraActivity.cpp	/^    OPEN_CAMERA = IBinder::FIRST_CALL_TRANSACTION,$/;"	e	enum:__anon2	file:
+OUTPUT_PATH	include/fac_util.h	17;"	d
+OnCameraClose	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void OnCameraClose(View v) {$/;"	m	class:CameraTestActivity
+OnCameraOpen	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void OnCameraOpen(View v) {$/;"	m	class:CameraTestActivity
+OnCameraPreview	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void OnCameraPreview(View v) {$/;"	m	class:CameraTestActivity
+OnCameraTakePicture	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void OnCameraTakePicture(View v) {$/;"	m	class:CameraTestActivity
+OnLcdColor	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void OnLcdColor(View v) {$/;"	m	class:CameraTestActivity
+OnViewPicture	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void OnViewPicture(View v) {$/;"	m	class:CameraTestActivity
+PACKAGE_NAME	lib/camera/activity_path.h	4;"	d
+PAPER	lib/include/robot_fac.h	/^    PAPER                   = 0x43,    HORIZONTAL_OFFSET       = 0x44,$/;"	e	enum:MOTION_ID
+PARTS_ALL	lib/src/robot_fac.c	140;"	d	file:
+PARTS_ARMS	lib/src/robot_fac.c	141;"	d	file:
+PARTS_LEFT_ARM	lib/src/robot_fac.c	142;"	d	file:
+PARTS_NECK	lib/src/robot_fac.c	145;"	d	file:
+PARTS_RIGHT_ARM	lib/src/robot_fac.c	143;"	d	file:
+PARTS_TRAJECTORY	lib/src/robot_fac.c	147;"	d	file:
+PARTS_WAIST	lib/src/robot_fac.c	146;"	d	file:
+PARTS_WHEELS	lib/src/robot_fac.c	144;"	d	file:
+PASSWD_NONE	lib/include/wifi/RWifiManager.h	/^        PASSWD_NONE = 0,$/;"	e	enum:RWifiManager::SecurityType
+PASSWD_WEB_KEY	lib/include/wifi/RWifiManager.h	/^        PASSWD_WEB_KEY = 2,$/;"	e	enum:RWifiManager::SecurityType
+PASSWD_WPA_PSK	lib/include/wifi/RWifiManager.h	/^        PASSWD_WPA_PSK = 1,$/;"	e	enum:RWifiManager::SecurityType
+PASSWORD_MAY_BE_INCORRECT_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::PASSWORD_MAY_BE_INCORRECT_STR = "pre-shared key may be incorrect";$/;"	m	class:RWifiHalCmd	file:
+PASSWORD_MAY_BE_INCORRECT_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* PASSWORD_MAY_BE_INCORRECT_STR;$/;"	m	class:RWifiHalCmd
+PAYLOAD_SIZE	include/fac_util.h	19;"	d
+PIC_DIR	app/src/com/avatarmind/factorycommand/Utils.java	/^    public static final String PIC_DIR = "\/data\/factory_test";$/;"	f	class:Utils
+PIC_NAME	app/src/com/avatarmind/factorycommand/Utils.java	/^    public static final String PIC_NAME = "pic_name";$/;"	f	class:Utils
+PIN_REQUEST	lib/bluetooth/RMessage.h	/^    PIN_REQUEST,$/;"	e	enum:RMessageId
+PLAY_VOLUME	lib/factest1/test_mic.h	/^enum PLAY_VOLUME {$/;"	g
+PM_ACTIVE	lib/include/robot_fac.h	/^    PM_ACTIVE    = 1,$/;"	e	enum:POWER_MODE
+PM_POWEROFF	lib/include/robot_fac.h	/^    PM_POWEROFF  = 4,$/;"	e	enum:POWER_MODE
+PM_SLEEP	lib/include/robot_fac.h	/^    PM_SLEEP     = 3,$/;"	e	enum:POWER_MODE
+PM_STANDBY	lib/include/robot_fac.h	/^    PM_STANDBY   = 2,$/;"	e	enum:POWER_MODE
+POSITION_PATTERN	lib/include/camera/pattern.h	/^    POSITION_PATTERN = 1,$/;"	e	enum:ComparePattern
+POSITIVE	lib/include/robot_fac.h	/^    POSITIVE = 1,$/;"	e	enum:MOTOR_DIRECTION
+POWER_MODE	lib/include/robot_fac.h	/^enum POWER_MODE {$/;"	g
+POWER_SUPPLY_SUBSYSTEM	lib/factest1/test_battery.cpp	21;"	d	file:
+POWER_SUPPLY_SYSFS_PATH	lib/factest1/test_battery.cpp	22;"	d	file:
+PREVIEW	lib/camera/ICameraActivity.cpp	/^    PREVIEW,$/;"	e	enum:__anon2	file:
+PRINT_ADDR	lib/include/bluetooth/RBluetoothCommon.h	7;"	d
+PWD_FORMAT_LEN	lib/wifi/RWifiSsidPasswd.h	/^    static const int PWD_FORMAT_LEN = 32;$/;"	m	class:RWifiSsidPasswd
+PictureViewActivity	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^public class PictureViewActivity extends Activity {$/;"	c
+PointerState	app/src/com/avatarmind/factorycommand/TouchView.java	/^    private class PointerState {$/;"	c	class:TouchView
+PowerSupplyType	lib/factest1/test_battery.cpp	/^enum PowerSupplyType {$/;"	g	file:
+Properties	lib/bluetooth/RMessage.h	/^class Properties$/;"	c
+Properties	lib/bluetooth/RMessage.h	/^inline Properties::Properties()$/;"	f	class:Properties
+RAIN	lib/include/robot_fac.h	/^    WIPE_PERSPIRATION       = 0x55,    RAIN                    = 0x56,$/;"	e	enum:MOTION_ID
+RAN	lib/include/robot_fac.h	/^    RAN                     = 0x1F,    HANDSHAKE               = 0x20,$/;"	e	enum:MOTION_ID
+RAdapterProperties	lib/bluetooth/RAdapterProperties.cpp	/^RAdapterProperties::RAdapterProperties(RBluetoothAdapterHw* hw, RRemoteDevices* remote)$/;"	f	class:RAdapterProperties
+RAdapterProperties	lib/bluetooth/RAdapterProperties.h	/^class RAdapterProperties$/;"	c
+RB_BODY	lib/include/robot_fac.h	/^    RB_BODY  = 2,$/;"	e	enum:RB_TYPE
+RB_LEFT	lib/include/robot_fac.h	/^    RB_LEFT  = 1,$/;"	e	enum:RB_TYPE
+RB_MAX	lib/include/robot_fac.h	/^    RB_MAX$/;"	e	enum:RB_TYPE
+RB_RIGHT	lib/include/robot_fac.h	/^    RB_RIGHT = 0,$/;"	e	enum:RB_TYPE
+RB_TYPE	lib/include/robot_fac.h	/^enum RB_TYPE {$/;"	g
+RBluetoothAdapterHw	lib/bluetooth/RBluetoothAdapterHw.cpp	/^RBluetoothAdapterHw::RBluetoothAdapterHw()$/;"	f	class:RBluetoothAdapterHw
+RBluetoothAdapterHw	lib/bluetooth/RBluetoothAdapterHw.h	/^class RBluetoothAdapterHw$/;"	c
+RBluetoothAddr	lib/include/bluetooth/RBluetoothCommon.h	/^struct RBluetoothAddr$/;"	s
+RBluetoothAvrcp	lib/bluetooth/RBluetoothAvrcp.cpp	/^RBluetoothAvrcp::RBluetoothAvrcp()$/;"	f	class:RBluetoothAvrcp
+RBluetoothAvrcp	lib/bluetooth/RBluetoothAvrcp.h	/^class RBluetoothAvrcp$/;"	c
+RBluetoothAvrcpCallbacks	lib/bluetooth/RBluetoothAvrcpCallbacks.h	/^class RBluetoothAvrcpCallbacks$/;"	c
+RBluetoothCallbacks	lib/bluetooth/RBluetoothCallbacks.h	/^class RBluetoothCallbacks$/;"	c
+RBluetoothHandsfree	lib/bluetooth/RBluetoothHandsfree.cpp	/^RBluetoothHandsfree::RBluetoothHandsfree()$/;"	f	class:RBluetoothHandsfree
+RBluetoothHandsfree	lib/bluetooth/RBluetoothHandsfree.h	/^class RBluetoothHandsfree$/;"	c
+RBluetoothHfpCallbacks	lib/bluetooth/RBluetoothHfpCallbacks.h	/^class RBluetoothHfpCallbacks$/;"	c
+RBluetoothListener	lib/bluetooth/RBluetoothListener.cpp	/^RBluetoothListener::RBluetoothListener(RBluetoothManager* manager)$/;"	f	class:RBluetoothListener
+RBluetoothListener	lib/bluetooth/RBluetoothListener.h	/^class RBluetoothListener : public RBluetoothCallbacks$/;"	c
+RBluetoothManager	lib/bluetooth/RBluetoothManager.cpp	/^RBluetoothManager::RBluetoothManager()$/;"	f	class:RBluetoothManager
+RBluetoothManager	lib/include/bluetooth/RBluetoothManager.h	/^class RBluetoothManager$/;"	c
+RBluetoothPinCode	lib/include/bluetooth/RBluetoothCommon.h	/^struct RBluetoothPinCode$/;"	s
+RCommand	lib/wifi/RNetdConnector.cpp	/^RNetdConnector::RCommand::RCommand()$/;"	f	class:RNetdConnector::RCommand
+RCommand	lib/wifi/RNetdConnector.cpp	/^RNetdConnector::RCommand::RCommand(const char* cmd, int SN)$/;"	f	class:RNetdConnector::RCommand
+RCommand	lib/wifi/RNetdConnector.h	/^    class RCommand$/;"	c	class:RNetdConnector
+RData	fac_can.cpp	/^} RData; $/;"	v	typeref:struct:TmpRecvData
+RDhcpResults	lib/wifi/RDhcpResults.cpp	/^RDhcpResults::RDhcpResults()$/;"	f	class:RDhcpResults
+RDhcpResults	lib/wifi/RDhcpResults.h	/^class RDhcpResults$/;"	c
+READY_TO_FOLLOW	lib/include/robot_fac.h	/^    READY_TO_FOLLOW         = 0x53,    FOLLOWING               = 0x54,$/;"	e	enum:MOTION_ID
+RECORD_FILE	lib/factest1/test_mic.cpp	30;"	d	file:
+RED_PATTERN	lib/include/camera/pattern.h	/^    RED_PATTERN = 1,$/;"	e	enum:DisplayPattern
+REGISTER_CAMERA_ACTIVITY	lib/camera/IActivityTestService.cpp	/^    REGISTER_CAMERA_ACTIVITY = IBinder::FIRST_CALL_TRANSACTION,$/;"	e	enum:__anon3	file:
+REGISTER_LCD_ACTIVITY	lib/camera/IActivityTestService.cpp	/^    REGISTER_LCD_ACTIVITY,$/;"	e	enum:__anon3	file:
+REMOTE_DEVICE_PROPERTIES	lib/bluetooth/RMessage.h	/^    REMOTE_DEVICE_PROPERTIES,$/;"	e	enum:RMessageId
+REPLY_BUF_SIZE	lib/wifi/RWifiHalCmd.h	/^    static const int REPLY_BUF_SIZE = 4096;$/;"	m	class:RWifiHalCmd
+RESET_ALL_ADDRESSES	lib/wifi/RNetworkUtils.h	/^        RESET_ALL_ADDRESSES = RESET_IPV4_ADDRESSES | RESET_IPV6_ADDRESSES,$/;"	e	enum:RNetworkUtils::ResetMask
+RESET_IPV4_ADDRESSES	lib/wifi/RNetworkUtils.h	/^        RESET_IPV4_ADDRESSES = 0x01,$/;"	e	enum:RNetworkUtils::ResetMask
+RESET_IPV6_ADDRESSES	lib/wifi/RNetworkUtils.h	/^        RESET_IPV6_ADDRESSES = 0x02,$/;"	e	enum:RNetworkUtils::ResetMask
+RIGHT_ARM_RESET	lib/include/robot_fac.h	/^    LEFT_ARM_RESET          = 0x09,    RIGHT_ARM_RESET         = 0x0A,$/;"	e	enum:MOTION_ID
+RIGHT_ARM_STOP	lib/include/robot_fac.h	/^    LEFT_ARM_STOP           = 0x03,    RIGHT_ARM_STOP          = 0x04, $/;"	e	enum:MOTION_ID
+RINGFINGER_LEFT	lib/include/robot_fac.h	/^    RINGFINGER_LEFT         = 0x18,$/;"	e	enum:MOTOR_ID
+RINGFINGER_RIGHT	lib/include/robot_fac.h	/^    RINGFINGER_RIGHT        = 0x16,$/;"	e	enum:MOTOR_ID
+RING_PLAY_FILE	lib/factest1/test_mic.cpp	31;"	d	file:
+RMessage	lib/bluetooth/RMessage.h	/^struct RMessage$/;"	s
+RMessageData	lib/bluetooth/RMessage.h	/^struct RMessageData$/;"	s
+RMessageId	lib/bluetooth/RMessage.h	/^enum RMessageId$/;"	g
+RNAND_GET_BT_ADDR	lib/hwinfo/sninfo.h	34;"	d
+RNAND_GET_ETH_ADDR	lib/hwinfo/sninfo.h	33;"	d
+RNAND_GET_SN_INFO	lib/hwinfo/sninfo.h	31;"	d
+RNAND_GET_WIFI_ADDR	lib/hwinfo/sninfo.h	32;"	d
+RNetdConnector	lib/wifi/RNetdConnector.cpp	/^RNetdConnector::RNetdConnector()$/;"	f	class:RNetdConnector
+RNetdConnector	lib/wifi/RNetdConnector.h	/^class RNetdConnector$/;"	c
+RNetdConnectorListener	lib/wifi/RNetdConnector.h	/^class RNetdConnectorListener$/;"	c
+RNetworkManagement	lib/wifi/RNetworkManagement.cpp	/^RNetworkManagement::RNetworkManagement()$/;"	f	class:RNetworkManagement
+RNetworkManagement	lib/wifi/RNetworkManagement.h	/^class RNetworkManagement$/;"	c
+RNetworkUtils	lib/wifi/RNetworkUtils.cpp	/^RNetworkUtils::RNetworkUtils()$/;"	f	class:RNetworkUtils
+RNetworkUtils	lib/wifi/RNetworkUtils.h	/^class RNetworkUtils$/;"	c
+ROBOT_FAC_ERROR	lib/include/robot_fac.h	/^enum ROBOT_FAC_ERROR {$/;"	g
+ROBOT_GENDER_BOY	lib/factest1/test_robot_info.h	24;"	d
+ROBOT_GENDER_GIRL	lib/factest1/test_robot_info.h	25;"	d
+ROCK	lib/include/robot_fac.h	/^    ROCK                    = 0x41,    SCISSORS                = 0x42,$/;"	e	enum:MOTION_ID
+RRemoteDevices	lib/bluetooth/RRemoteDevices.cpp	/^RRemoteDevices::RRemoteDevices(RBluetoothAdapterHw* hw)$/;"	f	class:RRemoteDevices
+RRemoteDevices	lib/bluetooth/RRemoteDevices.h	/^class RRemoteDevices$/;"	c
+RStorageManager	lib/hwinfo/RStorageManager.cpp	/^RStorageManager::RStorageManager()$/;"	f	class:RStorageManager
+RStorageManager	lib/include/RStorageManager.h	/^class RStorageManager$/;"	c
+RWifiConfiguredInfo	lib/wifi/RWifiInfo.cpp	/^RWifiInfo::RWifiConfiguredInfo::RWifiConfiguredInfo()$/;"	f	class:RWifiInfo::RWifiConfiguredInfo
+RWifiConfiguredInfo	lib/wifi/RWifiInfo.cpp	/^RWifiInfo::RWifiConfiguredInfo::RWifiConfiguredInfo(const RWifiInfo::RWifiConfiguredInfo& other)$/;"	f	class:RWifiInfo::RWifiConfiguredInfo
+RWifiConfiguredInfo	lib/wifi/RWifiInfo.h	/^    class RWifiConfiguredInfo$/;"	c	class:RWifiInfo
+RWifiHalCmd	lib/wifi/RWifiHalCmd.cpp	/^RWifiHalCmd::RWifiHalCmd()$/;"	f	class:RWifiHalCmd
+RWifiHalCmd	lib/wifi/RWifiHalCmd.h	/^class RWifiHalCmd$/;"	c
+RWifiInfo	lib/wifi/RWifiInfo.cpp	/^RWifiInfo::RWifiInfo(RWifiHalCmd* handle)$/;"	f	class:RWifiInfo
+RWifiInfo	lib/wifi/RWifiInfo.h	/^class RWifiInfo$/;"	c
+RWifiManager	lib/include/wifi/RWifiManager.h	/^class RWifiManager$/;"	c
+RWifiManager	lib/wifi/RWifiManager.cpp	/^RWifiManager::RWifiManager()$/;"	f	class:RWifiManager
+RWifiScanResultSInfo	lib/wifi/RWifiInfo.h	/^    class RWifiScanResultSInfo$/;"	c	class:RWifiInfo
+RWifiSsidPasswd	lib/wifi/RWifiSsidPasswd.cpp	/^RWifiSsidPasswd::RWifiSsidPasswd()$/;"	f	class:RWifiSsidPasswd
+RWifiSsidPasswd	lib/wifi/RWifiSsidPasswd.h	/^class RWifiSsidPasswd$/;"	c
+RWifiStatus	lib/wifi/RWifiInfo.h	/^        enum RWifiStatus$/;"	g	class:RWifiInfo::RWifiConfiguredInfo
+R_ONLY	lib/factest1/test_mic.h	/^    R_ONLY  = 0x02,$/;"	e	enum:PLAY_VOLUME
+ResetMask	lib/wifi/RNetworkUtils.h	/^    enum ResetMask{$/;"	g	class:RNetworkUtils
+RobotHwInfo	lib/hwinfo/RobotHwInfo.cpp	/^RobotHwInfo::RobotHwInfo()$/;"	f	class:RobotHwInfo
+RobotHwInfo	lib/include/RobotHwInfo.h	/^class RobotHwInfo$/;"	c
+SALUTE	lib/include/robot_fac.h	/^    SALUTE                  = 0x25,    FOLD_ARMS               = 0x26,$/;"	e	enum:MOTION_ID
+SCAN_RESULTS_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::SCAN_RESULTS_STR = "SCAN-RESULTS";$/;"	m	class:RWifiHalCmd	file:
+SCAN_RESULTS_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* SCAN_RESULTS_STR;$/;"	m	class:RWifiHalCmd
+SCAN_WITHOUT_CONNECTION_SETUP	lib/wifi/RWifiHalCmd.h	/^        SCAN_WITHOUT_CONNECTION_SETUP = 1,$/;"	e	enum:RWifiHalCmd::ScanType
+SCAN_WITH_CONNECTION_SETUP	lib/wifi/RWifiHalCmd.h	/^        SCAN_WITH_CONNECTION_SETUP = 2,$/;"	e	enum:RWifiHalCmd::ScanType
+SCISSORS	lib/include/robot_fac.h	/^    ROCK                    = 0x41,    SCISSORS                = 0x42,$/;"	e	enum:MOTION_ID
+SELF_PORTECTION	lib/include/robot_fac.h	/^    SNOW                    = 0x57,    SELF_PORTECTION         = 0x58,$/;"	e	enum:MOTION_ID
+SENSORS_MAP	lib/factest1/test_sensors.cpp	/^static struct SENSORS_MAP {$/;"	s	file:
+SENSOR_INFRARED	lib/factest1/test_sensors.h	/^    SENSOR_INFRARED   = 0,$/;"	e	enum:SENSOR_TYPE
+SENSOR_TYPE	lib/factest1/test_sensors.h	/^enum SENSOR_TYPE {$/;"	g
+SENSOR_TYPE_MAX	lib/factest1/test_sensors.cpp	36;"	d	file:
+SENSOR_ULTRASONIC	lib/factest1/test_sensors.h	/^    SENSOR_ULTRASONIC = 1,$/;"	e	enum:SENSOR_TYPE
+SERIAL_NUMBER_MAX	lib/factest1/test_robot_info.h	22;"	d
+SHAKING_HEAD	lib/include/robot_fac.h	/^    NOD                     = 0x2B,    SHAKING_HEAD            = 0x2C,$/;"	e	enum:MOTION_ID
+SHY_BY_HAND	lib/include/robot_fac.h	/^    SHY_BY_HAND             = 0x37,    SPEECH                  = 0x38,$/;"	e	enum:MOTION_ID
+SLOW_STOP	lib/include/robot_fac.h	207;"	d
+SNOW	lib/include/robot_fac.h	/^    SNOW                    = 0x57,    SELF_PORTECTION         = 0x58,$/;"	e	enum:MOTION_ID
+SPEECH	lib/include/robot_fac.h	/^    SHY_BY_HAND             = 0x37,    SPEECH                  = 0x38,$/;"	e	enum:MOTION_ID
+SPEED_FAST	lib/src/robot_fac.c	136;"	d	file:
+SPEED_MEDIUM	lib/src/robot_fac.c	137;"	d	file:
+SPEED_SLOW	lib/src/robot_fac.c	138;"	d	file:
+SSID_FORMAT_LEN	lib/wifi/RWifiSsidPasswd.h	/^    static const int SSID_FORMAT_LEN = STRING_LEN + 4;$/;"	m	class:RWifiSsidPasswd
+SSP_REQUEST	lib/bluetooth/RMessage.h	/^    SSP_REQUEST,$/;"	e	enum:RMessageId
+STATE_CHANGE_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::STATE_CHANGE_STR = "STATE-CHANGE";$/;"	m	class:RWifiHalCmd	file:
+STATE_CHANGE_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* STATE_CHANGE_STR;$/;"	m	class:RWifiHalCmd
+STATE_OFF	lib/bluetooth/RAdapterProperties.h	/^        STATE_OFF,$/;"	e	enum:RAdapterProperties::BtState
+STATE_ON	lib/bluetooth/RAdapterProperties.h	/^        STATE_ON,$/;"	e	enum:RAdapterProperties::BtState
+STEREO	lib/factest1/test_mic.h	/^    STEREO  = 0x03$/;"	e	enum:PLAY_VOLUME
+STOP_TALKING	lib/include/robot_fac.h	/^    TURN_BOOK               = 0x4F,    STOP_TALKING            = 0x50,$/;"	e	enum:MOTION_ID
+STREAM_MUSIC	lib/factest1/test_mic.cpp	/^static const int STREAM_MUSIC = 3;$/;"	v	file:
+STREAM_MUSIC_DEVICE	lib/factest1/test_mic.cpp	/^static int STREAM_MUSIC_DEVICE = DEVICE_OUT_DEFAULT; $/;"	v	file:
+STRING_LEN	lib/wifi/RWifiSsidPasswd.h	/^    static const int STRING_LEN = 128;$/;"	m	class:RWifiSsidPasswd
+ST_OPEN	transport.cpp	25;"	d	file:
+ST_UNMOUNT	transport.cpp	24;"	d	file:
+SUBSYS_VER_LEN	lib/factest1/test_robot_info.cpp	25;"	d	file:
+ScanType	lib/wifi/RWifiHalCmd.h	/^    enum ScanType$/;"	g	class:RWifiHalCmd
+SecurityType	lib/include/wifi/RWifiManager.h	/^    enum SecurityType$/;"	g	class:RWifiManager
+StorageType	lib/include/camera/pattern.h	/^enum StorageType$/;"	g
+StringEnumMap	lib/factest1/test_battery.cpp	/^struct StringEnumMap {$/;"	s	file:
+TAG	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private static final String TAG = "CameraTestActivity";$/;"	f	class:CameraTestActivity	file:
+TAG	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private static final String TAG = "LCDActivity";$/;"	f	class:LCDActivity	file:
+TAG	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    private static final String TAG = "PictureViewActivity";$/;"	f	class:PictureViewActivity	file:
+TAG	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^    private static final String TAG = "TouchActivity";$/;"	f	class:TouchActivity	file:
+TAG	app/src/com/avatarmind/factorycommand/TouchView.java	/^    private static final String TAG = "TouchView";$/;"	f	class:TouchView	file:
+TAG	app/src/com/avatarmind/factorycommand/Utils.java	/^    private static final String TAG = "FACTORY_COMMAND_APP";$/;"	f	class:Utils	file:
+TAG	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    private static final String TAG = "FacCmdClient";$/;"	f	class:FacCmdClient	file:
+TAKE_PHOTO	lib/include/robot_fac.h	/^    TAKE_PHOTO              = 0x4D,    UPGRADE                 = 0x4E,$/;"	e	enum:MOTION_ID
+TAKE_PICTURE	lib/camera/ICameraActivity.cpp	/^    TAKE_PICTURE,$/;"	e	enum:__anon2	file:
+TERMINATING_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::TERMINATING_STR = "TERMINATING";$/;"	m	class:RWifiHalCmd	file:
+TERMINATING_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* TERMINATING_STR;$/;"	m	class:RWifiHalCmd
+TEST_BATTERY_H	lib/factest1/test_battery.h	9;"	d
+TEST_MIC_H	lib/factest1/test_mic.h	9;"	d
+TEST_ROBOT_INFO_H	lib/factest1/test_robot_info.h	9;"	d
+TEST_SENSORS	lib/factest1/test_sensors.h	9;"	d
+THANKS_FIRST	lib/include/robot_fac.h	/^    VICTORY                 = 0x2D,    THANKS_FIRST            = 0x2E,$/;"	e	enum:MOTION_ID
+THANKS_SECOND	lib/include/robot_fac.h	/^    THANKS_SECOND           = 0x2F,    THANKS_THIRD            = 0x30,$/;"	e	enum:MOTION_ID
+THANKS_THIRD	lib/include/robot_fac.h	/^    THANKS_SECOND           = 0x2F,    THANKS_THIRD            = 0x30,$/;"	e	enum:MOTION_ID
+THUMB_LEFT	lib/include/robot_fac.h	/^    THUMB_LEFT              = 0x0E,$/;"	e	enum:MOTOR_ID
+THUMB_RIGHT	lib/include/robot_fac.h	/^    THUMB_RIGHT             = 0x06,$/;"	e	enum:MOTOR_ID
+TIMEOUT_LEVEL1	lib/bluetooth/test.cpp	6;"	d	file:
+TIMEOUT_LEVEL2	lib/bluetooth/test.cpp	7;"	d	file:
+TIMEOUT_LEVEL3	lib/bluetooth/test.cpp	8;"	d	file:
+TMOUT_DEFAULT	lib/factest1/test_robot_info.cpp	27;"	d	file:
+TMP_FAILURE_RETRY	lib/factest1/test_battery.cpp	24;"	d	file:
+TOUCH	lib/camera/ITouchPanelActivity.cpp	/^    TOUCH = IBinder::FIRST_CALL_TRANSACTION,$/;"	e	enum:__anon5	file:
+TOUCH_ACTIVITY	lib/camera/activity_path.h	8;"	d
+TRAJECTORY_STOP	lib/include/robot_fac.h	/^    WHEELS_STOP             = 0x05,    TRAJECTORY_STOP         = 0x06,$/;"	e	enum:MOTION_ID
+TRANSACTION_createSecureContainer	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_createSecureContainer,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_decryptStorage	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_decryptStorage,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_destroySecureContainer	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_destroySecureContainer,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_encryptStorage	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_encryptStorage,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_finalizeSecureContainer	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_finalizeSecureContainer,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_finishMediaUpdate	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_finishMediaUpdate,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_formatVolume	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_formatVolume,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_getMountedObbPath	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_getMountedObbPath,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_getSecureContainerList	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_getSecureContainerList,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_getSecureContainerPath	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_getSecureContainerPath,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_getStorageUsers	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_getStorageUsers,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_getVolumeState	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_getVolumeState,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_isExternalStorageEmulated	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_isExternalStorageEmulated,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_isObbMounted	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_isObbMounted,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_isSecureContainerMounted	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_isSecureContainerMounted,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_isUsbMassStorageConnected	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_isUsbMassStorageConnected,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_isUsbMassStorageEnabled	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_isUsbMassStorageEnabled,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_mountObb	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_mountObb,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_mountSecureContainer	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_mountSecureContainer,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_mountVolume	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_mountVolume,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_registerListener	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_registerListener = IBinder::FIRST_CALL_TRANSACTION,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_renameSecureContainer	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_renameSecureContainer,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_setUsbMassStorageEnabled	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_setUsbMassStorageEnabled,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_shutdown	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_shutdown,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_unmountObb	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_unmountObb,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_unmountSecureContainer	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_unmountSecureContainer,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_unmountVolume	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_unmountVolume,$/;"	e	enum:android::__anon1	file:
+TRANSACTION_unregisterListener	lib/hwinfo/IMountService.cpp	/^    TRANSACTION_unregisterListener,$/;"	e	enum:android::__anon1	file:
+TRANSPORT_H	include/transport.h	9;"	d
+TURN_BOOK	lib/include/robot_fac.h	/^    TURN_BOOK               = 0x4F,    STOP_TALKING            = 0x50,$/;"	e	enum:MOTION_ID
+TURN_LEFT_90_NORMALLY	lib/include/robot_fac.h	/^    TURN_LEFT_90_SLOWLY     = 0x19,    TURN_LEFT_90_NORMALLY   = 0x1A,$/;"	e	enum:MOTION_ID
+TURN_LEFT_90_QUICKLY	lib/include/robot_fac.h	/^    TURN_LEFT_90_QUICKLY    = 0x1B,    TURN_RIGHT_90_SLOWLY    = 0x1C,$/;"	e	enum:MOTION_ID
+TURN_LEFT_90_SLOWLY	lib/include/robot_fac.h	/^    TURN_LEFT_90_SLOWLY     = 0x19,    TURN_LEFT_90_NORMALLY   = 0x1A,$/;"	e	enum:MOTION_ID
+TURN_RIGHT_90_NORMALLY	lib/include/robot_fac.h	/^    TURN_RIGHT_90_NORMALLY  = 0x1D,    TURN_RIGHT_90_QUICKLY   = 0x1E,$/;"	e	enum:MOTION_ID
+TURN_RIGHT_90_QUICKLY	lib/include/robot_fac.h	/^    TURN_RIGHT_90_NORMALLY  = 0x1D,    TURN_RIGHT_90_QUICKLY   = 0x1E,$/;"	e	enum:MOTION_ID
+TURN_RIGHT_90_SLOWLY	lib/include/robot_fac.h	/^    TURN_LEFT_90_QUICKLY    = 0x1B,    TURN_RIGHT_90_SLOWLY    = 0x1C,$/;"	e	enum:MOTION_ID
+TWO_HANDS_PUSH_FORWARD	lib/include/robot_fac.h	/^    TWO_HANDS_PUSH_FORWARD  = 0x49,    INCOMING_CALL           = 0x4A,$/;"	e	enum:MOTION_ID
+TmpRecvData	fac_can.cpp	/^struct TmpRecvData {$/;"	s	file:
+TouchActivity	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^public class TouchActivity extends Activity {$/;"	c
+TouchCallback	lib/camera/test.cpp	/^    TouchCallback() {}$/;"	f	class:TouchCallback
+TouchCallback	lib/camera/test.cpp	/^class TouchCallback : public ActivityTestCallback$/;"	c	file:
+TouchPanelActivity	lib/camera/ActivityTestService.cpp	/^ActivityTestService::TouchPanelActivity::TouchPanelActivity(const sp<ActivityTestService>& service)$/;"	f	class:ActivityTestService::TouchPanelActivity
+TouchPanelActivity	lib/include/camera/ActivityTestService.h	/^    class TouchPanelActivity : public BnTouchPanelActivity$/;"	c	class:ActivityTestService
+TouchView	app/src/com/avatarmind/factorycommand/TouchView.java	/^    public TouchView(Context context) {$/;"	m	class:TouchView
+TouchView	app/src/com/avatarmind/factorycommand/TouchView.java	/^    public TouchView(Context context, AttributeSet attrs) {$/;"	m	class:TouchView
+TouchView	app/src/com/avatarmind/factorycommand/TouchView.java	/^public class TouchView extends View {$/;"	c
+ULTRASONIC_SENSORS_ID	lib/factest1/test_sensors.h	/^enum ULTRASONIC_SENSORS_ID {$/;"	g
+UNREGISTER_CAMERA_ACTIVITY	lib/camera/IActivityTestService.cpp	/^    UNREGISTER_CAMERA_ACTIVITY,$/;"	e	enum:__anon3	file:
+UNREGISTER_LCD_ACTIVITY	lib/camera/IActivityTestService.cpp	/^    UNREGISTER_LCD_ACTIVITY,$/;"	e	enum:__anon3	file:
+UPGRADE	lib/include/robot_fac.h	/^    TAKE_PHOTO              = 0x4D,    UPGRADE                 = 0x4E,$/;"	e	enum:MOTION_ID
+US	lib/include/robot_fac.h	/^    ME                      = 0x39,    US                      = 0x3A,$/;"	e	enum:MOTION_ID
+US_SENSOR_BACK_WAIST	lib/factest1/test_sensors.h	/^    US_SENSOR_BACK_WAIST        = 2,$/;"	e	enum:ULTRASONIC_SENSORS_ID
+US_SENSOR_FRONT_BELLY	lib/factest1/test_sensors.h	/^    US_SENSOR_FRONT_BELLY       = 1,$/;"	e	enum:ULTRASONIC_SENSORS_ID
+US_SENSOR_LEFT_CHASSIS	lib/factest1/test_sensors.h	/^    US_SENSOR_LEFT_CHASSIS      = 3,$/;"	e	enum:ULTRASONIC_SENSORS_ID
+US_SENSOR_MAX	lib/factest1/test_sensors.h	/^    US_SENSOR_MAX$/;"	e	enum:ULTRASONIC_SENSORS_ID
+US_SENSOR_RIGHT_CHASSIS	lib/factest1/test_sensors.h	/^    US_SENSOR_RIGHT_CHASSIS     = 4,$/;"	e	enum:ULTRASONIC_SENSORS_ID
+US_SENSOR_UP_CHASSIS	lib/factest1/test_sensors.h	/^    US_SENSOR_UP_CHASSIS        = 5,$/;"	e	enum:ULTRASONIC_SENSORS_ID
+Utils	app/src/com/avatarmind/factorycommand/Utils.java	/^    public Utils() {$/;"	m	class:Utils
+Utils	app/src/com/avatarmind/factorycommand/Utils.java	/^public class Utils {$/;"	c
+VERSION_VALUE_MAX	lib/factest1/test_robot_info.h	21;"	d
+VICTORY	lib/include/robot_fac.h	/^    VICTORY                 = 0x2D,    THANKS_FIRST            = 0x2E,$/;"	e	enum:MOTION_ID
+VIEW_PITCTURE	lib/camera/ICameraActivity.cpp	/^    VIEW_PITCTURE,$/;"	e	enum:__anon2	file:
+WAIST_RESET	lib/include/robot_fac.h	/^    NECK_RESET              = 0x0B,    WAIST_RESET             = 0x0C,$/;"	e	enum:MOTION_ID
+WAIST_TILT	lib/include/robot_fac.h	/^    WAIST_TILT              = 0x13,$/;"	e	enum:MOTOR_ID
+WAKE	lib/include/robot_fac.h	/^    WAKE                    = 0x45,    FRIGHTENED              = 0x46,$/;"	e	enum:MOTION_ID
+WAVE	lib/include/robot_fac.h	/^    WAVE                    = 0x21,    CHEER                   = 0x22,$/;"	e	enum:MOTION_ID
+WHEELS_STOP	lib/include/robot_fac.h	/^    WHEELS_STOP             = 0x05,    TRAJECTORY_STOP         = 0x06,$/;"	e	enum:MOTION_ID
+WHEEL_LEFT	lib/include/robot_fac.h	/^    WHEEL_LEFT              = 0x11,$/;"	e	enum:MOTOR_ID
+WHEEL_RIGHT	lib/include/robot_fac.h	/^    WHEEL_RIGHT             = 0x12,$/;"	e	enum:MOTOR_ID
+WHITE_PATTERN	lib/include/camera/pattern.h	/^    WHITE_PATTERN = 5,$/;"	e	enum:DisplayPattern
+WIPE_PERSPIRATION	lib/include/robot_fac.h	/^    WIPE_PERSPIRATION       = 0x55,    RAIN                    = 0x56,$/;"	e	enum:MOTION_ID
+WPA_EVENT_PREFIX_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::WPA_EVENT_PREFIX_STR = "WPA:";$/;"	m	class:RWifiHalCmd	file:
+WPA_EVENT_PREFIX_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* WPA_EVENT_PREFIX_STR;$/;"	m	class:RWifiHalCmd
+WPS_FAIL_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::WPS_FAIL_STR = "WPS-FAIL";$/;"	m	class:RWifiHalCmd	file:
+WPS_FAIL_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* WPS_FAIL_STR;$/;"	m	class:RWifiHalCmd
+WPS_OVERLAP_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::WPS_OVERLAP_STR = "WPS-OVERLAP-DETECTED";$/;"	m	class:RWifiHalCmd	file:
+WPS_OVERLAP_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* WPS_OVERLAP_STR;$/;"	m	class:RWifiHalCmd
+WPS_SUCCESS_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::WPS_SUCCESS_STR = "WPS-SUCCESS";$/;"	m	class:RWifiHalCmd	file:
+WPS_SUCCESS_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* WPS_SUCCESS_STR;$/;"	m	class:RWifiHalCmd
+WPS_TIMEOUT_STR	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::WPS_TIMEOUT_STR = "WPS-TIMEOUT";$/;"	m	class:RWifiHalCmd	file:
+WPS_TIMEOUT_STR	lib/wifi/RWifiHalCmd.h	/^    static const char* WPS_TIMEOUT_STR;$/;"	m	class:RWifiHalCmd
+WRIST_LEFT	lib/include/robot_fac.h	/^    WRIST_LEFT              = 0x0D,$/;"	e	enum:MOTOR_ID
+WRIST_RIGHT	lib/include/robot_fac.h	/^    WRIST_RIGHT             = 0x05,$/;"	e	enum:MOTOR_ID
+YAWN	lib/include/robot_fac.h	/^    LAUGH_OUT_LOUD          = 0x31,    YAWN                    = 0x32,$/;"	e	enum:MOTION_ID
+_AI_VER_H	lib/factest1/ai_ver.h	9;"	d
+_MediaPlayerListener	lib/factest1/test_mic.cpp	/^    _MediaPlayerListener() {};$/;"	f	class:_MediaPlayerListener
+_MediaPlayerListener	lib/factest1/test_mic.cpp	/^class _MediaPlayerListener : public MediaPlayerListener$/;"	c	file:
+_RBLUETOOTH_CALLBACKS_H_	lib/bluetooth/RBluetoothCallbacks.h	2;"	d
+_SN_INFO_H	lib/hwinfo/sninfo.h	2;"	d
+__ACTIVITY_PATH_H_	lib/camera/activity_path.h	2;"	d
+__ACTIVITY_TEST_SERVICE_H_	lib/include/camera/ActivityTestService.h	2;"	d
+__FACTORY_LOG_H_	lib/include/factory_log.h	2;"	d
+__IACTIVITY_TEST_SERVICE_H_	lib/include/camera/IActivityTestService.h	7;"	d
+__ICAMERA_ACTIVITY_H_	lib/camera/ICameraActivity.h	6;"	d
+__ILCD_ACTIVITY_H_	lib/camera/ILcdActivity.h	7;"	d
+__ITOUCH_PANEL_ACTIVITY_H_	lib/include/camera/ITouchPanelActivity.h	7;"	d
+__PATTERN_H_	lib/include/camera/pattern.h	2;"	d
+__RBLUETOOTH_ADAPTER_HW_H_	lib/bluetooth/RBluetoothAdapterHw.h	5;"	d
+__RBLUETOOTH_AVRCP_CALLBACKS_H_	lib/bluetooth/RBluetoothAvrcpCallbacks.h	2;"	d
+__RBLUETOOTH_AVRCP_H_	lib/bluetooth/RBluetoothAvrcp.h	2;"	d
+__RBLUETOOTH_COMMON_H_	lib/include/bluetooth/RBluetoothCommon.h	2;"	d
+__RBLUETOOTH_HANDSFREE_H_	lib/bluetooth/RBluetoothHandsfree.h	6;"	d
+__RBLUETOOTH_HFP_CALLBACKS_H_	lib/bluetooth/RBluetoothHfpCallbacks.h	2;"	d
+__RBLUETOOTH_LISTENER_H_	lib/bluetooth/RBluetoothListener.h	2;"	d
+__RBLUETOOTH_MANAGER_H_	lib/include/bluetooth/RBluetoothManager.h	2;"	d
+__RDHCP_RESULTS_H_	lib/wifi/RDhcpResults.h	2;"	d
+__RMESSAGE_H_	lib/bluetooth/RMessage.h	2;"	d
+__RNETD_CONNECTOR_H_	lib/wifi/RNetdConnector.h	2;"	d
+__RNETWORK_MANAGEMENT_H_	lib/wifi/RNetworkManagement.h	2;"	d
+__RNETWORK_UTILS_H_	lib/wifi/RNetworkUtils.h	2;"	d
+__ROBOT_FAC_H_	lib/include/robot_fac.h	22;"	d
+__ROBOT_HW_INFO_H_	lib/include/RobotHwInfo.h	2;"	d
+__RREMOTE_DEVICES_H_	lib/bluetooth/RRemoteDevices.h	2;"	d
+__RWIFI_HAL_CMD_H_	lib/wifi/RWifiHalCmd.h	2;"	d
+__RWIFI_INFO_H_	lib/wifi/RWifiInfo.h	2;"	d
+__RWIFI_MANAGER_H_	lib/include/wifi/RWifiManager.h	2;"	d
+__RWIFI_SSID_PASSWD_H_	lib/wifi/RWifiSsidPasswd.h	2;"	d
+__Rstorage_Manager_h_	lib/include/RStorageManager.h	2;"	d
+__radapter_properties_h_	lib/bluetooth/RAdapterProperties.h	2;"	d
 _write	serial.cpp	/^static int _write(int _fd, const void *data, int datalen)$/;"	f	file:
-callbackID	transport_jni.cpp	/^static jmethodID callbackID = NULL;$/;"	v	file:
+aclStateChange	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::aclStateChange(int status, bt_bdaddr_t& addr, int state)$/;"	f	class:RRemoteDevices
+acl_state	lib/bluetooth/RMessage.h	/^    struct acl_state$/;"	s	struct:RMessageData
+acl_state	lib/bluetooth/RMessage.h	/^    }acl_state;$/;"	m	struct:RMessageData	typeref:struct:RMessageData::acl_state
+activity_main	lib/camera/test.cpp	/^int activity_main(int argc, char **argv)$/;"	f
+adapterPropertyChanged	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::adapterPropertyChanged(int num, bt_property_t* props)$/;"	f	class:RAdapterProperties
+addDevice	lib/bluetooth/RRemoteDevices.cpp	/^RRemoteDevices::DeviceProperties* RRemoteDevices::addDevice(const bt_bdaddr_t& addr)$/;"	f	class:RRemoteDevices
+addNetwork	lib/wifi/RWifiHalCmd.cpp	/^int RWifiHalCmd::addNetwork()$/;"	f	class:RWifiHalCmd
+addr	lib/bluetooth/RMessage.h	/^        bt_bdaddr_t addr;$/;"	m	struct:RMessageData::acl_state
+addr	lib/bluetooth/RMessage.h	/^        bt_bdaddr_t addr;$/;"	m	struct:RMessageData::bond_state
+addr	lib/bluetooth/RMessage.h	/^        bt_bdaddr_t addr;$/;"	m	struct:RMessageData::pin_request
+addr	lib/bluetooth/RMessage.h	/^        bt_bdaddr_t addr;$/;"	m	struct:RMessageData::remote_device
+addr	lib/bluetooth/RMessage.h	/^        bt_bdaddr_t addr;$/;"	m	struct:RMessageData::ssp_request
+addr	lib/bluetooth/RMessage.h	/^    bt_bdaddr_t addr;$/;"	m	struct:RMessageData
+addr	lib/bluetooth/RRemoteDevices.h	/^        bt_bdaddr_t addr;$/;"	m	struct:RRemoteDevices::AddrKey
+addr	lib/hwinfo/sninfo.h	/^	struct mac_addr addr;$/;"	m	struct:bt_mac_addr	typeref:struct:bt_mac_addr::mac_addr
+addr	lib/hwinfo/sninfo.h	/^	struct mac_addr addr;$/;"	m	struct:eth_mac_addr	typeref:struct:eth_mac_addr::mac_addr
+addr	lib/hwinfo/sninfo.h	/^	struct mac_addr addr;$/;"	m	struct:wifi_mac_addr	typeref:struct:wifi_mac_addr::mac_addr
+addr	lib/hwinfo/sninfo.h	/^	uint8_t addr[6];$/;"	m	struct:mac_addr
+addr	lib/include/RobotHwInfo.h	/^    uint8_t addr[6];$/;"	m	struct:MacAddrStore
+addr	lib/include/bluetooth/RBluetoothCommon.h	/^    uint8_t addr[6];$/;"	m	struct:RBluetoothAddr
+android	lib/hwinfo/IMountService.cpp	/^namespace android {$/;"	n	file:
+android	lib/hwinfo/IMountService.h	/^namespace android {$/;"	n
+android	lib/include/RStorageManager.h	/^namespace android{$/;"	n
+appendArg	lib/wifi/RNetdConnector.cpp	/^int RNetdConnector::RCommand::appendArg(const char* arg)$/;"	f	class:RNetdConnector::RCommand
+atResponseCode	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::atResponseCode(int response_code, int cmee_code)$/;"	f	class:RBluetoothHandsfree
+atResponseString	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::atResponseString(const char* response)$/;"	f	class:RBluetoothHandsfree
+bondStateChange	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::bondStateChange(int status, bt_bdaddr_t& addr, int state)$/;"	f	class:RRemoteDevices
+bond_state	lib/bluetooth/RMessage.h	/^    struct bond_state$/;"	s	struct:RMessageData
+bond_state	lib/bluetooth/RMessage.h	/^    }bond_state;$/;"	m	struct:RMessageData	typeref:struct:RMessageData::bond_state
+bt_mac_addr	lib/hwinfo/sninfo.h	/^struct bt_mac_addr {$/;"	s
+bt_main	lib/bluetooth/test.cpp	/^int bt_main(int argc, char **argv)$/;"	f
+bt_pairing	factory_test_main.cpp	/^static void bt_pairing(uint8_t *data, int len)$/;"	f	file:
+cameraClose	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public boolean cameraClose() {$/;"	m	class:CameraTestActivity
+cameraOpen	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public boolean cameraOpen() {$/;"	m	class:CameraTestActivity
+cameraStartPreview	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public boolean cameraStartPreview() {$/;"	m	class:CameraTestActivity
+cameraTakePicture	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public boolean cameraTakePicture() {$/;"	m	class:CameraTestActivity
+can_server_died	fac_can.cpp	/^void can_server_died()$/;"	f
+cancelBond	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::cancelBond(RBluetoothAddr& addr)$/;"	f	class:RBluetoothAdapterHw
+cancelBond	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::cancelBond()$/;"	f	class:RBluetoothManager
+cancelBond	lib/bluetooth/RRemoteDevices.cpp	/^bool RRemoteDevices::cancelBond()$/;"	f	class:RRemoteDevices
+cancelDiscovery	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::cancelDiscovery()$/;"	f	class:RAdapterProperties
+cancelDiscovery	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::cancelDiscovery()$/;"	f	class:RBluetoothAdapterHw
+cancelDiscovery	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::cancelDiscovery()$/;"	f	class:RBluetoothManager
+cindResponse	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::cindResponse($/;"	f	class:RBluetoothHandsfree
+clccResponse	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::clccResponse($/;"	f	class:RBluetoothHandsfree
+cleanup	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::cleanup()$/;"	f	class:RBluetoothAdapterHw
+cleanup	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::cleanup()$/;"	f	class:RBluetoothAvrcp
+cleanup	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::cleanup()$/;"	f	class:RBluetoothHandsfree
+clear	lib/wifi/RDhcpResults.cpp	/^void RDhcpResults::clear()$/;"	f	class:RDhcpResults
+clearInterfaceAddresses	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::clearInterfaceAddresses(const char* ifname)$/;"	f	class:RNetworkManagement
+clearSurfaceView	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private void clearSurfaceView() {$/;"	m	class:CameraTestActivity	file:
+closeBt	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::closeBt()$/;"	f	class:RBluetoothManager
+closeCamera	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public int closeCamera() {$/;"	m	class:CameraTestActivity.CameraTestClient
+closeCamera	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::closeCamera()$/;"	f	class:ActivityTestService
+closeCamera	lib/camera/ICameraActivity.cpp	/^    virtual int closeCamera()$/;"	f	class:BpCameraActivity
+closeSNFlash	lib/hwinfo/RobotHwInfo.cpp	/^void RobotHwInfo::closeSNFlash(int& fd)$/;"	f	class:RobotHwInfo
+closeSupplicantConnection	lib/wifi/RWifiHalCmd.cpp	/^void RWifiHalCmd::closeSupplicantConnection()$/;"	f	class:RWifiHalCmd
+closeWifi	lib/wifi/RWifiManager.cpp	/^void RWifiManager::closeWifi()$/;"	f	class:RWifiManager
 close_device	transport.cpp	/^static void close_device()$/;"	f	file:
-cmd	transport.h	/^    uint8_t cmd;$/;"	m	struct:message
-d_len	transport.h	/^    uint8_t d_len;$/;"	m	struct:exmessage
-d_len	transport.h	/^    uint8_t d_len;$/;"	m	struct:message
-data	transport.h	/^    uint8_t *data;$/;"	m	struct:exmessage
-data	transport.h	/^    uint8_t *data;$/;"	m	struct:message
+cmd	include/transport.h	/^    uint8_t cmd;$/;"	m	struct:message
+cod	lib/bluetooth/RMessage.h	/^        uint32_t cod;$/;"	m	struct:RMessageData::pin_request
+cod	lib/bluetooth/RMessage.h	/^        uint32_t cod;$/;"	m	struct:RMessageData::ssp_request
+com.avatarmind.factorycommand	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^package com.avatarmind.factorycommand;$/;"	p
+com.avatarmind.factorycommand	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^package com.avatarmind.factorycommand;$/;"	p
+com.avatarmind.factorycommand	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^package com.avatarmind.factorycommand;$/;"	p
+com.avatarmind.factorycommand	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^package com.avatarmind.factorycommand;$/;"	p
+com.avatarmind.factorycommand	app/src/com/avatarmind/factorycommand/TouchView.java	/^package com.avatarmind.factorycommand;$/;"	p
+com.avatarmind.factorycommand	app/src/com/avatarmind/factorycommand/Utils.java	/^package com.avatarmind.factorycommand;$/;"	p
+com.avatarmind.factorycommand.service	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^package com.avatarmind.factorycommand.service;$/;"	p
+compareImage	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public int compareImage(int pattern, int storage, String filename) {$/;"	m	class:CameraTestActivity.CameraTestClient
+compareImage	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::compareImage(int pattern, int storage, const String16& filename)$/;"	f	class:ActivityTestService
+compareImage	lib/camera/ICameraActivity.cpp	/^    virtual int compareImage(int pattern, int storage, const String16& filename)$/;"	f	class:BpCameraActivity
+compare_addr	lib/bluetooth/RRemoteDevices.cpp	/^static int compare_addr(const bt_bdaddr_t& addr1, const bt_bdaddr_t& addr2)$/;"	f	file:
+configHciSnoopLog	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::configHciSnoopLog(bool enable)$/;"	f	class:RBluetoothAdapterHw
+connectAudio	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::connectAudio(RBluetoothAddr& addr)$/;"	f	class:RBluetoothHandsfree
+connectHfp	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::connectHfp(RBluetoothAddr& addr)$/;"	f	class:RBluetoothHandsfree
+connectSocket	lib/bluetooth/RBluetoothAdapterHw.cpp	/^int RBluetoothAdapterHw::connectSocket($/;"	f	class:RBluetoothAdapterHw
+connectToSupplicant	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::connectToSupplicant()$/;"	f	class:RWifiHalCmd
+connectToWifi	lib/wifi/RWifiManager.cpp	/^int RWifiManager::connectToWifi(const char* ssid, const char* pwd, int security)$/;"	f	class:RWifiManager
+convertToBytes	lib/wifi/RWifiSsidPasswd.cpp	/^size_t RWifiSsidPasswd::convertToBytes(uint8_t* buf, size_t maxlen, const char* str)$/;"	f	class:RWifiSsidPasswd
+convertToString	lib/wifi/RWifiSsidPasswd.cpp	/^void RWifiSsidPasswd::convertToString(char *txt, size_t maxlen, const uint8_t *data, size_t len)$/;"	f	class:RWifiSsidPasswd
+copsResponse	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::copsResponse(const char* operator_name)$/;"	f	class:RBluetoothHandsfree
+copyProps	lib/bluetooth/RMessage.h	/^inline void Properties::copyProps(int num, bt_property_t* props)$/;"	f	class:Properties
+createBond	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::createBond(RBluetoothAddr& addr)$/;"	f	class:RBluetoothAdapterHw
+createOutputDir	fac_util.cpp	/^int createOutputDir()$/;"	f
+createSocketChannel	lib/bluetooth/RBluetoothAdapterHw.cpp	/^int RBluetoothAdapterHw::createSocketChannel($/;"	f	class:RBluetoothAdapterHw
+d_len	include/transport.h	/^    uint8_t d_len;$/;"	m	struct:message
+data	fac_can.cpp	/^    uint8_t *data;$/;"	m	struct:TmpRecvData	file:
+data	include/transport.h	/^    uint8_t *data;$/;"	m	struct:message
+data	lib/bluetooth/RMessage.h	/^    RMessageData data;$/;"	m	struct:RMessage
+deinitBt	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::deinitBt()$/;"	f	class:RBluetoothManager
+deviceFound	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::deviceFound(bt_bdaddr_t& addr)$/;"	f	class:RRemoteDevices
+devicePropertyChanged	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::devicePropertyChanged(bt_bdaddr_t& addr, int num, bt_property_t* props)$/;"	f	class:RRemoteDevices
 device_poll_thread	transport.cpp	/^static void* device_poll_thread(void *arg)$/;"	f	file:
+disable	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::disable()$/;"	f	class:RBluetoothAdapterHw
+disableInterface	lib/wifi/RNetworkUtils.cpp	/^int RNetworkUtils::disableInterface(const char* interfaceName)$/;"	f	class:RNetworkUtils
+disableNetwork	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::disableNetwork(int netId)$/;"	f	class:RWifiHalCmd
+disable_sensor	lib/factest1/test_sensors.cpp	/^void disable_sensor()$/;"	f
+disconnect	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::disconnect()$/;"	f	class:RWifiHalCmd
+disconnectAudio	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::disconnectAudio(RBluetoothAddr& addr)$/;"	f	class:RBluetoothHandsfree
+disconnectHfp	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::disconnectHfp(RBluetoothAddr& addr)$/;"	f	class:RBluetoothHandsfree
+discoveryStateChange	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::discoveryStateChange(int state)$/;"	f	class:RAdapterProperties
+dispatchEvent	lib/wifi/RWifiManager.cpp	/^bool RWifiManager::dispatchEvent(const char* event_str)$/;"	f	class:RWifiManager
+display	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^        public int display(int pattern) {$/;"	m	class:LCDActivity.LCDTestClient
+display	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::display(int pattern)$/;"	f	class:ActivityTestService
+display	lib/camera/ILcdActivity.cpp	/^    virtual int display(int pattern)$/;"	f	class:BpLcdActivity
+doBoolCommand	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::doBoolCommand(const char* cmd)$/;"	f	class:RWifiHalCmd
+doCommand	lib/wifi/RNetdConnector.cpp	/^int RNetdConnector::doCommand(int argc, char **argv)$/;"	f	class:RNetdConnector
+doCommand	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::doCommand(const char* cmd,char* reply, size_t reply_len)$/;"	f	class:RWifiHalCmd
+doIntCommand	lib/wifi/RWifiHalCmd.cpp	/^int RWifiHalCmd::doIntCommand(const char* cmd)$/;"	f	class:RWifiHalCmd
+doMonitoring	lib/wifi/RNetdConnector.cpp	/^void* RNetdConnector::doMonitoring(void* arg)$/;"	f	class:RNetdConnector
+doStringCommand	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::doStringCommand(const char* cmd)$/;"	f	class:RWifiHalCmd
+dump	lib/wifi/RDhcpResults.cpp	/^void RDhcpResults::dump() const$/;"	f	class:RDhcpResults
+enable	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::enable()$/;"	f	class:RBluetoothAdapterHw
+enableInterface	lib/wifi/RNetworkUtils.cpp	/^int RNetworkUtils::enableInterface(const char* interfaceName)$/;"	f	class:RNetworkUtils
+enableNetwork	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::enableNetwork(int netId, bool disableOthers)$/;"	f	class:RWifiHalCmd
+enable_sensor	lib/factest1/test_sensors.cpp	/^int enable_sensor(int type, int id)$/;"	f
+enter_burning_mode	factory_test_main.cpp	/^static void enter_burning_mode()$/;"	f	file:
+errs	fac_util.cpp	/^volatile uint8_t errs = E_OK;$/;"	v
+eth_mac_addr	lib/hwinfo/sninfo.h	/^struct eth_mac_addr {$/;"	s
 event_loop	factory_test_main.cpp	/^static void event_loop()$/;"	f	file:
-exmessage	transport.h	/^struct exmessage$/;"	s
-find_serial_device	transport.cpp	/^static void find_serial_device(char *base) $/;"	f	file:
-ft_pthread_create	transport.h	/^static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t func, void *arg)$/;"	f
-ft_thread_func_t	transport.h	/^typedef void* (*ft_thread_func_t)(void *arg);$/;"	t
-gMethods	transport_jni.cpp	/^static JNINativeMethod gMethods[] =$/;"	v	file:
+execute_cmd	lib/camera/ActivityTestService.cpp	/^static int execute_cmd(const char* activity_pkg, bool is_start)$/;"	f	file:
+exit_burning_mode	factory_test_main.cpp	/^static void exit_burning_mode()$/;"	f	file:
+fac_motor_calibration	lib/src/robot_fac.c	/^int fac_motor_calibration(enum MOTOR_ID id)$/;"	f
+fac_motor_calibration2	lib/src/robot_fac.c	/^int fac_motor_calibration2(enum RB_TYPE type)$/;"	f
+fac_motor_motion	lib/src/robot_fac.c	/^int fac_motor_motion(enum MOTION_ID id)$/;"	f
+fac_motor_move	lib/src/robot_fac.c	/^int fac_motor_move(enum MOTOR_ID id, enum MOTOR_DIRECTION direction,$/;"	f
+fac_motor_stop	lib/src/robot_fac.c	/^int fac_motor_stop(enum MOTOR_ID id)$/;"	f
+fac_set_power_mode	lib/src/robot_fac.c	/^int fac_set_power_mode(enum POWER_MODE mode)$/;"	f
+fetchRssiAndLinkSpeed	lib/wifi/RWifiInfo.cpp	/^void RWifiInfo::fetchRssiAndLinkSpeed(int& rssi, int& linkSpeed)$/;"	f	class:RWifiInfo
+find_serial_device	transport.cpp	/^static void find_serial_device(const char *base) $/;"	f	file:
+ft_pthread_create	include/transport.h	/^static __inline__ int ft_pthread_create(pthread_t *pthread, ft_thread_func_t func, void *arg)$/;"	f
+ft_thread_func_t	include/transport.h	/^typedef void* (*ft_thread_func_t)(void *arg);$/;"	t
+gClient	fac_can.cpp	/^struct can_client_callback gClient = $/;"	v	typeref:struct:can_client_callback
+g_IsFactoryMode	factory_test_main.cpp	/^static bool g_IsFactoryMode = false;$/;"	v	file:
+g_MOTOR_MOVING	factory_test_main.cpp	/^static MOTOR_ID g_MOTOR_MOVING = INVALID_MOTOR_ID;$/;"	v	file:
+g_distance	lib/factest1/test_sensors.cpp	/^static volatile float g_distance = 0.0f;$/;"	v	file:
+g_init_flag	lib/factest1/test_sensors.cpp	/^static int g_init_flag = 0;$/;"	v	file:
+g_manager	lib/factest1/test_sensors.cpp	/^static ASensorManager *g_manager = NULL;$/;"	v	file:
+g_queue	lib/factest1/test_sensors.cpp	/^static ASensorEventQueue *g_queue = NULL;$/;"	v	file:
+g_sensor	lib/factest1/test_sensors.cpp	/^static ASensorRef g_sensor = NULL;$/;"	v	file:
+g_sensor_num	lib/factest1/test_sensors.cpp	/^static int g_sensor_num = 0;$/;"	v	file:
+g_tid	lib/factest1/test_sensors.cpp	/^static pthread_t g_tid = 0;$/;"	v	file:
+generateWhiteRectangle	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private Drawable generateWhiteRectangle() {$/;"	m	class:LCDActivity	file:
+getAdapterProperties	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::getAdapterProperties()$/;"	f	class:RBluetoothAdapterHw
+getAdapterProperty	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::getAdapterProperty(int type)$/;"	f	class:RBluetoothAdapterHw
+getArgArray	lib/wifi/RNetdConnector.cpp	/^char** RNetdConnector::RCommand::getArgArray()$/;"	f	class:RNetdConnector::RCommand
+getArgNum	lib/wifi/RNetdConnector.cpp	/^int RNetdConnector::RCommand::getArgNum()$/;"	f	class:RNetdConnector::RCommand
+getBatteryStatus	lib/factest1/test_battery.cpp	/^static int getBatteryStatus(const char *buf)$/;"	f	file:
+getBatterySupplyPath	lib/factest1/test_battery.cpp	/^static int getBatterySupplyPath(char *bat_path)$/;"	f	file:
+getBluetoothInterface	lib/bluetooth/RBluetoothAdapterHw.cpp	/^const bt_interface_t* RBluetoothAdapterHw::getBluetoothInterface()$/;"	f	class:RBluetoothAdapterHw
+getBtMacAddr	lib/hwinfo/RobotHwInfo.cpp	/^int RobotHwInfo::getBtMacAddr(MacAddrStore& addr)$/;"	f	class:RobotHwInfo
+getBytesFromAscii	lib/wifi/RWifiSsidPasswd.cpp	/^const uint8_t* RWifiSsidPasswd::getBytesFromAscii($/;"	f	class:RWifiSsidPasswd
+getBytesFromHex	lib/wifi/RWifiSsidPasswd.cpp	/^const uint8_t* RWifiSsidPasswd::getBytesFromHex($/;"	f	class:RWifiSsidPasswd
 getChecksum	transport.cpp	/^static int getChecksum(const message *msg)$/;"	f	file:
+getCmdSN	lib/wifi/RNetworkManagement.cpp	/^int RNetworkManagement::getCmdSN()$/;"	f	class:RNetworkManagement
+getCurrentSSID	lib/wifi/RWifiInfo.cpp	/^const char* RWifiInfo::getCurrentSSID()$/;"	f	class:RWifiInfo
+getCurrentSignal	lib/wifi/RWifiInfo.cpp	/^int RWifiInfo::getCurrentSignal()$/;"	f	class:RWifiInfo
+getDevice	lib/bluetooth/RRemoteDevices.cpp	/^RRemoteDevices::DeviceProperties* RRemoteDevices::getDevice(const bt_bdaddr_t& addr)$/;"	f	class:RRemoteDevices
+getDeviceProperty	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::getDeviceProperty(RBluetoothAddr& addr, int type)$/;"	f	class:RBluetoothAdapterHw
+getDhcpError	lib/wifi/RNetworkUtils.cpp	/^const char* RNetworkUtils::getDhcpError()$/;"	f	class:RNetworkUtils
+getDhcpResults	lib/wifi/RNetworkUtils.cpp	/^const RDhcpResults* RNetworkUtils::getDhcpResults()$/;"	f	class:RNetworkUtils
+getDnsNum	lib/wifi/RDhcpResults.cpp	/^int RDhcpResults::getDnsNum() const$/;"	f	class:RDhcpResults
+getElementAttrRsp	lib/bluetooth/RBluetoothAvrcp.cpp	/^bool RBluetoothAvrcp::getElementAttrRsp(int numAttr, int* attrIds, const char* texts[])$/;"	f	class:RBluetoothAvrcp
+getEthMacAddr	lib/hwinfo/RobotHwInfo.cpp	/^int RobotHwInfo::getEthMacAddr(MacAddrStore& addr)$/;"	f	class:RobotHwInfo
+getInstance	lib/wifi/RNetworkManagement.cpp	/^RNetworkManagement* RNetworkManagement::getInstance()$/;"	f	class:RNetworkManagement
+getInstance	lib/wifi/RWifiManager.cpp	/^RWifiManager* RWifiManager::getInstance()$/;"	f	class:RWifiManager
+getIntField	lib/factest1/test_battery.cpp	/^static int getIntField(const char *path)$/;"	f	file:
+getInterfaceConfig	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::getInterfaceConfig(const char* ifname)$/;"	f	class:RNetworkManagement
+getIpAddr	lib/wifi/RWifiManager.cpp	/^const char* RWifiManager::getIpAddr()$/;"	f	class:RWifiManager
+getMacAddress	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::getMacAddress()$/;"	f	class:RWifiHalCmd
+getMotionError	factory_test_main.cpp	/^static int getMotionError(int err)$/;"	f	file:
+getNetworkVariable	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::getNetworkVariable(int netId, const char* name)$/;"	f	class:RWifiHalCmd
 getNewEvent	transport.cpp	/^int getNewEvent(EventCallback cbFun)$/;"	f
 getPacket	transport.cpp	/^static message* getPacket(uint8_t header, $/;"	f	file:
-getSerialData	transport.cpp	/^void getSerialData(uint8_t *data, int &len)$/;"	f
-get_ai_core_lib_ver	fw_version.cpp	/^static int get_ai_core_lib_ver(char *ver, size_t len)$/;"	f	file:
-get_android_os_ver	fw_version.cpp	/^static int get_android_os_ver(char *ver, size_t len)$/;"	f	file:
-get_fw_version	factory_test_main.cpp	/^static void get_fw_version(int id)$/;"	f	file:
-get_subsys_ver	fw_version.cpp	/^static int get_subsys_ver(int id, char *ver, size_t len)$/;"	f	file:
-getfw_version	fw_version.cpp	/^int getfw_version(int id, char *version, size_t len)$/;"	f
+getPlayStatusRsp	lib/bluetooth/RBluetoothAvrcp.cpp	/^bool RBluetoothAvrcp::getPlayStatusRsp(int playStatus, int songLen, int songPos)$/;"	f	class:RBluetoothAvrcp
+getPwdFormat	lib/wifi/RWifiSsidPasswd.cpp	/^const char* RWifiSsidPasswd::getPwdFormat(const char* passwd)$/;"	f	class:RWifiSsidPasswd
+getRemoteServices	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::getRemoteServices(RBluetoothAddr& addr)$/;"	f	class:RBluetoothAdapterHw
+getSN	lib/hwinfo/RobotHwInfo.cpp	/^const char* RobotHwInfo::getSN()$/;"	f	class:RobotHwInfo
+getSSID	lib/wifi/RWifiManager.cpp	/^const char* RWifiManager::getSSID()$/;"	f	class:RWifiManager
+getSSIDFormat	lib/wifi/RWifiSsidPasswd.cpp	/^const char* RWifiSsidPasswd::getSSIDFormat(const char* ssid)$/;"	f	class:RWifiSsidPasswd
+getService	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    private static IActivityTestService getService() {$/;"	m	class:FacCmdClient	file:
+getSignalStrength	lib/bluetooth/RBluetoothManager.cpp	/^int RBluetoothManager::getSignalStrength()$/;"	f	class:RBluetoothManager
+getSignalStrength	lib/bluetooth/RRemoteDevices.cpp	/^int RRemoteDevices::getSignalStrength()$/;"	f	class:RRemoteDevices
+getState	lib/bluetooth/RAdapterProperties.cpp	/^int RAdapterProperties::getState()$/;"	f	class:RAdapterProperties
+getStringFromBytes	lib/wifi/RWifiSsidPasswd.cpp	/^const char* RWifiSsidPasswd::getStringFromBytes($/;"	f	class:RWifiSsidPasswd
+getTouchPanelActivity	lib/camera/ActivityTestService.cpp	/^sp<ITouchPanelActivity> ActivityTestService::getTouchPanelActivity()$/;"	f	class:ActivityTestService
+getTouchPanelActivity	lib/camera/IActivityTestService.cpp	/^    virtual sp<ITouchPanelActivity> getTouchPanelActivity()$/;"	f	class:BpActivityTestService
+getTouchPannel	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    public ITouchPanelActivity getTouchPannel() {$/;"	m	class:FacCmdClient
+getVolumeState	lib/hwinfo/IMountService.cpp	/^    String16 getVolumeState(const String16& mountPoint)$/;"	f	class:android::BpMountService
+getWifiMacAddr	lib/hwinfo/RobotHwInfo.cpp	/^int RobotHwInfo::getWifiMacAddr(MacAddrStore& addr)$/;"	f	class:RobotHwInfo
+getWifiSignal	lib/wifi/RWifiManager.cpp	/^int RWifiManager::getWifiSignal()$/;"	f	class:RWifiManager
+get_ai_core_lib_ver	lib/factest1/test_robot_info.cpp	/^static int get_ai_core_lib_ver(uint8_t *ver)$/;"	f	file:
+get_android_os_ver	lib/factest1/test_robot_info.cpp	/^static int get_android_os_ver(uint8_t *ver)$/;"	f	file:
+get_battery_capacity	lib/factest1/test_battery.cpp	/^int get_battery_capacity()$/;"	f
+get_battery_level	factory_test_main.cpp	/^static void get_battery_level()$/;"	f	file:
+get_battery_status	lib/factest1/test_battery.cpp	/^int get_battery_status()$/;"	f
+get_bt_addr	factory_test_main.cpp	/^static void get_bt_addr()$/;"	f	file:
+get_bt_signal	factory_test_main.cpp	/^static void get_bt_signal()$/;"	f	file:
+get_charger_status	factory_test_main.cpp	/^static void get_charger_status()$/;"	f	file:
+get_distance	lib/factest1/test_sensors.cpp	/^int get_distance()$/;"	f
+get_fw_version	factory_test_main.cpp	/^static void get_fw_version(uint8_t *data, int len)$/;"	f	file:
+get_gender	lib/factest1/test_robot_info.cpp	/^int get_gender(uint8_t &sex)$/;"	f
+get_ip_addr	factory_test_main.cpp	/^static void get_ip_addr()$/;"	f	file:
+get_ir_sensor_handle	lib/factest1/test_sensors.cpp	/^int get_ir_sensor_handle(int id)$/;"	f
+get_nlu_version	lib/factest1/ai_ver.cpp	/^int get_nlu_version(char *buf, int len)$/;"	f
+get_robot_cloud_sn	factory_test_main.cpp	/^static void get_robot_cloud_sn()$/;"	f	file:
+get_robot_gender	factory_test_main.cpp	/^static void get_robot_gender()$/;"	f	file:
+get_robot_sn	factory_test_main.cpp	/^static void get_robot_sn()$/;"	f	file:
+get_sensor_distance	factory_test_main.cpp	/^static void get_sensor_distance(uint8_t cmd, uint8_t *data, int len)$/;"	f	file:
+get_serial_number	lib/factest1/test_robot_info.cpp	/^int get_serial_number(uint8_t *sn)$/;"	f
+get_subsys_ver	lib/factest1/test_robot_info.cpp	/^static int get_subsys_ver(int id, uint8_t *ver)$/;"	f	file:
+get_tf_status	factory_test_main.cpp	/^static void get_tf_status()$/;"	f	file:
+get_us_sensor_handle	lib/factest1/test_sensors.cpp	/^int get_us_sensor_handle(int id)$/;"	f
+get_wifi_addr	factory_test_main.cpp	/^static void get_wifi_addr()$/;"	f	file:
+get_wifi_ap	factory_test_main.cpp	/^static void get_wifi_ap()$/;"	f	file:
+get_wifi_signal	factory_test_main.cpp	/^static void get_wifi_signal()$/;"	f	file:
+getfw_version	lib/factest1/test_robot_info.cpp	/^int getfw_version(int id, uint8_t *version)$/;"	f
+handle	lib/factest1/test_sensors.cpp	/^    int handle;$/;"	m	struct:SENSORS_MAP	file:
+handleAclState	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleAclState(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleAdapterProps	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleAdapterProps(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleAdapterState	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleAdapterState(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleBondState	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleBondState(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleDeviceFound	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleDeviceFound(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleDiscoveryState	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleDiscoveryState(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleFailedIp	lib/wifi/RWifiManager.cpp	/^void RWifiManager::handleFailedIp()$/;"	f	class:RWifiManager
+handleNetworkConnect	lib/wifi/RWifiManager.cpp	/^void RWifiManager::handleNetworkConnect()$/;"	f	class:RWifiManager
+handleNetworkDisconnect	lib/wifi/RWifiManager.cpp	/^void RWifiManager::handleNetworkDisconnect()$/;"	f	class:RWifiManager
+handlePinRequest	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handlePinRequest(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleRemoteDeviceProps	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleRemoteDeviceProps(RMessage* msg)$/;"	f	class:RBluetoothManager
+handleSspRequest	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::handleSspRequest(RMessage* msg)$/;"	f	class:RBluetoothManager
 handle_event	factory_test_main.cpp	/^void handle_event(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len)$/;"	f
-header	transport.h	/^    uint8_t header;$/;"	m	struct:message
-hex2Str	fac_util.cpp	/^void hex2Str(char *dst, uint8_t *src, int len)$/;"	f
-hex2Str	transport_jni.cpp	/^static void hex2Str(char* dst, uint8_t* src, int len)$/;"	f	file:
-init	transport_jni.cpp	/^static void init(JNIEnv* env, jobject thiz)$/;"	f	file:
+header	include/transport.h	/^    uint8_t header;$/;"	m	struct:message
+hex2byte	lib/wifi/RWifiSsidPasswd.cpp	/^static int hex2byte(const char *hex)$/;"	f	file:
+hex2num	lib/wifi/RWifiSsidPasswd.cpp	/^static int hex2num(char c)$/;"	f	file:
+hexstr2bin	lib/wifi/RWifiSsidPasswd.cpp	/^static int hexstr2bin(const char *hex, uint8_t *buf, size_t len)$/;"	f	file:
+hwinfo_main	lib/hwinfo/test.cpp	/^static int hwinfo_main(int argc, char** argv)$/;"	f	file:
+id	lib/bluetooth/RMessage.h	/^    RMessageId id;$/;"	m	struct:RMessage
+id	lib/factest1/test_sensors.cpp	/^    int id;$/;"	m	struct:SENSORS_MAP	file:
+init	app/src/com/avatarmind/factorycommand/TouchView.java	/^    private void init() {$/;"	m	class:TouchView	file:
+init	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::init()$/;"	f	class:RBluetoothAdapterHw
+init	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::init()$/;"	f	class:RBluetoothAvrcp
+initBluetoothCallbacks	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::initBluetoothCallbacks()$/;"	f	class:RBluetoothAdapterHw
+initBt	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::initBt()$/;"	f	class:RBluetoothManager
+initCallbacks	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::initCallbacks()$/;"	f	class:RBluetoothAvrcp
+initCallbacks	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::initCallbacks()$/;"	f	class:RBluetoothHandsfree
+initData	lib/wifi/RNetdConnector.cpp	/^void RNetdConnector::RCommand::initData()$/;"	f	class:RNetdConnector::RCommand
+init_can	fac_can.cpp	/^int init_can()$/;"	f
+init_sensor_grab	lib/factest1/test_sensors.cpp	/^static int init_sensor_grab(int32_t handle)$/;"	f	file:
+initialize	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::initialize()$/;"	f	class:RBluetoothHandsfree
+initialize	lib/hwinfo/RStorageManager.cpp	/^bool RStorageManager::initialize()$/;"	f	class:RStorageManager
+instance	lib/bluetooth/RBluetoothAdapterHw.cpp	/^RBluetoothAdapterHw* RBluetoothAdapterHw::instance()$/;"	f	class:RBluetoothAdapterHw
+instance	lib/bluetooth/RBluetoothAvrcp.cpp	/^RBluetoothAvrcp* RBluetoothAvrcp::instance()$/;"	f	class:RBluetoothAvrcp
+instance	lib/bluetooth/RBluetoothHandsfree.cpp	/^RBluetoothHandsfree* RBluetoothHandsfree::instance()$/;"	f	class:RBluetoothHandsfree
+instance	lib/bluetooth/RBluetoothManager.cpp	/^RBluetoothManager* RBluetoothManager::instance()$/;"	f	class:RBluetoothManager
+instance	lib/camera/ActivityTestService.cpp	/^sp<ActivityTestService> ActivityTestService::instance()$/;"	f	class:ActivityTestService
+instance	lib/hwinfo/RStorageManager.cpp	/^RStorageManager* RStorageManager::instance()$/;"	f	class:RStorageManager
+ir_sensor_map	lib/factest1/test_sensors.cpp	/^} ir_sensor_map[] = {$/;"	v	typeref:struct:SENSORS_MAP	file:
+isBond	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::isBond()$/;"	f	class:RBluetoothManager
+isBond	lib/bluetooth/RRemoteDevices.cpp	/^bool RRemoteDevices::isBond()$/;"	f	class:RRemoteDevices
+isCameraActivity	lib/camera/ActivityTestService.cpp	/^bool ActivityTestService::isCameraActivity()$/;"	f	class:ActivityTestService
+isConnected	lib/wifi/RWifiManager.cpp	/^bool RWifiManager::isConnected()$/;"	f	class:RWifiManager
+isDiscovering	lib/bluetooth/RAdapterProperties.cpp	/^bool RAdapterProperties::isDiscovering()$/;"	f	class:RAdapterProperties
+isDiscovering	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::isDiscovering()$/;"	f	class:RBluetoothManager
+isDriverLoaded	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::isDriverLoaded()$/;"	f	class:RWifiHalCmd
+isFileExist	fac_util.cpp	/^int isFileExist(const char *file)$/;"	f
+isFound	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::isFound()$/;"	f	class:RBluetoothManager
+isFound	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::isFound(RBluetoothAddr& addr)$/;"	f	class:RBluetoothManager
+isFound	lib/bluetooth/RRemoteDevices.cpp	/^bool RRemoteDevices::isFound()$/;"	f	class:RRemoteDevices
+isFound	lib/bluetooth/RRemoteDevices.cpp	/^bool RRemoteDevices::isFound(RBluetoothAddr& addr)$/;"	f	class:RRemoteDevices
+isLcdActivity	lib/camera/ActivityTestService.cpp	/^bool ActivityTestService::isLcdActivity()$/;"	f	class:ActivityTestService
+isNewWifi	lib/wifi/RWifiInfo.cpp	/^int RWifiInfo::isNewWifi(const char* ssid)$/;"	f	class:RWifiInfo
+isOpened	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::isOpened()$/;"	f	class:RBluetoothManager
+isP2pSupported	lib/wifi/RWifiManager.cpp	/^bool RWifiManager::isP2pSupported()$/;"	f	class:RWifiManager
+isPlaying	lib/factest1/test_mic.cpp	/^static bool isPlaying = false;$/;"	v	file:
+isRecording	lib/factest1/test_mic.cpp	/^static bool isRecording = false;$/;"	v	file:
+isTFCardMounted	lib/hwinfo/RStorageManager.cpp	/^bool RStorageManager::isTFCardMounted()$/;"	f	class:RStorageManager
+isTouchActivity	lib/camera/ActivityTestService.cpp	/^bool ActivityTestService::isTouchActivity()$/;"	f	class:ActivityTestService
+isWifiEnabled	lib/wifi/RWifiManager.cpp	/^bool RWifiManager::isWifiEnabled()$/;"	f	class:RWifiManager
+key	lib/bluetooth/RMessage.h	/^        uint32_t key;$/;"	m	struct:RMessageData::ssp_request
+killSupplicant	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::killSupplicant(bool p2pSupported)$/;"	f	class:RWifiHalCmd
 know_device	transport.cpp	/^static int know_device(char *dev)$/;"	f	file:
+len	fac_can.cpp	/^    int      len;$/;"	m	struct:TmpRecvData	file:
+listNetworks	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::listNetworks()$/;"	f	class:RWifiHalCmd
+loadBluetoothModule	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::loadBluetoothModule()$/;"	f	class:RBluetoothAdapterHw
+loadConfiguredNetworks	lib/wifi/RWifiInfo.cpp	/^void RWifiInfo::loadConfiguredNetworks()$/;"	f	class:RWifiInfo
+loadDriver	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::loadDriver()$/;"	f	class:RWifiHalCmd
+mActionSound	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private MediaActionSound mActionSound;$/;"	f	class:CameraTestActivity	file:
+mAddress	lib/bluetooth/RAdapterProperties.h	/^    uint8_t mAddress[6];$/;"	m	class:RAdapterProperties
+mAddress	lib/bluetooth/RRemoteDevices.h	/^        uint8_t mAddress[6];$/;"	m	class:RRemoteDevices::DeviceProperties
+mAlias	lib/bluetooth/RRemoteDevices.h	/^        char mAlias[250];$/;"	m	class:RRemoteDevices::DeviceProperties
+mArgArray	lib/wifi/RNetdConnector.h	/^        char mArgArray[ARG_NUM][ARG_LEN];$/;"	m	class:RNetdConnector::RCommand
+mArgNum	lib/wifi/RNetdConnector.h	/^        int mArgNum;$/;"	m	class:RNetdConnector::RCommand
+mArgRet	lib/wifi/RNetdConnector.h	/^        char *mArgRet[ARG_NUM];$/;"	m	class:RNetdConnector::RCommand
+mAuthAlgStr	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mAuthAlgStr[3] = {"OPEN", "SHARED", "LEAP"};$/;"	m	class:RWifiHalCmd	file:
+mAuthAlgStr	lib/wifi/RWifiHalCmd.h	/^    static const char* mAuthAlgStr[3];$/;"	m	class:RWifiHalCmd
+mAuthAlgVarName	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mAuthAlgVarName = "auth_alg";$/;"	m	class:RWifiHalCmd	file:
+mAuthAlgVarName	lib/wifi/RWifiHalCmd.h	/^    static const char* mAuthAlgVarName;$/;"	m	class:RWifiHalCmd
+mAvrcp	lib/bluetooth/RBluetoothAvrcp.cpp	/^RBluetoothAvrcp* RBluetoothAvrcp::mAvrcp = NULL;$/;"	m	class:RBluetoothAvrcp	file:
+mAvrcp	lib/bluetooth/RBluetoothAvrcp.h	/^    static RBluetoothAvrcp* mAvrcp;$/;"	m	class:RBluetoothAvrcp
+mBluetoothDisabling	lib/bluetooth/RAdapterProperties.h	/^    bool mBluetoothDisabling;$/;"	m	class:RAdapterProperties
+mBondDevice	lib/bluetooth/RRemoteDevices.h	/^    DeviceProperties* mBondDevice;$/;"	m	class:RRemoteDevices
+mBondState	lib/bluetooth/RRemoteDevices.h	/^        int mBondState;$/;"	m	class:RRemoteDevices::DeviceProperties
+mBtAvrcpCallbacks	lib/bluetooth/RBluetoothAvrcp.h	/^    btrc_callbacks_t mBtAvrcpCallbacks;$/;"	m	class:RBluetoothAvrcp
+mBtAvrcpInterface	lib/bluetooth/RBluetoothAvrcp.h	/^    const btrc_interface_t *mBtAvrcpInterface;$/;"	m	class:RBluetoothAvrcp
+mBtCallbacks	lib/bluetooth/RBluetoothAdapterHw.h	/^    bt_callbacks_t mBtCallbacks;$/;"	m	class:RBluetoothAdapterHw
+mBtClass	lib/bluetooth/RAdapterProperties.h	/^    uint32_t mBtClass;$/;"	m	class:RAdapterProperties
+mBtClass	lib/bluetooth/RRemoteDevices.h	/^        uint32_t mBtClass;$/;"	m	class:RRemoteDevices::DeviceProperties
+mBtDevice	lib/bluetooth/RBluetoothAdapterHw.h	/^    hw_device_t *mBtDevice;$/;"	m	class:RBluetoothAdapterHw
+mBtHfpInterface	lib/bluetooth/RBluetoothHandsfree.h	/^    const bthf_interface_t *mBtHfpInterface;$/;"	m	class:RBluetoothHandsfree
+mBtInterface	lib/bluetooth/RBluetoothAdapterHw.h	/^    const bt_interface_t *mBtInterface;$/;"	m	class:RBluetoothAdapterHw
+mBtModule	lib/bluetooth/RBluetoothAdapterHw.h	/^    hw_module_t *mBtModule;$/;"	m	class:RBluetoothAdapterHw
+mBtSocketInterface	lib/bluetooth/RBluetoothAdapterHw.h	/^    btsock_interface_t *mBtSocketInterface;$/;"	m	class:RBluetoothAdapterHw
+mBthfCallbacks	lib/bluetooth/RBluetoothHandsfree.h	/^    bthf_callbacks_t mBthfCallbacks;$/;"	m	class:RBluetoothHandsfree
+mByteArray	lib/wifi/RWifiSsidPasswd.h	/^    uint8_t mByteArray[BYTE_STREAM_LEN];$/;"	m	class:RWifiSsidPasswd
+mCallback	lib/include/camera/ActivityTestService.h	/^    ActivityTestCallback* mCallback;$/;"	m	class:ActivityTestService
+mCallbacks	lib/bluetooth/RBluetoothAdapterHw.h	/^    RBluetoothCallbacks* mCallbacks;$/;"	m	class:RBluetoothAdapterHw
+mCallbacks	lib/bluetooth/RBluetoothAvrcp.h	/^    RBluetoothAvrcpCallbacks* mCallbacks;$/;"	m	class:RBluetoothAvrcp
+mCallbacks	lib/bluetooth/RBluetoothHandsfree.h	/^    RBluetoothHfpCallbacks* mCallbacks;$/;"	m	class:RBluetoothHandsfree
+mCameraActivity	lib/include/camera/ActivityTestService.h	/^    sp<ICameraActivity> mCameraActivity;$/;"	m	class:ActivityTestService
+mCameraClient	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private final CameraTestClient mCameraClient = new CameraTestClient();$/;"	f	class:CameraTestActivity	file:
+mCameraDevice	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private Camera mCameraDevice;$/;"	f	class:CameraTestActivity	file:
+mCameraPid	lib/include/camera/ActivityTestService.h	/^    int mCameraPid;$/;"	m	class:ActivityTestService
+mCmd	lib/wifi/RNetdConnector.h	/^        char mCmd[CMD_LEN];$/;"	m	class:RNetdConnector::RCommand
+mColorArray	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private final int[] mColorArray = { Color.RED, Color.BLUE, Color.GREEN,$/;"	f	class:LCDActivity	file:
+mConfiguredNetworks	lib/wifi/RWifiInfo.h	/^    android::KeyedVector<int, RWifiConfiguredInfo> mConfiguredNetworks;$/;"	m	class:RWifiInfo
+mConnector	lib/wifi/RNetworkManagement.h	/^    RNetdConnector* mConnector;$/;"	m	class:RNetworkManagement
+mCorrds	app/src/com/avatarmind/factorycommand/TouchView.java	/^        private PointerCoords mCorrds = new PointerCoords();$/;"	f	class:TouchView.PointerState	file:
+mDefaultInterface	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mDefaultInterface = "wlan0";$/;"	m	class:RWifiHalCmd	file:
+mDefaultInterface	lib/wifi/RWifiHalCmd.h	/^    static const char* mDefaultInterface;$/;"	m	class:RWifiHalCmd
+mDevice	lib/bluetooth/RBluetoothAdapterHw.cpp	/^RBluetoothAdapterHw *RBluetoothAdapterHw::mDevice = NULL;$/;"	m	class:RBluetoothAdapterHw	file:
+mDevice	lib/bluetooth/RBluetoothAdapterHw.h	/^    static RBluetoothAdapterHw *mDevice;$/;"	m	class:RBluetoothAdapterHw
+mDeviceType	lib/bluetooth/RRemoteDevices.h	/^        int mDeviceType;$/;"	m	class:RRemoteDevices::DeviceProperties
+mDevices	lib/bluetooth/RRemoteDevices.h	/^    android::KeyedVector<AddrKey, DeviceProperties*> mDevices;$/;"	m	class:RRemoteDevices
+mDiscoverableTimeout	lib/bluetooth/RAdapterProperties.h	/^    uint32_t mDiscoverableTimeout;$/;"	m	class:RAdapterProperties
+mDiscovering	lib/bluetooth/RAdapterProperties.h	/^    bool mDiscovering;$/;"	m	class:RAdapterProperties
+mDns	lib/wifi/RDhcpResults.h	/^    char    *mDns[5];$/;"	m	class:RDhcpResults
+mDns1	lib/wifi/RDhcpResults.h	/^    char    mDns1[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mDns2	lib/wifi/RDhcpResults.h	/^    char    mDns2[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mDns3	lib/wifi/RDhcpResults.h	/^    char    mDns3[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mDns4	lib/wifi/RDhcpResults.h	/^    char    mDns4[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mDomains	lib/wifi/RDhcpResults.h	/^    char mDomains[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mDown	app/src/com/avatarmind/factorycommand/TouchView.java	/^        private boolean mDown;$/;"	f	class:TouchView.PointerState	file:
+mEnableState	lib/include/bluetooth/RBluetoothManager.h	/^    bool mEnableState;$/;"	m	class:RBluetoothManager
+mEventBuf	lib/wifi/RWifiHalCmd.h	/^    char mEventBuf[EVENT_BUF_SIZE];$/;"	m	class:RWifiHalCmd
+mEventHandle	lib/include/wifi/RWifiManager.h	/^    pthread_t mEventHandle;$/;"	m	class:RWifiManager
+mFacCmd	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private FacCmdClient mFacCmd;$/;"	f	class:CameraTestActivity	file:
+mFacCmd	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private FacCmdClient mFacCmd;$/;"	f	class:LCDActivity	file:
+mFacCmd	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^    private FacCmdClient mFacCmd;$/;"	f	class:TouchActivity	file:
+mGateway	lib/wifi/RDhcpResults.h	/^    char mGateway[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mGradientColor	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private LinearLayout mGradientColor;$/;"	f	class:LCDActivity	file:
+mHfp	lib/bluetooth/RBluetoothHandsfree.cpp	/^RBluetoothHandsfree* RBluetoothHandsfree::mHfp = NULL;$/;"	m	class:RBluetoothHandsfree	file:
+mHfp	lib/bluetooth/RBluetoothHandsfree.h	/^    static RBluetoothHandsfree* mHfp;$/;"	m	class:RBluetoothHandsfree
+mHw	lib/bluetooth/RAdapterProperties.h	/^    RBluetoothAdapterHw* mHw;$/;"	m	class:RAdapterProperties
+mHw	lib/bluetooth/RRemoteDevices.h	/^    RBluetoothAdapterHw* mHw;$/;"	m	class:RRemoteDevices
+mHw	lib/include/bluetooth/RBluetoothManager.h	/^    RBluetoothAdapterHw* mHw;$/;"	m	class:RBluetoothManager
+mInterfaceName	lib/wifi/RDhcpResults.h	/^    char mInterfaceName[16];$/;"	m	class:RDhcpResults
+mInterfacePrefix	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mInterfacePrefix = "IFNAME=";$/;"	m	class:RWifiHalCmd	file:
+mInterfacePrefix	lib/wifi/RWifiHalCmd.h	/^    static const char* mInterfacePrefix;$/;"	m	class:RWifiHalCmd
+mIpAddr	lib/wifi/RDhcpResults.h	/^    char mIpAddr[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mIsConnected	lib/include/wifi/RWifiManager.h	/^    bool mIsConnected;$/;"	m	class:RWifiManager
+mIsFound	lib/bluetooth/RRemoteDevices.h	/^        bool mIsFound;$/;"	m	class:RRemoteDevices::DeviceProperties
+mIsFound	lib/bluetooth/RRemoteDevices.h	/^    bool mIsFound;$/;"	m	class:RRemoteDevices
+mIsMonitoring	lib/include/wifi/RWifiManager.h	/^    bool mIsMonitoring;$/;"	m	class:RWifiManager
+mIsMonitoring	lib/wifi/RNetdConnector.h	/^    bool mIsMonitoring;$/;"	m	class:RNetdConnector
+mIsOpened	lib/include/bluetooth/RBluetoothManager.h	/^    bool mIsOpened;$/;"	m	class:RBluetoothManager
+mIsPreview	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private boolean mIsPreview = false;$/;"	f	class:CameraTestActivity	file:
+mIsRunning	lib/include/bluetooth/RBluetoothManager.h	/^    bool mIsRunning;$/;"	m	class:RBluetoothManager
+mIsSearching	lib/bluetooth/RAdapterProperties.h	/^    bool mIsSearching;$/;"	m	class:RAdapterProperties
+mIsTouchActivity	lib/include/camera/ActivityTestService.h	/^    bool mIsTouchActivity;$/;"	m	class:ActivityTestService
+mIsWifiEnabled	lib/include/wifi/RWifiManager.h	/^    bool mIsWifiEnabled;$/;"	m	class:RWifiManager
+mKeyMgmtStr	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mKeyMgmtStr[5] = {"NONE", "WPA_PSK", "WPA_EAP", "IEEE8021X", "WPA2_PSK"};$/;"	m	class:RWifiHalCmd	file:
+mKeyMgmtStr	lib/wifi/RWifiHalCmd.h	/^    static const char* mKeyMgmtStr[5];$/;"	m	class:RWifiHalCmd
+mKeyMgmtVarName	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mKeyMgmtVarName = "key_mgmt";$/;"	m	class:RWifiHalCmd	file:
+mKeyMgmtVarName	lib/wifi/RWifiHalCmd.h	/^    static const char* mKeyMgmtVarName;$/;"	m	class:RWifiHalCmd
+mLcdActivity	lib/include/camera/ActivityTestService.h	/^    sp<ILcdActivity> mLcdActivity;$/;"	m	class:ActivityTestService
+mLcdClient	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private final LCDTestClient mLcdClient = new LCDTestClient();$/;"	f	class:LCDActivity	file:
+mLcdPid	lib/include/camera/ActivityTestService.h	/^    int mLcdPid;$/;"	m	class:ActivityTestService
+mLease	lib/wifi/RDhcpResults.h	/^    uint32_t mLease;$/;"	m	class:RDhcpResults
+mListCondition	lib/include/bluetooth/RBluetoothManager.h	/^    android::Condition mListCondition;$/;"	m	class:RBluetoothManager
+mListMutex	lib/include/bluetooth/RBluetoothManager.h	/^    android::Mutex mListMutex;$/;"	m	class:RBluetoothManager
+mListener	lib/include/bluetooth/RBluetoothManager.h	/^    RBluetoothListener* mListener;$/;"	m	class:RBluetoothManager
+mListener	lib/wifi/RNetdConnector.h	/^    RNetdConnectorListener* mListener;$/;"	m	class:RNetdConnector
+mLock	lib/include/wifi/RWifiManager.h	/^    android::Mutex mLock;$/;"	m	class:RWifiManager
+mManagement	lib/wifi/RNetworkManagement.cpp	/^RNetworkManagement* RNetworkManagement::mManagement = NULL;$/;"	m	class:RNetworkManagement	file:
+mManagement	lib/wifi/RNetworkManagement.h	/^    static RNetworkManagement* mManagement;$/;"	m	class:RNetworkManagement
+mManager	lib/bluetooth/RBluetoothListener.h	/^    RBluetoothManager* mManager;$/;"	m	class:RBluetoothListener
+mManager	lib/bluetooth/RBluetoothManager.cpp	/^RBluetoothManager* RBluetoothManager::mManager = NULL;$/;"	m	class:RBluetoothManager	file:
+mManager	lib/hwinfo/RStorageManager.cpp	/^RStorageManager* RStorageManager::mManager = NULL;$/;"	m	class:RStorageManager	file:
+mManager	lib/include/RStorageManager.h	/^    static RStorageManager* mManager;$/;"	m	class:RStorageManager
+mManager	lib/include/bluetooth/RBluetoothManager.h	/^    static RBluetoothManager* mManager;$/;"	m	class:RBluetoothManager
+mManager	lib/include/wifi/RWifiManager.h	/^    static RWifiManager* mManager;$/;"	m	class:RWifiManager
+mManager	lib/wifi/RWifiManager.cpp	/^RWifiManager* RWifiManager::mManager = NULL;$/;"	m	class:RWifiManager	file:
+mMediaPlayer	lib/factest1/test_mic.cpp	/^static sp<MediaPlayer> mMediaPlayer = NULL;$/;"	v	file:
+mMediaPlayerListener	lib/factest1/test_mic.cpp	/^static sp<_MediaPlayerListener> mMediaPlayerListener = NULL;$/;"	v	file:
+mMediaRecorder	lib/factest1/test_mic.cpp	/^static sp<MediaRecorder> mMediaRecorder = NULL;$/;"	v	file:
+mMonitorHandle	lib/wifi/RNetdConnector.h	/^    pthread_t mMonitorHandle;$/;"	m	class:RNetdConnector
+mMountService	lib/include/RStorageManager.h	/^    sp<IMountService> mMountService;$/;"	m	class:RStorageManager
+mMsgList	lib/include/bluetooth/RBluetoothManager.h	/^    android::List<RMessage*> mMsgList;$/;"	m	class:RBluetoothManager
+mMtu	lib/wifi/RDhcpResults.h	/^    char mMtu[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mMutex	lib/bluetooth/RAdapterProperties.h	/^    android::Mutex mMutex;$/;"	m	class:RAdapterProperties
+mMutex	lib/bluetooth/RRemoteDevices.h	/^    android::Mutex mMutex;$/;"	m	class:RRemoteDevices
+mMutex	lib/include/RStorageManager.h	/^    Mutex mMutex;$/;"	m	class:RStorageManager
+mMutex	lib/include/bluetooth/RBluetoothManager.h	/^    android::Mutex mMutex;$/;"	m	class:RBluetoothManager
+mMutex	lib/include/camera/ActivityTestService.h	/^    Mutex mMutex;$/;"	m	class:ActivityTestService
+mMutex	lib/wifi/RNetdConnector.h	/^    pthread_mutex_t mMutex;$/;"	m	class:RNetdConnector
+mName	lib/bluetooth/RAdapterProperties.h	/^    char mName[250];$/;"	m	class:RAdapterProperties
+mName	lib/bluetooth/RRemoteDevices.h	/^        char mName[250];$/;"	m	class:RRemoteDevices::DeviceProperties
+mNetId	lib/wifi/RWifiInfo.h	/^        int mNetId;$/;"	m	class:RWifiInfo::RWifiConfiguredInfo
+mNetUtils	lib/include/wifi/RWifiManager.h	/^    RNetworkUtils* mNetUtils;$/;"	m	class:RWifiManager
+mNetd	lib/include/wifi/RWifiManager.h	/^    RNetworkManagement* mNetd;$/;"	m	class:RWifiManager
+mNum	lib/bluetooth/RMessage.h	/^    int mNum;$/;"	m	class:Properties
+mPaused	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private boolean mPaused = false;$/;"	f	class:CameraTestActivity	file:
+mPoints	app/src/com/avatarmind/factorycommand/TouchView.java	/^    private final List<PointerState> mPoints = new ArrayList<PointerState>();$/;"	f	class:TouchView	file:
+mPrefixLength	lib/wifi/RDhcpResults.h	/^    uint32_t mPrefixLength;$/;"	m	class:RDhcpResults
+mProps	lib/include/bluetooth/RBluetoothManager.h	/^    RAdapterProperties* mProps;$/;"	m	class:RBluetoothManager
+mPskVarName	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mPskVarName = "psk";$/;"	m	class:RWifiHalCmd	file:
+mPskVarName	lib/wifi/RWifiHalCmd.h	/^    static const char* mPskVarName;$/;"	m	class:RWifiHalCmd
+mPureColor	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    private ImageView mPureColor;$/;"	f	class:LCDActivity	file:
+mPwdFormat	lib/wifi/RWifiSsidPasswd.h	/^    char mPwdFormat[PWD_FORMAT_LEN];$/;"	m	class:RWifiSsidPasswd
 mRecvLock	transport.cpp	/^static Mutex mRecvLock;$/;"	v	file:
 mRecvSignal	transport.cpp	/^static Condition mRecvSignal;$/;"	v	file:
+mRemote	lib/bluetooth/RAdapterProperties.h	/^    RRemoteDevices* mRemote;$/;"	m	class:RAdapterProperties
+mRemoteDevices	lib/include/bluetooth/RBluetoothManager.h	/^    RRemoteDevices* mRemoteDevices;$/;"	m	class:RBluetoothManager
+mReplyBuf	lib/wifi/RWifiHalCmd.h	/^    char mReplyBuf[REPLY_BUF_SIZE];$/;"	m	class:RWifiHalCmd
+mResults	lib/wifi/RNetworkUtils.h	/^    RDhcpResults* mResults;$/;"	m	class:RNetworkUtils
+mRssi	lib/bluetooth/RRemoteDevices.h	/^        int32_t mRssi;$/;"	m	class:RRemoteDevices::DeviceProperties
+mSN	lib/include/RobotHwInfo.h	/^    char mSN[32];$/;"	m	class:RobotHwInfo
+mSNBase	lib/wifi/RNetworkManagement.h	/^    int mSNBase;$/;"	m	class:RNetworkManagement
+mSSID	lib/wifi/RWifiInfo.h	/^        android::String8 mSSID;$/;"	m	class:RWifiInfo::RWifiConfiguredInfo
+mSSIDFormat	lib/wifi/RWifiSsidPasswd.h	/^    char mSSIDFormat[SSID_FORMAT_LEN];$/;"	m	class:RWifiSsidPasswd
+mScanMode	lib/bluetooth/RAdapterProperties.h	/^    int mScanMode;$/;"	m	class:RAdapterProperties
+mServer	lib/wifi/RDhcpResults.h	/^    char  mServer[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mService	lib/camera/ActivityTestService.cpp	/^sp<ActivityTestService> ActivityTestService::mService = NULL;$/;"	m	class:ActivityTestService	file:
+mService	lib/include/camera/ActivityTestService.h	/^        sp<ActivityTestService> mService;$/;"	m	class:ActivityTestService::TouchPanelActivity
+mService	lib/include/camera/ActivityTestService.h	/^    static sp<ActivityTestService> mService;$/;"	m	class:ActivityTestService
+mSignal	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private ConditionVariable mSignal;$/;"	f	class:CameraTestActivity	file:
+mSocket	lib/wifi/RNetdConnector.h	/^    int mSocket;$/;"	m	class:RNetdConnector
+mSsidTool	lib/include/wifi/RWifiManager.h	/^    RWifiSsidPasswd* mSsidTool;$/;"	m	class:RWifiManager
+mSsidVarName	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mSsidVarName = "ssid";$/;"	m	class:RWifiHalCmd	file:
+mSsidVarName	lib/wifi/RWifiHalCmd.h	/^    static const char* mSsidVarName;$/;"	m	class:RWifiHalCmd
+mState	lib/bluetooth/RAdapterProperties.h	/^    int mState;$/;"	m	class:RAdapterProperties
+mStatus	lib/wifi/RWifiInfo.h	/^        int mStatus;$/;"	m	class:RWifiInfo::RWifiConfiguredInfo
+mString	lib/wifi/RWifiSsidPasswd.h	/^    char mString[STRING_LEN];$/;"	m	class:RWifiSsidPasswd
+mSurfaceHolder	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private SurfaceHolder mSurfaceHolder;$/;"	f	class:CameraTestActivity	file:
+mSurfaceView	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    private SurfaceView mSurfaceView;$/;"	f	class:CameraTestActivity	file:
+mThreadId	lib/include/bluetooth/RBluetoothManager.h	/^    pthread_t mThreadId;$/;"	m	class:RBluetoothManager
+mTouchActivity	lib/include/camera/ActivityTestService.h	/^    sp<ITouchPanelActivity> mTouchActivity;$/;"	m	class:ActivityTestService
+mTouchClient	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^    private ITouchPanelActivity mTouchClient;$/;"	f	class:TouchActivity	file:
+mUuids	lib/bluetooth/RAdapterProperties.h	/^    android::Vector<bt_uuid_t> mUuids;$/;"	m	class:RAdapterProperties
+mUuids	lib/bluetooth/RRemoteDevices.h	/^        android::Vector<bt_uuid_t> mUuids;$/;"	m	class:RRemoteDevices::DeviceProperties
+mValues	lib/bluetooth/RMessage.h	/^    bt_property_t mValues[15];$/;"	m	class:Properties
+mVendorInfo	lib/wifi/RDhcpResults.h	/^    char mVendorInfo[PROPERTY_VALUE_MAX];$/;"	m	class:RDhcpResults
+mViewPic	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    private ImageView mViewPic;$/;"	f	class:PictureViewActivity	file:
+mWarnText	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    private TextView mWarnText;$/;"	f	class:PictureViewActivity	file:
+mWebKeyVarNames	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::mWebKeyVarNames[4] = {"wep_key0", "wep_key1", "wep_key2", "wep_key3"};$/;"	m	class:RWifiHalCmd	file:
+mWebKeyVarNames	lib/wifi/RWifiHalCmd.h	/^    static const char* mWebKeyVarNames[4];$/;"	m	class:RWifiHalCmd
+mWifiCmd	lib/include/wifi/RWifiManager.h	/^    RWifiHalCmd* mWifiCmd;$/;"	m	class:RWifiManager
+mWifiCmd	lib/wifi/RWifiInfo.h	/^    RWifiHalCmd* mWifiCmd;$/;"	m	class:RWifiInfo
+mWifiInfo	lib/include/wifi/RWifiManager.h	/^    RWifiInfo* mWifiInfo;$/;"	m	class:RWifiManager
+mac_addr	lib/hwinfo/sninfo.h	/^struct mac_addr {$/;"	s
 main	factory_test_main.cpp	/^int main(int argc, char **argv)$/;"	f
-message	transport.h	/^struct message$/;"	s
-notifyClient	transport_jni.cpp	/^static void notifyClient(const char *info)$/;"	f	file:
+main	lib/bluetooth/test.cpp	/^int main(int argc, char** argv)$/;"	f
+main	lib/camera/test.cpp	/^int main(int argc, char** argv)$/;"	f
+main	lib/hwinfo/test.cpp	/^int main(int argc, char** argv)$/;"	f
+main	lib/src/faclib_test.c	/^int main()$/;"	f
+main	lib/wifi/test.cpp	/^int main(int argc, char** argv)$/;"	f
+mapString	lib/factest1/test_battery.cpp	/^static int mapString(const char *str, struct StringEnumMap map[])$/;"	f	file:
+markSocket	lib/wifi/RNetworkUtils.cpp	/^void RNetworkUtils::markSocket(int socketfd, int mark)$/;"	f	class:RNetworkUtils
+max_angle	lib/src/robot_fac.c	/^int max_angle[MOTOR_MAX] = {$/;"	v
+message	include/transport.h	/^struct message$/;"	s
+min_angle	lib/src/robot_fac.c	/^int min_angle[MOTOR_MAX] = {$/;"	v
+module_calib	lib/src/robot_fac.c	/^unsigned int module_calib[MOTOR_MAX] = {$/;"	v
+module_calib2	lib/src/robot_fac.c	/^unsigned int module_calib2[RB_MAX] = {$/;"	v
+module_drive	lib/src/robot_fac.c	/^unsigned int module_drive[MOTOR_MAX] = {$/;"	v
+motor_move	factory_test_main.cpp	/^static void motor_move(uint8_t *data, int len)$/;"	f	file:
+motor_stop	factory_test_main.cpp	/^static void motor_stop()$/;"	f	file:
+name	lib/bluetooth/RMessage.h	/^        bt_bdname_t name;$/;"	m	struct:RMessageData::pin_request
+name	lib/bluetooth/RMessage.h	/^        bt_bdname_t name;$/;"	m	struct:RMessageData::ssp_request
+notify	lib/factest1/test_mic.cpp	/^void _MediaPlayerListener::notify(int msg, int ext1, int ext2, const Parcel *obj)$/;"	f	class:_MediaPlayerListener
+notifyDeviceStatus	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::notifyDeviceStatus($/;"	f	class:RBluetoothHandsfree
+oldStreamVolume	lib/factest1/test_mic.cpp	/^static int  oldStreamVolume = 0;$/;"	v	file:
+onAclStateChanged	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onAclStateChanged($/;"	f	class:RBluetoothAdapterHw
+onAclStateChanged	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onAclStateChanged($/;"	f	class:RBluetoothListener
+onAdapterProperties	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onAdapterProperties($/;"	f	class:RBluetoothAdapterHw
+onAdapterProperties	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onAdapterProperties(int num_properties, bt_property_t *properties)$/;"	f	class:RBluetoothListener
+onAdapterStateChanged	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onAdapterStateChanged(bt_state_t status)$/;"	f	class:RBluetoothAdapterHw
+onAdapterStateChanged	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onAdapterStateChanged(bt_state_t status)$/;"	f	class:RBluetoothListener
+onAnswerCall	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAnswerCall()$/;"	f	class:RBluetoothHandsfree
+onAtChld	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAtChld(bthf_chld_type_t chld)$/;"	f	class:RBluetoothHandsfree
+onAtCind	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAtCind()$/;"	f	class:RBluetoothHandsfree
+onAtClcc	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAtClcc()$/;"	f	class:RBluetoothHandsfree
+onAtCnum	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAtCnum()$/;"	f	class:RBluetoothHandsfree
+onAtCops	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAtCops()$/;"	f	class:RBluetoothHandsfree
+onAudioState	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onAudioState(bthf_audio_state_t state, bt_bdaddr_t* bd_addr)$/;"	f	class:RBluetoothHandsfree
+onBluetoothDisable	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::onBluetoothDisable()$/;"	f	class:RAdapterProperties
+onBluetoothReady	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::onBluetoothReady()$/;"	f	class:RAdapterProperties
+onBondStateChanged	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onBondStateChanged($/;"	f	class:RBluetoothAdapterHw
+onBondStateChanged	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onBondStateChanged($/;"	f	class:RBluetoothListener
+onConnectionState	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onConnectionState(bthf_connection_state_t state, bt_bdaddr_t* bd_addr)$/;"	f	class:RBluetoothHandsfree
+onCreate	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:CameraTestActivity
+onCreate	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:LCDActivity
+onCreate	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:PictureViewActivity
+onCreate	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^    protected void onCreate(Bundle savedInstanceState) {$/;"	m	class:TouchActivity
+onDestroy	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    protected void onDestroy() {$/;"	m	class:CameraTestActivity
+onDeviceFound	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onDeviceFound(int num_properties, bt_property_t *properties)$/;"	f	class:RBluetoothAdapterHw
+onDeviceFound	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onDeviceFound(bt_bdaddr_t *bd_addr)$/;"	f	class:RBluetoothListener
+onDialCall	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onDialCall(char *number)$/;"	f	class:RBluetoothHandsfree
+onDiscoveryStateChanged	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onDiscoveryStateChanged(bt_discovery_state_t state)$/;"	f	class:RBluetoothAdapterHw
+onDiscoveryStateChanged	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onDiscoveryStateChanged(bt_discovery_state_t state)$/;"	f	class:RBluetoothListener
+onDraw	app/src/com/avatarmind/factorycommand/TouchView.java	/^    protected void onDraw(Canvas canvas) {$/;"	m	class:TouchView
+onDtmfCmd	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onDtmfCmd(char dtmf)$/;"	f	class:RBluetoothHandsfree
+onDutModeRecv	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onDutModeRecv(uint16_t opcode, uint8_t *buf, uint8_t len)$/;"	f	class:RBluetoothAdapterHw
+onGetElementAttr	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::onGetElementAttr(uint8_t num_attr, btrc_media_attr_t *p_attrs)$/;"	f	class:RBluetoothAvrcp
+onGetPlayStatus	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::onGetPlayStatus()$/;"	f	class:RBluetoothAvrcp
+onHangupCall	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onHangupCall()$/;"	f	class:RBluetoothHandsfree
+onKeyPressed	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onKeyPressed()$/;"	f	class:RBluetoothHandsfree
+onLeTestModeRecv	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onLeTestModeRecv(bt_status_t status, uint16_t packet_count)$/;"	f	class:RBluetoothAdapterHw
+onNewIntent	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    protected void onNewIntent(Intent intent)    {$/;"	m	class:CameraTestActivity
+onNewIntent	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    protected void onNewIntent(Intent intent) {$/;"	m	class:LCDActivity
+onNewIntent	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    protected void onNewIntent(Intent intent) {$/;"	m	class:PictureViewActivity
+onNoiceReduction	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onNoiceReduction(bthf_nrec_t nrec)$/;"	f	class:RBluetoothHandsfree
+onOptionsItemSelected	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public boolean onOptionsItemSelected(MenuItem item) {$/;"	m	class:CameraTestActivity
+onPassthroughCommand	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::onPassthroughCommand(int id, int pressed)$/;"	f	class:RBluetoothAvrcp
+onPause	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    protected void onPause() {$/;"	m	class:CameraTestActivity
+onPause	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    protected void onPause() {$/;"	m	class:LCDActivity
+onPause	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    protected void onPause() {$/;"	m	class:PictureViewActivity
+onPause	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^    protected void onPause() {$/;"	m	class:TouchActivity
+onPinRequest	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onPinRequest(bt_bdaddr_t *bd_addr, bt_bdname_t *bdname, uint32_t cod)$/;"	f	class:RBluetoothAdapterHw
+onPinRequest	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onPinRequest(bt_bdaddr_t *bd_addr, bt_bdname_t *bdname, uint32_t cod)$/;"	f	class:RBluetoothListener
+onRegisterNotification	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::onRegisterNotification(btrc_event_id_t event_id, uint32_t param)$/;"	f	class:RBluetoothAvrcp
+onRemoteDeviceProperties	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onRemoteDeviceProperties($/;"	f	class:RBluetoothAdapterHw
+onRemoteDeviceProperties	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onRemoteDeviceProperties($/;"	f	class:RBluetoothListener
+onRemoteFeatures	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::onRemoteFeatures(bt_bdaddr_t* bd_addr, btrc_remote_features_t features)$/;"	f	class:RBluetoothAvrcp
+onResume	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    protected void onResume() {$/;"	m	class:CameraTestActivity
+onResume	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    protected void onResume() {$/;"	m	class:LCDActivity
+onResume	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    protected void onResume() {$/;"	m	class:PictureViewActivity
+onResume	app/src/com/avatarmind/factorycommand/TouchActivity.java	/^    protected void onResume() {$/;"	m	class:TouchActivity
+onSspRequest	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onSspRequest($/;"	f	class:RBluetoothAdapterHw
+onSspRequest	lib/bluetooth/RBluetoothListener.cpp	/^void RBluetoothListener::onSspRequest($/;"	f	class:RBluetoothListener
+onThreadEvent	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::onThreadEvent(bt_cb_thread_evt event)$/;"	f	class:RBluetoothAdapterHw
+onTouchEvent	app/src/com/avatarmind/factorycommand/TouchView.java	/^    public boolean onTouchEvent(MotionEvent event) {$/;"	m	class:TouchView
+onTransact	lib/camera/IActivityTestService.cpp	/^status_t BnActivityTestService::onTransact(uint32_t code, const Parcel& data,$/;"	f	class:BnActivityTestService
+onTransact	lib/camera/ICameraActivity.cpp	/^status_t BnCameraActivity::onTransact(uint32_t code, const Parcel& data,$/;"	f	class:BnCameraActivity
+onTransact	lib/camera/ILcdActivity.cpp	/^status_t BnLcdActivity::onTransact(uint32_t code, const Parcel& data,$/;"	f	class:BnLcdActivity
+onTransact	lib/camera/ITouchPanelActivity.cpp	/^status_t BnTouchPanelActivity::onTransact(uint32_t code, const Parcel& data,$/;"	f	class:BnTouchPanelActivity
+onUnknownAt	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onUnknownAt(char *at_string)$/;"	f	class:RBluetoothHandsfree
+onVoiceRecognition	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onVoiceRecognition(bthf_vr_state_t state)$/;"	f	class:RBluetoothHandsfree
+onVolumeChange	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::onVolumeChange(uint8_t volume, uint8_t ctype)$/;"	f	class:RBluetoothAvrcp
+onVolumeControl	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::onVolumeControl(bthf_volume_type_t type, int volume)$/;"	f	class:RBluetoothHandsfree
+openBt	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::openBt()$/;"	f	class:RBluetoothManager
+openCamera	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public int openCamera() {$/;"	m	class:CameraTestActivity.CameraTestClient
+openCamera	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::openCamera()$/;"	f	class:ActivityTestService
+openCamera	lib/camera/ICameraActivity.cpp	/^    virtual int openCamera()$/;"	f	class:BpCameraActivity
+openSNFlash	lib/hwinfo/RobotHwInfo.cpp	/^int RobotHwInfo::openSNFlash()$/;"	f	class:RobotHwInfo
+openWifi	lib/wifi/RWifiManager.cpp	/^int RWifiManager::openWifi()$/;"	f	class:RWifiManager
 open_device	transport.cpp	/^static void open_device(char *dev)$/;"	f	file:
-popFromRecvList	transport.cpp	/^struct exmessage* popFromRecvList()$/;"	f
+operator <	lib/bluetooth/RRemoteDevices.cpp	/^bool RRemoteDevices::AddrKey::operator<(const AddrKey& rhs) const$/;"	f	class:RRemoteDevices::AddrKey
+operator =	lib/bluetooth/RMessage.h	/^inline Properties& Properties::operator=(const Properties& right)$/;"	f	class:Properties
+operator =	lib/wifi/RWifiInfo.cpp	/^RWifiInfo::RWifiConfiguredInfo::operator=(const RWifiInfo::RWifiConfiguredInfo& rightv)$/;"	f	class:RWifiInfo::RWifiConfiguredInfo
+p_fd	lib/factest1/test_mic.cpp	/^static int p_fd = 0;$/;"	v	file:
+pairing	lib/bluetooth/RBluetoothManager.cpp	/^bool RBluetoothManager::pairing(RBluetoothAddr& addr)$/;"	f	class:RBluetoothManager
+phoneStateChange	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::phoneStateChange($/;"	f	class:RBluetoothHandsfree
+pin	lib/bluetooth/RMessage.h	/^    }pin;$/;"	m	struct:RMessageData	typeref:struct:RMessageData::pin_request
+pin	lib/include/bluetooth/RBluetoothCommon.h	/^    uint8_t pin[16];$/;"	m	struct:RBluetoothPinCode
+pinReply	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::pinReply(RBluetoothAddr& addr,$/;"	f	class:RBluetoothAdapterHw
+pin_request	lib/bluetooth/RMessage.h	/^    struct pin_request$/;"	s	struct:RMessageData
+ping	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::ping()$/;"	f	class:RWifiHalCmd
+ping	lib/wifi/RWifiManager.cpp	/^int RWifiManager::ping(const char* ip_host, int packet_num)$/;"	f	class:RWifiManager
+ping_ip_addr	factory_test_main.cpp	/^static void ping_ip_addr(uint8_t *data, int len)$/;"	f	file:
+play_record	lib/factest1/test_mic.cpp	/^int play_record()$/;"	f
+player_release	lib/factest1/test_mic.cpp	/^static int player_release()$/;"	f	file:
+player_setup	lib/factest1/test_mic.cpp	/^static int player_setup(const char* path)$/;"	f	file:
+player_start	lib/factest1/test_mic.cpp	/^static int player_start()$/;"	f	file:
+pointEventChange	app/src/com/avatarmind/factorycommand/TouchView.java	/^    private void pointEventChange(MotionEvent event) {$/;"	m	class:TouchView	file:
 popFromRecvList	transport.cpp	/^struct message* popFromRecvList()$/;"	f
+preview	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public int preview() {$/;"	m	class:CameraTestActivity.CameraTestClient
+preview	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::preview()$/;"	f	class:ActivityTestService
+preview	lib/camera/ICameraActivity.cpp	/^    virtual int preview()$/;"	f	class:BpCameraActivity
 printHex	fac_util.cpp	/^void printHex(const uint8_t *data, int len)$/;"	f
-pushToRecvList	transport.cpp	/^static void pushToRecvList(struct exmessage *msg)$/;"	f	file:
+printMacAddr	fac_util.cpp	/^void printMacAddr(const uint8_t *data, int len)$/;"	f
+print_usage	lib/camera/test.cpp	/^static void print_usage()$/;"	f	file:
+processEvent	lib/wifi/RWifiManager.cpp	/^void* RWifiManager::processEvent(void* arg)$/;"	f	class:RWifiManager
+processMessage	lib/bluetooth/RBluetoothManager.cpp	/^void *RBluetoothManager::processMessage(void *arg)$/;"	f	class:RBluetoothManager
+props	lib/bluetooth/RMessage.h	/^        Properties props;$/;"	m	struct:RMessageData::remote_device
+props	lib/bluetooth/RMessage.h	/^    Properties props;$/;"	m	struct:RMessageData
 pushToRecvList	transport.cpp	/^static void pushToRecvList(struct message *msg)$/;"	f	file:
-qRecvList	transport.cpp	/^static List<struct exmessage*> qRecvList;$/;"	v	file:
 qRecvList	transport.cpp	/^static List<struct message*> qRecvList;$/;"	v	file:
-r_thread	transport_jni.cpp	/^static pthread_t r_thread;$/;"	v	file:
+r_fd	lib/factest1/test_mic.cpp	/^static int r_fd = 0;$/;"	v	file:
+readFromFile	lib/factest1/test_battery.cpp	/^static int readFromFile(const char *path, char *buf, int size)$/;"	f	file:
+readNetworkVariables	lib/wifi/RWifiInfo.cpp	/^void RWifiInfo::readNetworkVariables(RWifiInfo::RWifiConfiguredInfo& config)$/;"	f	class:RWifiInfo
+readPowerSupplyType	lib/factest1/test_battery.cpp	/^static PowerSupplyType readPowerSupplyType(const char *path)$/;"	f	file:
+read_can_data	fac_can.cpp	/^int read_can_data(uint8_t *pdata, int &len, uint8_t exp_s, $/;"	f
 read_data	transport.cpp	/^static int read_data()$/;"	f	file:
 read_id	transport.cpp	/^static pthread_t read_id;$/;"	v	file:
-receive_thread	transport_jni.cpp	/^void* receive_thread(void* arg)$/;"	f
-register_native_methods	transport_jni.cpp	/^static int register_native_methods(JNIEnv* env)$/;"	f	file:
+reassociate	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::reassociate()$/;"	f	class:RWifiHalCmd
+receiveMessage	lib/bluetooth/RBluetoothManager.cpp	/^RMessage* RBluetoothManager::receiveMessage()$/;"	f	class:RBluetoothManager
+reconnect	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::reconnect()$/;"	f	class:RWifiHalCmd
+recorder_release	lib/factest1/test_mic.cpp	/^void recorder_release()$/;"	f
+recorder_setup	lib/factest1/test_mic.cpp	/^int recorder_setup()$/;"	f
+recorder_start	lib/factest1/test_mic.cpp	/^int recorder_start()$/;"	f
+recorder_stop	lib/factest1/test_mic.cpp	/^int recorder_stop()$/;"	f
+recv_can_data	fac_can.cpp	/^void recv_can_data(int priority, int s_id, const void *pdata, int len)$/;"	f
+registerCameraActivity	lib/camera/ActivityTestService.cpp	/^void ActivityTestService::registerCameraActivity(int pid, const sp<ICameraActivity>& cameraActivity)$/;"	f	class:ActivityTestService
+registerCameraActivity	lib/camera/IActivityTestService.cpp	/^    virtual void registerCameraActivity(int pid, const sp<ICameraActivity>& cameraActivity)$/;"	f	class:BpActivityTestService
+registerCameraClient	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    public void registerCameraClient (ICameraActivity client) {$/;"	m	class:FacCmdClient
+registerLcdActivity	lib/camera/ActivityTestService.cpp	/^void ActivityTestService::registerLcdActivity(int pid, const sp<ILcdActivity>& lcdActivity)$/;"	f	class:ActivityTestService
+registerLcdActivity	lib/camera/IActivityTestService.cpp	/^    virtual void registerLcdActivity(int pid, const sp<ILcdActivity>& lcdActivity)$/;"	f	class:BpActivityTestService
+registerLcdClient	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    public void registerLcdClient(ILcdActivity client) {$/;"	m	class:FacCmdClient
+registerNotificationRspPlayPos	lib/bluetooth/RBluetoothAvrcp.cpp	/^bool RBluetoothAvrcp::registerNotificationRspPlayPos(int type, int playPos)$/;"	f	class:RBluetoothAvrcp
+registerNotificationRspPlayStatus	lib/bluetooth/RBluetoothAvrcp.cpp	/^bool RBluetoothAvrcp::registerNotificationRspPlayStatus(int type, int playStatus)$/;"	f	class:RBluetoothAvrcp
+registerNotificationRspTrackChange	lib/bluetooth/RBluetoothAvrcp.cpp	/^bool RBluetoothAvrcp::registerNotificationRspTrackChange(int type, uint8_t* track)$/;"	f	class:RBluetoothAvrcp
+release	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::release()$/;"	f	class:RBluetoothAdapterHw
+release	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::release()$/;"	f	class:RBluetoothAvrcp
+release	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::release()$/;"	f	class:RBluetoothHandsfree
+release	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::release()$/;"	f	class:RBluetoothManager
+release	lib/camera/ActivityTestService.cpp	/^void ActivityTestService::release()$/;"	f	class:ActivityTestService
+release	lib/hwinfo/RStorageManager.cpp	/^void RStorageManager::release()$/;"	f	class:RStorageManager
+releaseDhcpLease	lib/wifi/RNetworkUtils.cpp	/^bool RNetworkUtils::releaseDhcpLease(const char* ifname)$/;"	f	class:RNetworkUtils
+releaseInstance	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::releaseInstance()$/;"	f	class:RNetworkManagement
+releaseInstance	lib/wifi/RWifiManager.cpp	/^void RWifiManager::releaseInstance()$/;"	f	class:RWifiManager
 releasePacket	transport.cpp	/^static void releasePacket(struct message *msg)$/;"	f	file:
+releaseProps	lib/bluetooth/RMessage.h	/^inline void Properties::releaseProps()$/;"	f	class:Properties
+remote	lib/bluetooth/RMessage.h	/^    }remote;$/;"	m	struct:RMessageData	typeref:struct:RMessageData::remote_device
+remote_device	lib/bluetooth/RMessage.h	/^    struct remote_device$/;"	s	struct:RMessageData
+removeBond	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::removeBond(RBluetoothAddr& addr)$/;"	f	class:RBluetoothAdapterHw
+removeNetwork	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::removeNetwork(int netId)$/;"	f	class:RWifiHalCmd
+resetConnections	lib/wifi/RNetworkUtils.cpp	/^int RNetworkUtils::resetConnections(const char* ifname, int mask)$/;"	f	class:RNetworkUtils
+reset_music_volume	lib/factest1/test_mic.cpp	/^static void reset_music_volume()$/;"	f	file:
 responseEvent	transport.cpp	/^int responseEvent(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len)$/;"	f
-s_jobject	transport_jni.cpp	/^static jobject   s_jobject = NULL;$/;"	v	file:
+responseEvent	transport.cpp	/^int responseEvent(uint8_t type, uint8_t cmd, uint8_t err)$/;"	f
+ring_play	factory_test_main.cpp	/^static void ring_play(uint8_t *data, int len)$/;"	f	file:
+ring_play_start	lib/factest1/test_mic.cpp	/^int ring_play_start(PLAY_VOLUME mode, int level)$/;"	f
+ring_play_stop	lib/factest1/test_mic.cpp	/^int ring_play_stop()$/;"	f
+runDhcp	lib/wifi/RNetworkUtils.cpp	/^bool RNetworkUtils::runDhcp(const char* ifname)$/;"	f	class:RNetworkUtils
+runDhcpCommon	lib/wifi/RNetworkUtils.cpp	/^bool RNetworkUtils::runDhcpCommon(const char* ifname, bool renew)$/;"	f	class:RNetworkUtils
+runDhcpRenew	lib/wifi/RNetworkUtils.cpp	/^bool RNetworkUtils::runDhcpRenew(const char* ifname)$/;"	f	class:RNetworkUtils
+s	lib/factest1/test_battery.cpp	/^    const char *s;$/;"	m	struct:StringEnumMap	file:
+sRecvMutex	fac_can.cpp	/^static Mutex sRecvMutex;$/;"	v	file:
+sRecvSignal	fac_can.cpp	/^static Condition sRecvSignal;$/;"	v	file:
+sService	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    private static IActivityTestService sService;$/;"	f	class:FacCmdClient	file:
+s_id	fac_can.cpp	/^    int      s_id;$/;"	m	struct:TmpRecvData	file:
+saveConfig	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::saveConfig()$/;"	f	class:RWifiHalCmd
+scan	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::scan(int type)$/;"	f	class:RWifiHalCmd
+scanResults	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::scanResults(int sid)$/;"	f	class:RWifiHalCmd
 se_fd	transport.cpp	/^static int se_fd = -1;$/;"	v	file:
 se_name	transport.cpp	/^static char se_name[32] = {0};$/;"	v	file:
 se_state	transport.cpp	/^static int se_state = ST_UNMOUNT;$/;"	v	file:
+sendMessage	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::sendMessage(RMessage* msg)$/;"	f	class:RBluetoothManager
+send_can_data	fac_can.cpp	/^int send_can_data(uint8_t dst_id, const uint8_t *pdata, int len)$/;"	f
+sensor_handle_event	lib/factest1/test_sensors.cpp	/^static void sensor_handle_event(ASensorEvent *event, int count)$/;"	f	file:
+sensor_id	lib/factest1/test_sensors.cpp	/^static int sensor_id   = -1;$/;"	v	file:
+sensor_poll_thread	lib/factest1/test_sensors.cpp	/^static void *sensor_poll_thread(void *arg)$/;"	f	file:
+sensor_type	lib/factest1/test_sensors.cpp	/^static int sensor_type = -1;$/;"	v	file:
 serial_close	serial.cpp	/^void serial_close(int fd)$/;"	f
 serial_init	serial.cpp	/^static int serial_init(int fd)$/;"	f	file:
 serial_open	serial.cpp	/^int serial_open(const char *dev)$/;"	f
 serial_read	serial.cpp	/^int serial_read(int fd, uint8_t *data, int datalen)$/;"	f
 serial_write	serial.cpp	/^int serial_write(int fd, const uint8_t *data, int datalen)$/;"	f
-str2Hex	fac_util.cpp	/^void str2Hex(uint8_t *dst, char *src, int len)$/;"	f
-str2Hex	transport_jni.cpp	/^static void str2Hex(uint8_t* dst, char* src, int len)$/;"	f	file:
+setAdapterProperty	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::setAdapterProperty(int type, void* value, int len)$/;"	f	class:RBluetoothAdapterHw
+setBkColor	app/src/com/avatarmind/factorycommand/LCDActivity.java	/^    public boolean setBkColor(int index) {$/;"	m	class:LCDActivity
+setBluetoothCallbacks	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::setBluetoothCallbacks(RBluetoothCallbacks* callbacks)$/;"	f	class:RBluetoothAdapterHw
+setCallback	lib/camera/ActivityTestService.cpp	/^void ActivityTestService::setCallback(ActivityTestCallback* callback)$/;"	f	class:ActivityTestService
+setCallbacks	lib/bluetooth/RBluetoothAvrcp.cpp	/^void RBluetoothAvrcp::setCallbacks(RBluetoothAvrcpCallbacks* callbacks)$/;"	f	class:RBluetoothAvrcp
+setCallbacks	lib/bluetooth/RBluetoothHandsfree.cpp	/^void RBluetoothHandsfree::setCallbacks(RBluetoothHfpCallbacks* callbacks)$/;"	f	class:RBluetoothHandsfree
+setDeviceName	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::DeviceProperties::setDeviceName(void* val, int len)$/;"	f	class:RRemoteDevices::DeviceProperties
+setDeviceProperty	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::setDeviceProperty(RBluetoothAddr& addr, int type,$/;"	f	class:RBluetoothAdapterHw
+setDiscoverableTimeout	lib/bluetooth/RAdapterProperties.cpp	/^bool RAdapterProperties::setDiscoverableTimeout(int timeout)$/;"	f	class:RAdapterProperties
+setDnsForwarders	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::setDnsForwarders(const char* const * dns, int num)$/;"	f	class:RNetworkManagement
+setFriendlyName	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::DeviceProperties::setFriendlyName(void* val, int len)$/;"	f	class:RRemoteDevices::DeviceProperties
+setInterfaceConfig	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::setInterfaceConfig(const char* ifname, const char* flag)$/;"	f	class:RNetworkManagement
+setInterfaceDown	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::setInterfaceDown(const char* ifname)$/;"	f	class:RNetworkManagement
+setInterfaceUp	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::setInterfaceUp(const char* ifname)$/;"	f	class:RNetworkManagement
+setListener	lib/wifi/RNetdConnector.cpp	/^void RNetdConnector::setListener(RNetdConnectorListener* listener)$/;"	f	class:RNetdConnector
+setName	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::setName(void* val, int len)$/;"	f	class:RAdapterProperties
+setName	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::DeviceProperties::setName(void* name, size_t size, void* val, int len)$/;"	f	class:RRemoteDevices::DeviceProperties
+setNetworkVariable	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::setNetworkVariable(int netId, const char* name, const char* value)$/;"	f	class:RWifiHalCmd
+setScanMode	lib/bluetooth/RAdapterProperties.cpp	/^bool RAdapterProperties::setScanMode(bt_scan_mode_t mode)$/;"	f	class:RAdapterProperties
+setState	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::setState(int state)$/;"	f	class:RAdapterProperties
+setUuids	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::setUuids(void* val, int num)$/;"	f	class:RAdapterProperties
+setUuids	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::DeviceProperties::setUuids(void *val, int len)$/;"	f	class:RRemoteDevices::DeviceProperties
+setVolume	lib/bluetooth/RBluetoothAvrcp.cpp	/^bool RBluetoothAvrcp::setVolume(int volume)$/;"	f	class:RBluetoothAvrcp
+setVolume	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::setVolume(int volume_type, int volume)$/;"	f	class:RBluetoothHandsfree
+setWifiPasswd	lib/wifi/RWifiManager.cpp	/^bool RWifiManager::setWifiPasswd(int netId, const char* pwd, int security)$/;"	f	class:RWifiManager
+setWifiSsid	lib/wifi/RWifiManager.cpp	/^bool RWifiManager::setWifiSsid(int netId, const char* ssid)$/;"	f	class:RWifiManager
+set_expression	lib/factest1/test_robot_info.cpp	/^int set_expression(uint8_t id)$/;"	f
+set_gender	lib/factest1/test_robot_info.cpp	/^int set_gender(uint8_t sex)$/;"	f
+set_motor_calibration	factory_test_main.cpp	/^static void set_motor_calibration()$/;"	f	file:
+set_motor_motion	factory_test_main.cpp	/^static void set_motor_motion(uint8_t *data, int len)$/;"	f	file:
+set_music_volume	lib/factest1/test_mic.cpp	/^static void set_music_volume(int vl)$/;"	f	file:
+set_power_mode	factory_test_main.cpp	/^static void set_power_mode(uint8_t *data, int len)$/;"	f	file:
+set_robot_gender	factory_test_main.cpp	/^static void set_robot_gender(uint8_t *data, int len)$/;"	f	file:
+set_wifi_ap	factory_test_main.cpp	/^static void set_wifi_ap(uint8_t *data, int len)$/;"	f	file:
+show	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    private void show(String fileName) {$/;"	m	class:PictureViewActivity	file:
+showPicture	app/src/com/avatarmind/factorycommand/PictureViewActivity.java	/^    public void showPicture(String fileName) {$/;"	m	class:PictureViewActivity
+signalPoll	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::signalPoll()$/;"	f	class:RWifiHalCmd
+size	lib/hwinfo/sninfo.h	/^	uint16_t size;$/;"	m	struct:sn_info
+size	lib/hwinfo/sninfo.h	/^	uint8_t size;$/;"	m	struct:mac_addr
+sn	lib/hwinfo/sninfo.h	/^	char sn[30];$/;"	m	struct:sn_info
+sn_info	lib/hwinfo/sninfo.h	/^struct sn_info {$/;"	s
+ssp	lib/bluetooth/RMessage.h	/^    }ssp;$/;"	m	struct:RMessageData	typeref:struct:RMessageData::ssp_request
+sspReply	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::sspReply(RBluetoothAddr& addr,$/;"	f	class:RBluetoothAdapterHw
+sspRequest	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::sspRequest(bt_bdaddr_t& addr, bt_bdname_t& name,$/;"	f	class:RRemoteDevices
+ssp_request	lib/bluetooth/RMessage.h	/^    struct ssp_request$/;"	s	struct:RMessageData
+startCameraActivity	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::startCameraActivity()$/;"	f	class:ActivityTestService
+startDiscovery	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::startDiscovery()$/;"	f	class:RAdapterProperties
+startDiscovery	lib/bluetooth/RBluetoothAdapterHw.cpp	/^bool RBluetoothAdapterHw::startDiscovery()$/;"	f	class:RBluetoothAdapterHw
+startDiscovery	lib/bluetooth/RBluetoothManager.cpp	/^void RBluetoothManager::startDiscovery()$/;"	f	class:RBluetoothManager
+startDriver	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::startDriver()$/;"	f	class:RWifiHalCmd
+startFound	lib/bluetooth/RRemoteDevices.cpp	/^void RRemoteDevices::startFound()$/;"	f	class:RRemoteDevices
+startLcdActivity	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::startLcdActivity()$/;"	f	class:ActivityTestService
+startMonitoring	lib/wifi/RNetdConnector.cpp	/^int RNetdConnector::startMonitoring()$/;"	f	class:RNetdConnector
+startMonitoring	lib/wifi/RWifiManager.cpp	/^void RWifiManager::startMonitoring()$/;"	f	class:RWifiManager
+startSupplicant	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::startSupplicant(bool p2pSupported)$/;"	f	class:RWifiHalCmd
+startTethering	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::startTethering()$/;"	f	class:RNetworkManagement
+startTouchActivity	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::startTouchActivity()$/;"	f	class:ActivityTestService
+startVoiceRecognition	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::startVoiceRecognition()$/;"	f	class:RBluetoothHandsfree
+state	lib/bluetooth/RMessage.h	/^        bt_acl_state_t state;$/;"	m	struct:RMessageData::acl_state
+state	lib/bluetooth/RMessage.h	/^        bt_bond_state_t state;$/;"	m	struct:RMessageData::bond_state
+state	lib/bluetooth/RMessage.h	/^    int state;$/;"	m	struct:RMessageData
+status	lib/bluetooth/RMessage.h	/^        bt_status_t status;$/;"	m	struct:RMessageData::acl_state
+status	lib/bluetooth/RMessage.h	/^        bt_status_t status;$/;"	m	struct:RMessageData::bond_state
+status	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::status()$/;"	f	class:RWifiHalCmd
+stopCameraActivity	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::stopCameraActivity()$/;"	f	class:ActivityTestService
+stopDhcp	lib/wifi/RNetworkUtils.cpp	/^bool RNetworkUtils::stopDhcp(const char* ifname)$/;"	f	class:RNetworkUtils
+stopDriver	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::stopDriver()$/;"	f	class:RWifiHalCmd
+stopLcdActivity	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::stopLcdActivity()$/;"	f	class:ActivityTestService
+stopMonitoring	lib/wifi/RNetdConnector.cpp	/^void RNetdConnector::stopMonitoring()$/;"	f	class:RNetdConnector
+stopMonitoring	lib/wifi/RWifiManager.cpp	/^void RWifiManager::stopMonitoring()$/;"	f	class:RWifiManager
+stopSupplicant	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::stopSupplicant()$/;"	f	class:RWifiHalCmd
+stopTethering	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::stopTethering()$/;"	f	class:RNetworkManagement
+stopTouchActivity	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::stopTouchActivity()$/;"	f	class:ActivityTestService
+stopVoiceRecognition	lib/bluetooth/RBluetoothHandsfree.cpp	/^bool RBluetoothHandsfree::stopVoiceRecognition()$/;"	f	class:RBluetoothHandsfree
+str2Hex	fac_util.cpp	/^int str2Hex(uint8_t *dst, const char *src)$/;"	f
+surfaceChanged	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {$/;"	m	class:CameraTestActivity
+surfaceCreated	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void surfaceCreated(SurfaceHolder holder) {$/;"	m	class:CameraTestActivity
+surfaceDestroyed	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^    public void surfaceDestroyed(SurfaceHolder holder) {$/;"	m	class:CameraTestActivity
+takePicture	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public int takePicture(int storage, String filename) {$/;"	m	class:CameraTestActivity.CameraTestClient
+takePicture	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::takePicture(int storage, const String16& filename)$/;"	f	class:ActivityTestService
+takePicture	lib/camera/ICameraActivity.cpp	/^    virtual int takePicture(int storage, const String16& filename)$/;"	f	class:BpCameraActivity
+test_can_bus	factory_test_main.cpp	/^static void test_can_bus()$/;"	f	file:
+test_can_module	lib/factest1/test_robot_info.cpp	/^int test_can_module(uint8_t m_id)$/;"	f
+test_facial_expression	factory_test_main.cpp	/^static void test_facial_expression(uint8_t *data, int len)$/;"	f	file:
+tfcard_main	lib/hwinfo/test.cpp	/^static int tfcard_main(int argc, char** argv)$/;"	f	file:
+touch	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::TouchPanelActivity::touch(int num, const int* points)$/;"	f	class:ActivityTestService::TouchPanelActivity
+touch	lib/camera/ITouchPanelActivity.cpp	/^    virtual int touch(int num, const int* points)$/;"	f	class:BpTouchPanelActivity
+touch	lib/camera/test.cpp	/^    virtual int touch(int num, const int* points)$/;"	f	class:TouchCallback
 transport_init	transport.cpp	/^void transport_init()$/;"	f
 transport_thread	transport.cpp	/^static void* transport_thread(void *arg)$/;"	f	file:
 transport_write	transport.cpp	/^static int transport_write(struct message *packet)$/;"	f	file:
-type	transport.h	/^    uint8_t type;$/;"	m	struct:message
-uninit	transport_jni.cpp	/^static void uninit(JNIEnv* env, jobject thiz)$/;"	f	file:
+type	include/transport.h	/^    uint8_t type;$/;"	m	struct:message
+uninit_can	fac_can.cpp	/^void uninit_can()$/;"	f
+uninit_sensor_grab	lib/factest1/test_sensors.cpp	/^static void uninit_sensor_grab()$/;"	f	file:
+unloadBluetoothModule	lib/bluetooth/RBluetoothAdapterHw.cpp	/^void RBluetoothAdapterHw::unloadBluetoothModule()$/;"	f	class:RBluetoothAdapterHw
+unloadDriver	lib/wifi/RWifiHalCmd.cpp	/^bool RWifiHalCmd::unloadDriver()$/;"	f	class:RWifiHalCmd
+unregisterCameraActivity	lib/camera/ActivityTestService.cpp	/^void ActivityTestService::unregisterCameraActivity(const sp<ICameraActivity>& cameraActivity)$/;"	f	class:ActivityTestService
+unregisterCameraActivity	lib/camera/IActivityTestService.cpp	/^    virtual void unregisterCameraActivity(const sp<ICameraActivity>& cameraActivity)$/;"	f	class:BpActivityTestService
+unregisterCameraClient	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    public void unregisterCameraClient(ICameraActivity client) {$/;"	m	class:FacCmdClient
+unregisterLcdActivity	lib/camera/ActivityTestService.cpp	/^void ActivityTestService::unregisterLcdActivity(const sp<ILcdActivity>& lcdActivity)$/;"	f	class:ActivityTestService
+unregisterLcdActivity	lib/camera/IActivityTestService.cpp	/^    virtual void unregisterLcdActivity(const sp<ILcdActivity>& lcdActivity)$/;"	f	class:BpActivityTestService
+unregisterLcdClient	app/src/com/avatarmind/factorycommand/service/FacCmdClient.java	/^    public void unregisterLcdClient(ILcdActivity client) {$/;"	m	class:FacCmdClient
+updateScanMode	lib/bluetooth/RAdapterProperties.cpp	/^void RAdapterProperties::updateScanMode()$/;"	f	class:RAdapterProperties
+us_sensor_map	lib/factest1/test_sensors.cpp	/^}, us_sensor_map[] = {$/;"	v	typeref:struct:SENSORS_MAP	file:
+val	lib/factest1/test_battery.cpp	/^    int val;$/;"	m	struct:StringEnumMap	file:
+variant	lib/bluetooth/RMessage.h	/^        bt_ssp_variant_t variant;$/;"	m	struct:RMessageData::ssp_request
+viewPicture	app/src/com/avatarmind/factorycommand/CameraTestActivity.java	/^        public int viewPicture(int storage, String filename) {$/;"	m	class:CameraTestActivity.CameraTestClient
+viewPicture	lib/camera/ActivityTestService.cpp	/^int ActivityTestService::viewPicture(int storage, const String16& filename)$/;"	f	class:ActivityTestService
+viewPicture	lib/camera/ICameraActivity.cpp	/^    virtual int viewPicture(int storage, const String16& filename)$/;"	f	class:BpCameraActivity
+waitForEvent	lib/wifi/RWifiHalCmd.cpp	/^const char* RWifiHalCmd::waitForEvent()$/;"	f	class:RWifiHalCmd
 wait_transport	transport.cpp	/^static int wait_transport()$/;"	f	file:
+wifiFirmwareReload	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::wifiFirmwareReload()$/;"	f	class:RNetworkManagement
+wifiFirmwareReload	lib/wifi/RNetworkManagement.cpp	/^void RNetworkManagement::wifiFirmwareReload(const char* ifname, const char* mode)$/;"	f	class:RNetworkManagement
+wifi_mac_addr	lib/hwinfo/sninfo.h	/^struct wifi_mac_addr {$/;"	s
+~ActivityTestCallback	lib/include/camera/ActivityTestService.h	/^    virtual ~ActivityTestCallback() {}$/;"	f	class:ActivityTestCallback
+~ActivityTestService	lib/camera/ActivityTestService.cpp	/^ActivityTestService::~ActivityTestService()$/;"	f	class:ActivityTestService
+~AddrKey	lib/bluetooth/RRemoteDevices.h	/^        ~AddrKey() {}$/;"	f	struct:RRemoteDevices::AddrKey
+~DeviceProperties	lib/bluetooth/RRemoteDevices.cpp	/^RRemoteDevices::DeviceProperties::~DeviceProperties()$/;"	f	class:RRemoteDevices::DeviceProperties
+~Properties	lib/bluetooth/RMessage.h	/^inline Properties::~Properties()$/;"	f	class:Properties
+~RAdapterProperties	lib/bluetooth/RAdapterProperties.cpp	/^RAdapterProperties::~RAdapterProperties()$/;"	f	class:RAdapterProperties
+~RBluetoothAdapterHw	lib/bluetooth/RBluetoothAdapterHw.cpp	/^RBluetoothAdapterHw::~RBluetoothAdapterHw()$/;"	f	class:RBluetoothAdapterHw
+~RBluetoothAvrcp	lib/bluetooth/RBluetoothAvrcp.cpp	/^RBluetoothAvrcp::~RBluetoothAvrcp()$/;"	f	class:RBluetoothAvrcp
+~RBluetoothAvrcpCallbacks	lib/bluetooth/RBluetoothAvrcpCallbacks.h	/^    virtual ~RBluetoothAvrcpCallbacks() {}$/;"	f	class:RBluetoothAvrcpCallbacks
+~RBluetoothCallbacks	lib/bluetooth/RBluetoothCallbacks.h	/^    virtual ~RBluetoothCallbacks() {}$/;"	f	class:RBluetoothCallbacks
+~RBluetoothHandsfree	lib/bluetooth/RBluetoothHandsfree.cpp	/^RBluetoothHandsfree::~RBluetoothHandsfree()$/;"	f	class:RBluetoothHandsfree
+~RBluetoothListener	lib/bluetooth/RBluetoothListener.cpp	/^RBluetoothListener::~RBluetoothListener()$/;"	f	class:RBluetoothListener
+~RBluetoothManager	lib/bluetooth/RBluetoothManager.cpp	/^RBluetoothManager::~RBluetoothManager()$/;"	f	class:RBluetoothManager
+~RCommand	lib/wifi/RNetdConnector.cpp	/^RNetdConnector::RCommand::~RCommand()$/;"	f	class:RNetdConnector::RCommand
+~RDhcpResults	lib/wifi/RDhcpResults.cpp	/^RDhcpResults::~RDhcpResults()$/;"	f	class:RDhcpResults
+~RNetdConnector	lib/wifi/RNetdConnector.cpp	/^RNetdConnector::~RNetdConnector()$/;"	f	class:RNetdConnector
+~RNetworkManagement	lib/wifi/RNetworkManagement.cpp	/^RNetworkManagement::~RNetworkManagement()$/;"	f	class:RNetworkManagement
+~RNetworkUtils	lib/wifi/RNetworkUtils.cpp	/^RNetworkUtils::~RNetworkUtils()$/;"	f	class:RNetworkUtils
+~RRemoteDevices	lib/bluetooth/RRemoteDevices.cpp	/^RRemoteDevices::~RRemoteDevices()$/;"	f	class:RRemoteDevices
+~RStorageManager	lib/hwinfo/RStorageManager.cpp	/^RStorageManager::~RStorageManager()$/;"	f	class:RStorageManager
+~RWifiHalCmd	lib/wifi/RWifiHalCmd.cpp	/^RWifiHalCmd::~RWifiHalCmd()$/;"	f	class:RWifiHalCmd
+~RWifiInfo	lib/wifi/RWifiInfo.cpp	/^RWifiInfo::~RWifiInfo()$/;"	f	class:RWifiInfo
+~RWifiManager	lib/wifi/RWifiManager.cpp	/^RWifiManager::~RWifiManager()$/;"	f	class:RWifiManager
+~RWifiSsidPasswd	lib/wifi/RWifiSsidPasswd.cpp	/^RWifiSsidPasswd::~RWifiSsidPasswd()$/;"	f	class:RWifiSsidPasswd
+~RobotHwInfo	lib/hwinfo/RobotHwInfo.cpp	/^RobotHwInfo::~RobotHwInfo()$/;"	f	class:RobotHwInfo
+~TouchCallback	lib/camera/test.cpp	/^    virtual ~TouchCallback() {}$/;"	f	class:TouchCallback
+~TouchPanelActivity	lib/camera/ActivityTestService.cpp	/^ActivityTestService::TouchPanelActivity::~TouchPanelActivity()$/;"	f	class:ActivityTestService::TouchPanelActivity
+~_MediaPlayerListener	lib/factest1/test_mic.cpp	/^    ~_MediaPlayerListener() {};$/;"	f	class:_MediaPlayerListener

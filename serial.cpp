@@ -12,7 +12,7 @@
 #include <fcntl.h>
 #include <termio.h>
 
-#include "fac_log.h"
+#include "fac_util.h"
 
 #include "serial.h"
 
@@ -33,9 +33,7 @@ static int serial_init(int fd)
     options.c_cflag &= ~CSIZE;            /* 设置数据位之前屏蔽掉其它标志位 */
     options.c_cflag |= CS8;               /* 8位数据长度 others: CS5,CS6,CS7*/
     options.c_cflag &= ~CSTOPB;           /* 1位停止位 */
-
     options.c_cflag &= ~PARENB;           /* 无奇偶校验 */
-    options.c_iflag &= ~INPCK;
 
     /* 奇校验
      * options.c_cflag |= (PARENB | PARODD);
@@ -49,6 +47,7 @@ static int serial_init(int fd)
      */
 
     /* 使用原始模式方式通讯 */
+    options.c_iflag &= ~(BRKINT | ICRNL | INPCK | ISTRIP | IXON);
     options.c_oflag &= ~OPOST;
     options.c_lflag &= ~(ICANON | ECHO | ECHOE | ISIG);
 

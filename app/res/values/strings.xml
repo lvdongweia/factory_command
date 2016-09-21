@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">整机测试</string>
+    <string name="on_pic">没有可显示的图片</string>
+    <string name="touch_point">检测到触点：</string>
+
+</resources>

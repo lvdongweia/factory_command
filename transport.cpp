@@ -16,7 +16,6 @@
 #include <utils/Condition.h>
 
 #include "serial.h"
-#include "fac_log.h"
 #include "fac_util.h"
 
 #include "transport.h"
@@ -41,20 +40,13 @@ static char se_name[32] = {0};
 static pthread_t read_id;
 static Mutex mRecvLock;
 static Condition mRecvSignal;
-
-#ifndef BUILD_FOR_JNI
 static List<struct message*> qRecvList;
-#else
-static List<struct exmessage*> qRecvList;
-#endif
 
 
-#ifndef BUILD_FOR_JNI
 static void pushToRecvList(struct message *msg)
 {
     AutoMutex lock(mRecvLock);
     qRecvList.push_back(msg);
-    LOGD("recv list size:%d", qRecvList.size());
     mRecvSignal.signal();
 }
 
@@ -167,44 +159,20 @@ int responseEvent(uint8_t type, uint8_t cmd, uint8_t *data, uint8_t len)
 
     // creat thread to write ?
     int ret = transport_write(msg);
-
     releasePacket(msg);
+
     return ret;
 }
 
-
-#else
-
-static void pushToRecvList(struct exmessage *msg)
+int responseEvent(uint8_t type, uint8_t cmd, uint8_t err)
 {
-    AutoMutex lock(mRecvLock);
-    qRecvList.push_back(msg);
-    LOGD("RecvList size:%d", qRecvList.size()); 
-    mRecvSignal.signal();
+    struct message *msg = getPacket(MSG_HEADER, type, cmd, 1, &err);
+
+    int ret = transport_write(msg);
+    releasePacket(msg);
+
+    return ret;
 }
-
-struct exmessage* popFromRecvList()
-{
-    struct exmessage *packet = NULL;
-
-    AutoMutex lock(mRecvLock);
-    if (qRecvList.empty()) mRecvSignal.wait(mRecvLock);
-
-    List<struct exmessage*>::iterator it = qRecvList.begin();
-    packet = *it;
-    qRecvList.erase(it);
-
-    return packet;
-}
-
-void getSerialData(uint8_t *data, int &len)
-{
-    struct exmessage *msg = popFromRecvList();
-
-    memcpy(data, msg->data, msg->d_len);
-    len = msg->d_len;
-}
-#endif
 
 static int read_data()
 {
@@ -213,7 +181,7 @@ static int read_data()
    
     if (!se_state) return -1;
     len = serial_read(se_fd, buf, sizeof(buf));
-    LOGD("#####receive data len:%d", len);
+    LOGD("## Serial recv:%d bytes ##", len);
     printHex(buf, len);
 
     if (len < 0)
@@ -230,7 +198,6 @@ static int read_data()
         return -1;
     }
 
-#ifndef BUILD_FOR_JNI
     struct message *msg;
 
     uint8_t *payload = NULL;
@@ -258,25 +225,23 @@ static int read_data()
     }
 
     type = buf[1];
-    if (type != MSG_TYPE_CMD && type != MSG_TYPE_ACK && type != MSG_TYPE_NACK)
+    if (type != MSG_TYPE_CMD)
     {
-        LOGE("Invalid data type:%02x (%02x | %02x | %02x)", type, 
-                MSG_TYPE_CMD, MSG_TYPE_ACK, MSG_TYPE_NACK);
+        LOGE("Invalid data type:%02x (%02x)", type, MSG_TYPE_CMD);
         return 0;
     }
 
     cmd = buf[2];
-
     length = buf[3];
+    int pldLen = len - 5;
+    if (length != pldLen)
+    {
+        LOGE("Invalid payload len:%d (%d)", length, pldLen);
+        return 0;
+    }
     if (length > 0)
     {
-        payload = buf + 4;
-        int pldLen = len - 5;
-        if (length != pldLen)
-        {
-            LOGE("Invalid payload len:%d (%d)", length, pldLen);
-            return 0;
-        }
+        payload = buf + 4; 
     }
 
     checksum = buf[len-1];
@@ -290,21 +255,10 @@ static int read_data()
         pushToRecvList(packet);
     else 
     {
-        LOGE("checksum failed.(%02x / %02x)", ck, checksum);
+        LOGE("XOR check failed.(%02x / %02x)", ck, checksum);
         if (packet->data != NULL) free(packet->data);
         free(packet);
     }
-
-#else
-
-    struct exmessage* msg = (struct exmessage*)malloc(sizeof(struct exmessage));
-    if (msg == NULL) return 0;
-    memcpy(msg->data, buf, len);
-    msg->d_len = len;
-
-    pushToRecvList(msg);
-
-#endif
 
     return 0;
 }
@@ -341,7 +295,6 @@ static void* transport_thread(void *arg)
     for (;;)
     {
         action = wait_transport();
-        LOGD("%d event happen", action);
         if (action == FD_READ)
         {
             ret = read_data();
@@ -349,7 +302,7 @@ static void* transport_thread(void *arg)
         }
     }
 
-    LOGD("###################################transport thread exit");
+    LOGD("######transport thread exit######");
 
     return 0;
 }
@@ -370,28 +323,32 @@ static void open_device(char *dev)
 
 static void close_device()
 {
-    LOGD("##############to close device");
+    LOGD("######waiting close device######");
     se_state = ST_UNMOUNT;
     serial_close(se_fd);
     se_fd = -1;
     memset(se_name, 0, sizeof(se_name));
 
     pthread_join(read_id, NULL);
-    LOGD("#############device closed");
+    LOGD("######device closed######");
     read_id = 0;
 }
+
 static int know_device(char *dev)
 {
     if (!se_name[0])
         return 0;
 
     if (strcmp(se_name, dev))
+    {
+        LOGD("New serial device:%s", dev);
         return 0;
+    }
 
     return 1;
 }
 
-static void find_serial_device(char *base) 
+static void find_serial_device(const char *base) 
 {
     DIR *devdir;
     struct dirent *de;

@@ -3,41 +3,52 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
-	factory_test_main.cpp \
 	fac_util.cpp \
+	fac_can.cpp
+
+LOCAL_C_INCLUDES := \
+	external/robot-canbus/include \
+	$(LOCAL_PATH)/include
+
+LOCAL_SHARED_LIBRARIES := \
+	librm_can \
+	libutils \
+	liblog
+
+LOCAL_MODULE_TAGS := eng optional
+LOCAL_MODULE := libfacutil
+include $(BUILD_SHARED_LIBRARY)
+
+
+##########################################
+include $(CLEAR_VARS)
+
+LOCAL_SRC_FILES := \
+	factory_test_main.cpp \
 	serial.cpp \
 	transport.cpp \
-	fw_version.cpp
 
 LOCAL_SHARED_LIBRARIES := \
 	libcutils \
 	libutils \
-	libsysinfo
+	libfacutil \
+	libfactest1 \
+	libfactory_hwinfo \
+	libfactory_wifi \
+	librobot_fac \
+	libfactory_bt \
+	libfactory_activity
 
 LOCAL_C_INCLUDES := \
-	external/robot-control/include
+	$(LOCAL_PATH)/include \
+	$(LOCAL_PATH)/lib/include \
+	$(LOCAL_PATH)/lib/factest1 
 
-
+LOCAL_MODULE_TAGS := eng optional
 LOCAL_MODULE := rm_factory_test
 
 include $(BUILD_EXECUTABLE)
 
 
-####################################################
-include $(CLEAR_VARS)
-
-#LOCAL_SRC_FILES := \
-#	serial.cpp \
-#	transport.cpp \
-#	transport_jni.cpp
-#
-#LOCAL_SHARED_LIBRARIES := \
-#	libcutils \
-#	libutils \
-#	libandroid_runtime 
-#
-#LOCAL_CFLAGS := -DBUILD_FOR_JNI
-#
-#LOCAL_MODULE := libuart
-
-#include $(BUILD_SHARED_LIBRARY)
+##########################################
+include $(call all-makefiles-under, $(LOCAL_PATH))
